@@ -1,0 +1,199 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 122,
+    "height": 159,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "angry_chicken.png",
+          "use1Xscale": false,
+          "name": "angry_chicken.png",
+          "x": 205,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Angry Chicken:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Angry Chicken:",
+          "x": 177,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Texture:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Texture:",
+          "x": 159,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "health:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "health:",
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Armor:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Armor:",
+          "x": 159,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Regen Level:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Regen Level:",
+          "x": 159,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "0.15",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "0.15",
+          "x": 159,
+          "y": 152
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzedust.png",
+          "use1Xscale": false,
+          "name": "bronzedust.png",
+          "x": 180,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Plains Biome",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Plains Biome",
+          "x": 159,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/Kill",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "/Kill",
+          "x": 195,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 222,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "0",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "0",
+          "x": 195,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "10",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "10",
+          "x": 195,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "OpenEnities"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Back",
+          "x": 215,
+          "y": 169
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

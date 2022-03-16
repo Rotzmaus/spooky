@@ -1,0 +1,361 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 427,
+    "height": 243,
+    "inventoryOffsetX": -12,
+    "inventoryOffsetY": 43,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 321,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzedust.png",
+          "use1Xscale": false,
+          "name": "bronzedust.png",
+          "x": 33,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzesword.png",
+          "use1Xscale": false,
+          "name": "bronzesword.png",
+          "x": 33,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "24",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "24",
+          "x": 6,
+          "y": 83
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "18",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "18",
+          "x": 6,
+          "y": 110
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "12",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "12",
+          "x": 6,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "10",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "10",
+          "x": 6,
+          "y": 136
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "32",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "32",
+          "x": 7,
+          "y": 29
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Helmet",
+          "onClick": {
+            "name": "BuyHelmet"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Helmet",
+          "x": 357,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sword",
+          "onClick": {
+            "name": "BuySword"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Sword",
+          "x": 357,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Chestplate",
+          "onClick": {
+            "name": "BuyChestplate"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Chestplate",
+          "x": 357,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Leggins",
+          "onClick": {
+            "name": "BuyLeggins"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Leggins",
+          "x": 357,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Boots",
+          "onClick": {
+            "name": "BuyBoots"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Boots",
+          "x": 357,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Press to Buy",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Press to Buy",
+          "x": 357,
+          "y": 5
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Input Dust Here!",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Input Dust Here!",
+          "x": 293,
+          "y": 162
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druiddust.png",
+          "use1Xscale": false,
+          "name": "druiddust.png",
+          "x": 60,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "infernodust.png",
+          "use1Xscale": false,
+          "name": "infernodust.png",
+          "x": 87,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "damascusdust.png",
+          "use1Xscale": false,
+          "name": "damascusdust.png",
+          "x": 114,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "irondust.png",
+          "use1Xscale": false,
+          "name": "irondust.png",
+          "x": 141,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "steeldust.png",
+          "use1Xscale": false,
+          "name": "steeldust.png",
+          "x": 168,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "angelicdust.png",
+          "use1Xscale": false,
+          "name": "angelicdust.png",
+          "x": 195,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "holysteeldust.png",
+          "use1Xscale": false,
+          "name": "holysteeldust.png",
+          "x": 222,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkirondust.png",
+          "use1Xscale": false,
+          "name": "darkirondust.png",
+          "x": 249,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "platedust.png",
+          "use1Xscale": false,
+          "name": "platedust.png",
+          "x": 276,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icedust.png",
+          "use1Xscale": false,
+          "name": "icedust.png",
+          "x": 303,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzeset_head.png",
+          "use1Xscale": false,
+          "name": "bronzeset_head.png",
+          "x": 33,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzeset_body.png",
+          "use1Xscale": false,
+          "name": "bronzeset_body.png",
+          "x": 33,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzeset_leggings.png",
+          "use1Xscale": false,
+          "name": "bronzeset_leggings.png",
+          "x": 33,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzeset_boots.png",
+          "use1Xscale": false,
+          "name": "bronzeset_boots.png",
+          "x": 33,
+          "y": 134
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

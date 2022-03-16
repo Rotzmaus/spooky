@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "command",
+  "definition": {
+    "commandName": "spooky:regeneratehealth",
+    "permissionLevel": "No requirement",
+    "onCommandExecuted": {
+      "name": "RegenerateHealthCommandExecuted"
+    }
+  }
+}

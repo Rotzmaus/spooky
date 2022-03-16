@@ -1,0 +1,125 @@
+{
+  "_fv": 24,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:HotPlacesExp>",
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:HotPlacesExp>",
+          "x": 15,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:playerEXPneeded>",
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:playerEXPneeded>",
+          "x": 42,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 33,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hot Places:",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "Hot Places:",
+          "x": 15,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Plains:",
+          "color": {
+            "value": -13382656,
+            "falpha": 0.0
+          },
+          "name": "Plains:",
+          "x": 15,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:PlainsEXP>",
+          "color": {
+            "value": -13382656,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:PlainsEXP>",
+          "x": 15,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -13382656,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 42,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:PlainsEXPNeeded>",
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:PlainsEXPNeeded>",
+          "x": 51,
+          "y": 71
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "StatsOverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

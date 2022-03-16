@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "command",
+  "definition": {
+    "commandName": "spooky:give100exp",
+    "permissionLevel": "No requirement",
+    "onCommandExecuted": {
+      "name": "Give100EXPCommandExecuted"
+    }
+  }
+}

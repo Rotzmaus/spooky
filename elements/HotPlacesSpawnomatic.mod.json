@@ -1,0 +1,215 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 310,
+    "height": 200,
+    "inventoryOffsetX": 70,
+    "inventoryOffsetY": 20,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ActiveHPLevel>",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ActiveHPLevel>",
+          "x": 249,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Active Hot Places Level:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Active Hot Places Level:",
+          "x": 123,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hot Places EXP:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Hot Places EXP:",
+          "x": 60,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert Hot Places Drops",
+          "onClick": {
+            "name": "ConvertHPDrops"
+          },
+          "width": 129,
+          "height": 20,
+          "name": "Convert Hot Places Drops",
+          "x": 66,
+          "y": 196
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 87,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:HotPlacesExp>",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:HotPlacesExp>",
+          "x": 141,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 168,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:HotPlacesEXPNeeded>",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:HotPlacesEXPNeeded>",
+          "x": 174,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hot Places Lvl:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Hot Places Lvl:",
+          "x": 60,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:HotPlacesLevel>",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:HotPlacesLevel>",
+          "x": 141,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EXP",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "EXP",
+          "x": 149,
+          "y": 176
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": true,
+          "name": "arrow.png",
+          "x": 107,
+          "y": 173
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "ActivePlainsDown"
+          },
+          "displayCondition": {
+            "name": "ActivePlainsBiggerThanZero"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 87,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "ActivePlainsUp"
+          },
+          "displayCondition": {
+            "name": "ActivePlainsCanGoBigger"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 306,
+          "y": 26
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

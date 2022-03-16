@@ -1,0 +1,90 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "augbronzeset_head",
+    "enableBody": true,
+    "textureBody": "augmentbronzechestplate",
+    "enableLeggings": false,
+    "textureLeggings": "augbronzeset_leggings",
+    "enableBoots": true,
+    "textureBoots": "augmentedbronzeboots",
+    "onHelmetTick": {
+      "name": "Helmettickevent"
+    },
+    "onBodyTick": {
+      "name": "ChestplateTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "LegginsTickEvent"
+    },
+    "onBootsTick": {
+      "name": "BootsTickEvent"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "augbronzeset",
+    "helmetName": "Bronze Set Aug Helmet",
+    "bodyName": "Augmented Bronze Chestplate",
+    "leggingsName": "Bronze Set Aug Leggings",
+    "bootsName": "FeatherLight Crocs",
+    "helmetSpecialInfo": [
+      "§5Level 1",
+      "§6Augmented with sturdy Fangs",
+      "§2Health x 1.075"
+    ],
+    "bodySpecialInfo": [
+      "§5Level1",
+      "§7Looks Cute and feels Nice :)",
+      "§2Health x 1.125"
+    ],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [
+      "§5Level 1",
+      "§dOstrichfeatherlight Crocs",
+      "§dwith Extra Holes for Breathing;)",
+      "§2Health x 1.025",
+      "§bPress B Key",
+      "§b To put Crocs in Sport mode",
+      "§b(Speed 2 for limited time)"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 50,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 4,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:BronzeDust"
+      }
+    ]
+  }
+}

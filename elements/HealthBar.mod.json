@@ -1,0 +1,629 @@
+{
+  "_fv": 24,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "frame1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame1"
+          },
+          "name": "frame1.png",
+          "x": 121,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame2"
+          },
+          "name": "frame2.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame3"
+          },
+          "name": "frame3.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame4"
+          },
+          "name": "frame4.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame5"
+          },
+          "name": "frame5.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame6"
+          },
+          "name": "frame6.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame7"
+          },
+          "name": "frame7.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame8"
+          },
+          "name": "frame8.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame9"
+          },
+          "name": "frame9.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame10"
+          },
+          "name": "frame10.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame11"
+          },
+          "name": "frame11.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame12"
+          },
+          "name": "frame12.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame13"
+          },
+          "name": "frame13.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame14"
+          },
+          "name": "frame14.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame15"
+          },
+          "name": "frame15.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame16"
+          },
+          "name": "frame16.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame17"
+          },
+          "name": "frame17.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame18"
+          },
+          "name": "frame18.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame19"
+          },
+          "name": "frame19.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frame20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frame20"
+          },
+          "name": "frame20.png",
+          "x": 122,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe1.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe1"
+          },
+          "name": "expframe1.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe2.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe2"
+          },
+          "name": "expframe2.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe3.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe3"
+          },
+          "name": "expframe3.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe4.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe4"
+          },
+          "name": "expframe4.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe5.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe5"
+          },
+          "name": "expframe5.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe6.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe6"
+          },
+          "name": "expframe6.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe7.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe7"
+          },
+          "name": "expframe7.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe8.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe8"
+          },
+          "name": "expframe8.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe9.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe9"
+          },
+          "name": "expframe9.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe10.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe10"
+          },
+          "name": "expframe10.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe11.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe11"
+          },
+          "name": "expframe11.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe12.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe12"
+          },
+          "name": "expframe12.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe13.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe13"
+          },
+          "name": "expframe13.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe14.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe14"
+          },
+          "name": "expframe14.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe15.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe15"
+          },
+          "name": "expframe15.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe16.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe16"
+          },
+          "name": "expframe16.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe17.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe17"
+          },
+          "name": "expframe17.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe18.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe18"
+          },
+          "name": "expframe18.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe19.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe19"
+          },
+          "name": "expframe19.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expframe20.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Expframe20"
+          },
+          "name": "expframe20.png",
+          "x": 185,
+          "y": 198
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:playerEXP>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:playerEXP>",
+          "x": 221,
+          "y": 198
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:playerEXPneeded>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:playerEXPneeded>",
+          "x": 254,
+          "y": 198
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 248,
+          "y": 198
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:playerLevel>",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:playerLevel>",
+          "x": 195,
+          "y": 189
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:effectiveHealthPointsMax>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:effectiveHealthPointsMax>",
+          "x": 152,
+          "y": 196
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 146,
+          "y": 196
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:effectiveHealthPoints>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:effectiveHealthPoints>",
+          "x": 127,
+          "y": 196
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 9,
+      "oy": 16,
+      "snapOnGrid": false
+    }
+  }
+}

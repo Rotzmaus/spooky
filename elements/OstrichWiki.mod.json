@@ -1,0 +1,238 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 125,
+    "height": 180,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Ostrich",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Ostrich",
+          "x": 188,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "A Birdlike creature-",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "A Birdlike creature-",
+          "x": 155,
+          "y": 52
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "health:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "health:",
+          "x": 154,
+          "y": 123
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Armor:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Armor:",
+          "x": 155,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Regen Level:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Regen Level:",
+          "x": 155,
+          "y": 148
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "0.35",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "0.35",
+          "x": 156,
+          "y": 169
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzedust.png",
+          "use1Xscale": false,
+          "name": "bronzedust.png",
+          "x": 182,
+          "y": 163
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Spawns in Hot Places",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Spawns in Hot Places",
+          "x": 154,
+          "y": 106
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/Kill",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "/Kill",
+          "x": 200,
+          "y": 175
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 219,
+          "y": 148
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "15",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "15",
+          "x": 189,
+          "y": 136
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "50",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "50",
+          "x": 191,
+          "y": 123
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "with grey feathers-",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "with grey feathers-",
+          "x": 155,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "and a yellow beak.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "and a yellow beak.",
+          "x": 155,
+          "y": 76
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "0.105",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "0.105",
+          "x": 156,
+          "y": 183
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druiddust.png",
+          "use1Xscale": false,
+          "name": "druiddust.png",
+          "x": 182,
+          "y": 177
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "OpenEnities"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Back",
+          "x": 224,
+          "y": 185
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

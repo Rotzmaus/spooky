@@ -1,0 +1,47 @@
+{
+  "goblinhurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "spooky:goblin",
+        "stream": false
+      }
+    ]
+  },
+  "goblindies": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "spooky:goblindies",
+        "stream": false
+      }
+    ]
+  },
+  "sao_death": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "spooky:amon_gus",
+        "stream": false
+      }
+    ]
+  },
+  "sao_bossfight": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "spooky:sword_art_online_alicization_rising_steel_-_illfang_the_kobold_lord_-_floor_1_boss_theme",
+        "stream": false
+      }
+    ]
+  },
+  "sao_first_town": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "spooky:sword_art_online_ost_-_the_first_town",
+        "stream": false
+      }
+    ]
+  }
+}

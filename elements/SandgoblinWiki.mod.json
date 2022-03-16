@@ -1,0 +1,202 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 135,
+    "height": 180,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Sand Goblin",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Sand Goblin",
+          "x": 183,
+          "y": 36
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "A Dirty Goblin which-",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "A Dirty Goblin which-",
+          "x": 154,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "health:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "health:",
+          "x": 154,
+          "y": 123
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Armor:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Armor:",
+          "x": 155,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Regen Level:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Regen Level:",
+          "x": 155,
+          "y": 148
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1.2",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1.2",
+          "x": 155,
+          "y": 173
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzedust.png",
+          "use1Xscale": false,
+          "name": "bronzedust.png",
+          "x": 174,
+          "y": 167
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Spawns in Hot places",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Spawns in Hot places",
+          "x": 150,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/Kill",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "/Kill",
+          "x": 194,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "null",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "null",
+          "x": 219,
+          "y": 148
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "20",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "20",
+          "x": 189,
+          "y": 136
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "50",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "50",
+          "x": 190,
+          "y": 122
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "OpenEnities"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Back",
+          "x": 224,
+          "y": 185
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "spawns at night.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "spawns at night.",
+          "x": 153,
+          "y": 68
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

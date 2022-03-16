@@ -1,0 +1,7 @@
+{
+  "parent": "spooky:custom/chickenknife",
+  "textures": {
+    "0": "spooky:blocks/chicken",
+    "particle": "spooky:items/chickenknife"
+  }
+}

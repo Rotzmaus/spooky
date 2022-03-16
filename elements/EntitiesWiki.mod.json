@@ -1,0 +1,340 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 435,
+    "height": 230,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Entities",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Entities",
+          "x": 168,
+          "y": 8
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "???",
+          "displayCondition": {
+            "name": "AngryChickenNotKilled"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "???",
+          "x": 24,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Angry Chicken",
+          "onClick": {
+            "name": "OpenAngryChicken"
+          },
+          "displayCondition": {
+            "name": "AngryChickenKilled"
+          },
+          "width": 93,
+          "height": 20,
+          "name": "Angry Chicken",
+          "x": 24,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Anime Cow",
+          "onClick": {
+            "name": "OpenAnimeCow"
+          },
+          "displayCondition": {
+            "name": "AnimeCowKilled"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "Anime Cow",
+          "x": 24,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "???",
+          "displayCondition": {
+            "name": "AnimeCowNotKilled"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "???",
+          "x": 24,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "???",
+          "displayCondition": {
+            "name": "OstrichNotKilled"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "???",
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Ostrich",
+          "onClick": {
+            "name": "OpenOstrichWiki"
+          },
+          "displayCondition": {
+            "name": "OstrichKilled"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Ostrich",
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "???",
+          "displayCondition": {
+            "name": "BoarNotKilled"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "???",
+          "x": 24,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Boar",
+          "onClick": {
+            "name": "OpenBoarWiki"
+          },
+          "displayCondition": {
+            "name": "BoarKilled"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Boar",
+          "x": 24,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "???",
+          "displayCondition": {
+            "name": "SandgoblinNotKilled"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "???",
+          "x": 24,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sand  Goblin",
+          "onClick": {
+            "name": "OpenSandgoblinWiki"
+          },
+          "displayCondition": {
+            "name": "SandgoblinKilled"
+          },
+          "width": 87,
+          "height": 20,
+          "name": "Sand  Goblin",
+          "x": 24,
+          "y": 125
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzedust.png",
+          "use1Xscale": false,
+          "name": "bronzedust.png",
+          "x": 69,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druiddust.png",
+          "use1Xscale": false,
+          "name": "druiddust.png",
+          "x": 177,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Plains = PL",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Plains = PL",
+          "x": -3,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "PL",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "PL",
+          "x": 6,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Forest = FO",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Forest = FO",
+          "x": -3,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hot Places = HP",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Hot Places = HP",
+          "x": 249,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cold Places = CP",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Cold Places = CP",
+          "x": 249,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Water = WA",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Water = WA",
+          "x": 348,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "PL",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "PL",
+          "x": 6,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "FO",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "FO",
+          "x": 6,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "HP",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "HP",
+          "x": 6,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "HP",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "HP",
+          "x": 141,
+          "y": 44
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

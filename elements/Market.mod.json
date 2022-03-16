@@ -1,0 +1,191 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 180,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Market",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Market",
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Craft Equipment",
+          "onClick": {
+            "name": "OpenEquipmentTab"
+          },
+          "width": 103,
+          "height": 20,
+          "name": "Craft Equipment",
+          "x": 159,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sell Dust",
+          "width": 102,
+          "height": 20,
+          "name": "Sell Dust",
+          "x": 159,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Buy Stuff",
+          "width": 103,
+          "height": 20,
+          "name": "Buy Stuff",
+          "x": 159,
+          "y": 170
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzedust.png",
+          "use1Xscale": false,
+          "name": "bronzedust.png",
+          "x": 123,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druiddust.png",
+          "use1Xscale": false,
+          "name": "druiddust.png",
+          "x": 132,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "infernodust.png",
+          "use1Xscale": false,
+          "name": "infernodust.png",
+          "x": 141,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "damascusdust.png",
+          "use1Xscale": false,
+          "name": "damascusdust.png",
+          "x": 150,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "holysteeldust.png",
+          "use1Xscale": false,
+          "name": "holysteeldust.png",
+          "x": 258,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkirondust.png",
+          "use1Xscale": false,
+          "name": "darkirondust.png",
+          "x": 276,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "platedust.png",
+          "use1Xscale": false,
+          "name": "platedust.png",
+          "x": 267,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "angelicdust.png",
+          "use1Xscale": false,
+          "name": "angelicdust.png",
+          "x": 285,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:Money>",
+          "color": {
+            "value": -16750849,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:Money>",
+          "x": 261,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Money:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Money:",
+          "x": 231,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Augment Equipment",
+          "onClick": {
+            "name": "OpenAugmentEquip"
+          },
+          "width": 103,
+          "height": 20,
+          "name": "Augment Equipment",
+          "x": 159,
+          "y": 98
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

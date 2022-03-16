@@ -1,0 +1,407 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 300,
+    "height": 200,
+    "inventoryOffsetX": 66,
+    "inventoryOffsetY": 20,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ActivePlainsLevel>",
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ActivePlainsLevel>",
+          "x": 250,
+          "y": 28
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Active Plains Level:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Active Plains Level:",
+          "x": 143,
+          "y": 28
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Plains EXP:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Plains EXP:",
+          "x": 68,
+          "y": 144
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert Plains Drops",
+          "onClick": {
+            "name": "ConvertPlainsDrops"
+          },
+          "width": 129,
+          "height": 20,
+          "name": "Convert Plains Drops",
+          "x": 66,
+          "y": 196
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 87,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:PlainsEXP>",
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:PlainsEXP>",
+          "x": 128,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 156,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:PlainsEXPNeeded>",
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:PlainsEXPNeeded>",
+          "x": 161,
+          "y": 145
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Plains Lvl:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Plains Lvl:",
+          "x": 68,
+          "y": 157
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:PlainsLevel>",
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:PlainsLevel>",
+          "x": 128,
+          "y": 158
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EXP",
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "name": "EXP",
+          "x": 149,
+          "y": 176
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": true,
+          "name": "arrow.png",
+          "x": 107,
+          "y": 173
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "ActivePlainsDown"
+          },
+          "displayCondition": {
+            "name": "ActivePlainsBiggerThanZero"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 109,
+          "y": 27
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "ActivePlainsUp"
+          },
+          "displayCondition": {
+            "name": "ActivePlainsCanGoBigger"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 306,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Angry Chicken",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AngryChickenKilled"
+          },
+          "name": "Angry Chicken",
+          "x": 96,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AngryChickenNotKilled"
+          },
+          "name": "???",
+          "x": 96,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "70%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActivePlainsLevel0"
+          },
+          "name": "70%",
+          "x": 78,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Anime Cow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AnimeCowKilled"
+          },
+          "name": "Anime Cow",
+          "x": 96,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AnimeCowNotKilled"
+          },
+          "name": "???",
+          "x": 96,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "30%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActivePlainsLevel0"
+          },
+          "name": "30%",
+          "x": 78,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "55%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActivePlainsLevel1"
+          },
+          "name": "55%",
+          "x": 78,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "40%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActivePlainsLevel1"
+          },
+          "name": "40%",
+          "x": 78,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "5%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActivePlainsLevel1"
+          },
+          "name": "5%",
+          "x": 78,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "40%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActivePlainsLevel2"
+          },
+          "name": "40%",
+          "x": 78,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "45%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActivePlainsLevel2"
+          },
+          "name": "45%",
+          "x": 78,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "15%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActivePlainsLevel2"
+          },
+          "name": "15%",
+          "x": 78,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

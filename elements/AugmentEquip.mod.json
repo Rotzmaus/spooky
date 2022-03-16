@@ -1,0 +1,612 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 435,
+    "height": 242,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 30,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Augment Bronze Set",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Augment Bronze Set",
+          "x": 172,
+          "y": 4
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 294,
+          "y": 205
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzesword.png",
+          "use1Xscale": false,
+          "name": "bronzesword.png",
+          "x": 6,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "20x",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "20x",
+          "x": 33,
+          "y": 13
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "feather.png",
+          "use1Xscale": false,
+          "name": "feather.png",
+          "x": 51,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "=",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "=",
+          "x": 69,
+          "y": 13
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "chickenknife.png",
+          "use1Xscale": false,
+          "name": "chickenknife.png",
+          "x": 78,
+          "y": 8
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:BronzeSword"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 6,
+          "y": 26
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:AngryFeather"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 42,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "=",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "=",
+          "x": 66,
+          "y": 28
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 78,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Augment",
+          "onClick": {
+            "name": "AugmentToChickenKnife"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Augment",
+          "x": 183,
+          "y": 129
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "augmentbronzechestplate.png",
+          "use1Xscale": true,
+          "name": "augmentbronzechestplate.png",
+          "x": 78,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzeset_body.png",
+          "use1Xscale": false,
+          "name": "bronzeset_body.png",
+          "x": 6,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": true,
+          "name": "plus.png",
+          "x": 23,
+          "y": 59
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": true,
+          "name": "plus.png",
+          "x": 30,
+          "y": 30
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": true,
+          "name": "plus.png",
+          "x": 24,
+          "y": 12
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "20x",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "20x",
+          "x": 33,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cuteleather.png",
+          "use1Xscale": true,
+          "name": "cuteleather.png",
+          "x": 51,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "=",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "=",
+          "x": 71,
+          "y": 57
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:BronzeSet.body"
+          },
+          "color": {
+            "value": -3381760,
+            "falpha": 0.0
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 6,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": true,
+          "name": "plus.png",
+          "x": 28,
+          "y": 76
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CuteLeather"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 42,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "=",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "=",
+          "x": 66,
+          "y": 74
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 78,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzeset_boots.png",
+          "use1Xscale": false,
+          "name": "bronzeset_boots.png",
+          "x": 6,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": true,
+          "name": "plus.png",
+          "x": 24,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": true,
+          "name": "plus.png",
+          "x": 28,
+          "y": 120
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "20x",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "20x",
+          "x": 34,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ostrichfeather.png",
+          "use1Xscale": false,
+          "name": "ostrichfeather.png",
+          "x": 51,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "=",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "=",
+          "x": 69,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "augmentedbronzeboots.png",
+          "use1Xscale": true,
+          "name": "augmentedbronzeboots.png",
+          "x": 78,
+          "y": 98
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:BronzeSet.boots"
+          },
+          "color": {
+            "value": -3381760,
+            "falpha": 0.0
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 6,
+          "y": 116
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:OstrichFeather"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 42,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "=",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "=",
+          "x": 66,
+          "y": 119
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -39169,
+            "falpha": 0.0
+          },
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #8",
+          "x": 78,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzeset_head.png",
+          "use1Xscale": false,
+          "name": "bronzeset_head.png",
+          "x": 6,
+          "y": 143
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": true,
+          "name": "plus.png",
+          "x": 25,
+          "y": 147
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": true,
+          "name": "plus.png",
+          "x": 28,
+          "y": 166
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "20x",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "20x",
+          "x": 36,
+          "y": 147
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "boarfang.png",
+          "use1Xscale": false,
+          "name": "boarfang.png",
+          "x": 50,
+          "y": 141
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "=",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "=",
+          "x": 68,
+          "y": 147
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "augbronzeset_head.png",
+          "use1Xscale": true,
+          "name": "augbronzeset_head.png",
+          "x": 78,
+          "y": 143
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:BronzeSet.helmet"
+          },
+          "color": {
+            "value": -3381760,
+            "falpha": 0.0
+          },
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #9",
+          "x": 6,
+          "y": 161
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:BoarFang"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "id": 10,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #10",
+          "x": 42,
+          "y": 161
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -3355648,
+            "falpha": 0.0
+          },
+          "id": 11,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #11",
+          "x": 78,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "=",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "=",
+          "x": 66,
+          "y": 164
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

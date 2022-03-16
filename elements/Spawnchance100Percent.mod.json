@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "command",
+  "definition": {
+    "commandName": "spooky:spawnchance100percent",
+    "permissionLevel": "No requirement",
+    "onCommandExecuted": {
+      "name": "Spawnchance100PercentCommandExecuted"
+    }
+  }
+}

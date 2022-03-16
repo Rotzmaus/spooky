@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "I",
+    "keyBindingName": "Wiki",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "WikiOnKeyPressed"
+    }
+  }
+}
