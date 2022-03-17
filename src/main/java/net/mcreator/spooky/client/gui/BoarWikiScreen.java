@@ -54,9 +54,6 @@ public class BoarWikiScreen extends AbstractContainerScreen<BoarWikiMenu> {
 		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/bronzedust.png"));
 		this.blit(ms, this.leftPos + 29, this.topPos + 137, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/druiddust.png"));
-		this.blit(ms, this.leftPos + 34, this.topPos + 149, 0, 0, 16, 16, 16, 16);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -83,12 +80,11 @@ public class BoarWikiScreen extends AbstractContainerScreen<BoarWikiMenu> {
 		this.font.draw(poseStack, "Regen Level:", 9, 118, -12829636);
 		this.font.draw(poseStack, "0.5", 9, 143, -12829636);
 		this.font.draw(poseStack, "Spawns in Forests", 4, 65, -12829636);
-		this.font.draw(poseStack, "/Kill", 53, 149, -12829636);
+		this.font.draw(poseStack, "/Kill", 48, 142, -12829636);
 		this.font.draw(poseStack, "2", 73, 118, -12829636);
 		this.font.draw(poseStack, "15", 43, 106, -12829636);
 		this.font.draw(poseStack, "40", 44, 92, -12829636);
 		this.font.draw(poseStack, "better leave it be.", 3, 38, -12829636);
-		this.font.draw(poseStack, "0.075", 7, 155, -12829636);
 	}
 
 	@Override
@@ -101,7 +97,7 @@ public class BoarWikiScreen extends AbstractContainerScreen<BoarWikiMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 81, this.topPos + 155, 46, 20, new TextComponent("Back"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 78, this.topPos + 155, 46, 20, new TextComponent("Back"), e -> {
 			if (true) {
 				SpookyMod.PACKET_HANDLER.sendToServer(new BoarWikiButtonMessage(0, x, y, z));
 				BoarWikiButtonMessage.handleButtonAction(entity, 0, x, y, z);

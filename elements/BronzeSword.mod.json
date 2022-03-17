@@ -3,20 +3,23 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "bronze_sword",
+    "texture": "bronzesword",
     "customModelName": "Normal",
     "name": "Bronze Sword",
-    "specialInfo": [],
+    "specialInfo": [
+      "§6It's not busted",
+      "§6But it does the Job"
+    ],
     "creativeTab": {
       "value": "COMBAT"
     },
     "toolType": "Sword",
     "harvestLevel": 2,
-    "efficiency": 6.0,
-    "attackSpeed": 1.0,
-    "enchantability": 14,
-    "damageVsEntity": 2.0,
-    "usageCount": 250,
+    "efficiency": 4.0,
+    "attackSpeed": 1.7999999999999998,
+    "enchantability": 25,
+    "damageVsEntity": 5.0,
+    "usageCount": 500,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [

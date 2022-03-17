@@ -125,8 +125,6 @@ public class EquipmentTabScreen extends AbstractContainerScreen<EquipmentTabMenu
 		this.font.draw(poseStack, "32", 7, 30, -12829636);
 		this.font.draw(poseStack, "Press to Buy", 357, 6, -12829636);
 		this.font.draw(poseStack, "Input Dust Here!", 293, 163, -12829636);
-		this.font.draw(poseStack, "32 Dust for", 285, 207, -12829636);
-		this.font.draw(poseStack, "complete Toolset", 285, 216, -12829636);
 	}
 
 	@Override
@@ -168,8 +166,6 @@ public class EquipmentTabScreen extends AbstractContainerScreen<EquipmentTabMenu
 				SpookyMod.PACKET_HANDLER.sendToServer(new EquipmentTabButtonMessage(4, x, y, z));
 				EquipmentTabButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 366, this.topPos + 189, 51, 20, new TextComponent("Tools"), e -> {
 		}));
 	}
 }

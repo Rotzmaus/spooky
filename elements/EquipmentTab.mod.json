@@ -348,43 +348,6 @@
           "x": 33,
           "y": 134
         }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Tools",
-          "width": 51,
-          "height": 20,
-          "name": "Tools",
-          "x": 366,
-          "y": 188
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "32 Dust for",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "32 Dust for",
-          "x": 285,
-          "y": 206
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "complete Toolset",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "complete Toolset",
-          "x": 285,
-          "y": 215
-        }
       }
     ],
     "gridSettings": {

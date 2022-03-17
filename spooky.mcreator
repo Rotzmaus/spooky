@@ -3271,8 +3271,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/equip/BronzeDustEquip/B Actionkey"
+      }
     },
     {
       "name": "CrocsSportModeDisplayOverlayIngame",
@@ -3289,8 +3288,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/equip/BronzeDustEquip/B Actionkey"
+      }
     },
     {
       "name": "CrocsSportMode",
@@ -3298,8 +3296,7 @@
       "sortid": 177,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crocs_sport_mode",
-      "path": "~/equip/BronzeDustEquip/B Actionkey"
+      "registry_name": "crocs_sport_mode"
     },
     {
       "name": "B",
@@ -3307,8 +3304,7 @@
       "sortid": 176,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "b",
-      "path": "~/equip/BronzeDustEquip/B Actionkey"
+      "registry_name": "b"
     },
     {
       "name": "BoarFang",
@@ -4805,6 +4801,24 @@
           {
             "name": "world",
             "type": "world"
+          }
+        ]
+      },
+      "path": "~/autismus"
+    },
+    {
+      "name": "Amongustamedchecked",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amongustamedchecked",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
