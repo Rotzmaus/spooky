@@ -21,7 +21,6 @@ import net.mcreator.spooky.entity.SandgoblinEntity;
 import net.mcreator.spooky.entity.OstrichEntity;
 import net.mcreator.spooky.entity.MummyEntity;
 import net.mcreator.spooky.entity.MummyDigAnimationEntity;
-import net.mcreator.spooky.entity.HuiiiEntity;
 import net.mcreator.spooky.entity.GorilaEntity;
 import net.mcreator.spooky.entity.GoatEntity;
 import net.mcreator.spooky.entity.FishEntity;
@@ -31,7 +30,6 @@ import net.mcreator.spooky.entity.BoarEntity;
 import net.mcreator.spooky.entity.AnimeCowEntity;
 import net.mcreator.spooky.entity.AngryChickenEntity;
 import net.mcreator.spooky.entity.AmongusEntity;
-import net.mcreator.spooky.entity.AfasfafafafaffEntity;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -84,15 +82,9 @@ public class SpookyModEntities {
 	public static final EntityType<FishEntity> FISH = register("fish",
 			EntityType.Builder.<FishEntity>of(FishEntity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(FishEntity::new).fireImmune().sized(1f, 1f));
-	public static final EntityType<HuiiiEntity> HUIII = register("huiii",
-			EntityType.Builder.<HuiiiEntity>of(HuiiiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(HuiiiEntity::new).sized(0.6f, 1.8f));
 	public static final EntityType<AmongusEntity> AMONGUS = register("amongus",
 			EntityType.Builder.<AmongusEntity>of(AmongusEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(AmongusEntity::new).sized(0.4f, 0.7000000000000001f));
-	public static final EntityType<AfasfafafafaffEntity> AFASFAFAFAFAFF = register("afasfafafafaff",
-			EntityType.Builder.<AfasfafafafaffEntity>of(AfasfafafafaffEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AfasfafafafaffEntity::new).sized(0.4f, 0.7f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -122,9 +114,7 @@ public class SpookyModEntities {
 			GorilaEntity.init();
 			SunflowerEntity.init();
 			FishEntity.init();
-			HuiiiEntity.init();
 			AmongusEntity.init();
-			AfasfafafafaffEntity.init();
 		});
 	}
 
@@ -144,8 +134,6 @@ public class SpookyModEntities {
 		event.put(GORILA, GorilaEntity.createAttributes().build());
 		event.put(SUNFLOWER, SunflowerEntity.createAttributes().build());
 		event.put(FISH, FishEntity.createAttributes().build());
-		event.put(HUIII, HuiiiEntity.createAttributes().build());
 		event.put(AMONGUS, AmongusEntity.createAttributes().build());
-		event.put(AFASFAFAFAFAFF, AfasfafafafaffEntity.createAttributes().build());
 	}
 }

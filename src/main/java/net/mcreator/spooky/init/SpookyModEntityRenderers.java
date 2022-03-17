@@ -17,7 +17,6 @@ import net.mcreator.spooky.client.renderer.SandgoblinRenderer;
 import net.mcreator.spooky.client.renderer.OstrichRenderer;
 import net.mcreator.spooky.client.renderer.MummyRenderer;
 import net.mcreator.spooky.client.renderer.MummyDigAnimationRenderer;
-import net.mcreator.spooky.client.renderer.HuiiiRenderer;
 import net.mcreator.spooky.client.renderer.GorilaRenderer;
 import net.mcreator.spooky.client.renderer.GoatRenderer;
 import net.mcreator.spooky.client.renderer.FishRenderer;
@@ -27,7 +26,6 @@ import net.mcreator.spooky.client.renderer.BoarRenderer;
 import net.mcreator.spooky.client.renderer.AnimeCowRenderer;
 import net.mcreator.spooky.client.renderer.AngryChickenRenderer;
 import net.mcreator.spooky.client.renderer.AmongusRenderer;
-import net.mcreator.spooky.client.renderer.AfasfafafafaffRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SpookyModEntityRenderers {
@@ -48,8 +46,6 @@ public class SpookyModEntityRenderers {
 		event.registerEntityRenderer(SpookyModEntities.SUNFLOWER, SunflowerRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.SUNFLOWER_PROJECTILE, ThrownItemRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.FISH, FishRenderer::new);
-		event.registerEntityRenderer(SpookyModEntities.HUIII, HuiiiRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.AMONGUS, AmongusRenderer::new);
-		event.registerEntityRenderer(SpookyModEntities.AFASFAFAFAFAFF, AfasfafafafaffRenderer::new);
 	}
 }

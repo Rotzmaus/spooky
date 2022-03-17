@@ -20,15 +20,20 @@ import net.mcreator.spooky.item.IronDustItem;
 import net.mcreator.spooky.item.InfernoDustItem;
 import net.mcreator.spooky.item.IceDustItem;
 import net.mcreator.spooky.item.HolySteelDustItem;
+import net.mcreator.spooky.item.DruidSetItem;
 import net.mcreator.spooky.item.DruidDustItem;
 import net.mcreator.spooky.item.DarkIronDustItem;
 import net.mcreator.spooky.item.DamascusDustItem;
 import net.mcreator.spooky.item.CuteLeatherItem;
 import net.mcreator.spooky.item.ChickenKnifeItem;
 import net.mcreator.spooky.item.BronzeSwordItem;
+import net.mcreator.spooky.item.BronzeShovelItem;
 import net.mcreator.spooky.item.BronzeSetItem;
 import net.mcreator.spooky.item.BronzeSetAugItem;
+import net.mcreator.spooky.item.BronzePickaxeItem;
+import net.mcreator.spooky.item.BronzeHoeItem;
 import net.mcreator.spooky.item.BronzeDustItem;
+import net.mcreator.spooky.item.BronzeAxeItem;
 import net.mcreator.spooky.item.BoarFangItem;
 import net.mcreator.spooky.item.AngryFeatherItem;
 import net.mcreator.spooky.item.AngelicDustItem;
@@ -90,7 +95,6 @@ public class SpookyModItems {
 	public static final Item DARK_IRON_DUST = register(new DarkIronDustItem());
 	public static final Item PLATE_DUST = register(new PlateDustItem());
 	public static final Item ICE_DUST = register(new IceDustItem());
-	public static final Item BRONZE_SWORD = register(new BronzeSwordItem());
 	public static final Item BRONZE_SET_HELMET = register(new BronzeSetItem.Helmet());
 	public static final Item BRONZE_SET_CHESTPLATE = register(new BronzeSetItem.Chestplate());
 	public static final Item BRONZE_SET_LEGGINGS = register(new BronzeSetItem.Leggings());
@@ -105,11 +109,15 @@ public class SpookyModItems {
 			new SpawnEggItem(SpookyModEntities.FISH, -26215, -3355444, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("fish_spawn_egg"));
 	public static final Item SPAWN_O_MATIC = register(new SpawnOMaticItem());
-	public static final Item HUIII = register(new SpawnEggItem(SpookyModEntities.HUIII, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-			.setRegistryName("huiii_spawn_egg"));
-	public static final Item AFASFAFAFAFAFF = register(
-			new SpawnEggItem(SpookyModEntities.AFASFAFAFAFAFF, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-					.setRegistryName("afasfafafafaff_spawn_egg"));
+	public static final Item BRONZE_PICKAXE = register(new BronzePickaxeItem());
+	public static final Item BRONZE_AXE = register(new BronzeAxeItem());
+	public static final Item BRONZE_SWORD = register(new BronzeSwordItem());
+	public static final Item BRONZE_SHOVEL = register(new BronzeShovelItem());
+	public static final Item BRONZE_HOE = register(new BronzeHoeItem());
+	public static final Item DRUID_SET_HELMET = register(new DruidSetItem.Helmet());
+	public static final Item DRUID_SET_CHESTPLATE = register(new DruidSetItem.Chestplate());
+	public static final Item DRUID_SET_LEGGINGS = register(new DruidSetItem.Leggings());
+	public static final Item DRUID_SET_BOOTS = register(new DruidSetItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

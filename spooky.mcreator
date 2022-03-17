@@ -2829,7 +2829,7 @@
     {
       "name": "BronzeSword",
       "type": "tool",
-      "sortid": 154,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bronze_sword",
@@ -3272,7 +3272,7 @@
           }
         ]
       },
-      "path": "~/equip/BronzeDustEquip/B Actionkey"
+      "path": "~/equip/B Actionkey"
     },
     {
       "name": "CrocsSportModeDisplayOverlayIngame",
@@ -3290,7 +3290,7 @@
           }
         ]
       },
-      "path": "~/equip/BronzeDustEquip/B Actionkey"
+      "path": "~/equip/B Actionkey"
     },
     {
       "name": "CrocsSportMode",
@@ -3299,7 +3299,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "crocs_sport_mode",
-      "path": "~/equip/BronzeDustEquip/B Actionkey"
+      "path": "~/equip/B Actionkey"
     },
     {
       "name": "B",
@@ -3308,7 +3308,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "b",
-      "path": "~/equip/BronzeDustEquip/B Actionkey"
+      "path": "~/equip/B Actionkey"
     },
     {
       "name": "BoarFang",
@@ -4655,14 +4655,6 @@
       "path": "~/equip/abilities"
     },
     {
-      "name": "Huiii",
-      "type": "livingentity",
-      "sortid": 248,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "huiii"
-    },
-    {
       "name": "SpawnamonguscommandCommandExecuted",
       "type": "procedure",
       "sortid": 250,
@@ -4710,12 +4702,72 @@
       "path": "~/autismus"
     },
     {
-      "name": "Afasfafafafaff",
-      "type": "livingentity",
-      "sortid": 249,
+      "name": "BuyTools",
+      "type": "procedure",
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "afasfafafafaff"
+      "registry_name": "buy_tools",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Market/Equip"
+    },
+    {
+      "name": "BronzePickaxe",
+      "type": "tool",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_pickaxe",
+      "path": "~/equip/BronzeDustEquip"
+    },
+    {
+      "name": "BronzeAxe",
+      "type": "tool",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_axe",
+      "path": "~/equip/BronzeDustEquip"
+    },
+    {
+      "name": "BronzeShovel",
+      "type": "tool",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_shovel",
+      "path": "~/equip/BronzeDustEquip"
+    },
+    {
+      "name": "BronzeHoe",
+      "type": "tool",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_hoe",
+      "path": "~/equip/BronzeDustEquip"
+    },
+    {
+      "name": "DruidSet",
+      "type": "armor",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "druid_set",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/equip/BronzeDustEquip"
     }
   ],
   "variable_elements": [
@@ -5096,8 +5148,8 @@
       "itemGroup.tabmod_items": "Mod Items",
       "entity.spooky.ostrich": "ostrich",
       "itemGroup.tabentities": "Entities",
-      "item.spooky.huiii_spawn_egg": "Huiii Spawn Egg",
       "item.spooky.fish_spawn_egg": "Fish Spawn Egg",
+      "item.spooky.druid_set_helmet": "Bronze Helmet",
       "subtitles.sao_death": "",
       "item.spooky.bronze_set_boots": "Bronze Boots",
       "key.spooky.space": "Space",
@@ -5105,7 +5157,6 @@
       "key.spooky.m": "M",
       "item.spooky.angry_feather": "Angry Feather",
       "item.spooky.mummy_spawn_egg": "Mummy Spawn Egg",
-      "entity.spooky.afasfafafafaff": "Afasfafafafaff",
       "key.spooky.b": "B",
       "item.spooky.bronze_set_aug_leggings": "Bronze Set Aug Leggings",
       "item.spooky.ostrich_feather": "Ostrich Feather",
@@ -5126,6 +5177,7 @@
       "entity.spooky.mummy_dig_animation": "Mummy Dig Animation",
       "item.spooky.ice_dust": "Ice Dust",
       "key.spooky.wiki": "Wiki",
+      "item.spooky.bronze_hoe": "Bronze Hoe",
       "item.spooky.bronze_set_aug_chestplate": "Augmented Bronze Chestplate",
       "item.spooky.boar_spawn_egg": "Boar Spawn Egg",
       "item.spooky.damascus_dust": "Damascus Dust",
@@ -5133,6 +5185,7 @@
       "item.spooky.bronze_set_aug_boots": "FeatherLight Crocs",
       "item.spooky.druid_dust": "Druid Dust",
       "item.spooky.holy_steel_dust": "Holy Steel Dust",
+      "item.spooky.bronze_pickaxe": "Bronze Pickaxe",
       "item.spooky.spanky_spawn_egg": "Spanky Spawn Egg",
       "item.spooky.bronze_set_leggings": "Bronze Leggings",
       "item.spooky.steel_dust": "Steel Dust",
@@ -5142,15 +5195,19 @@
       "subtitles.amongus_sound_effect": "sus",
       "item.spooky.sunflower_spawn_egg": "Sunflower Spawn Egg",
       "item.spooky.bronze_set_aug_helmet": "Bronze Set Aug Helmet",
+      "item.spooky.druid_set_boots": "Bronze Boots",
       "item.spooky.cute_leather": "Cute Leather",
-      "item.spooky.afasfafafafaff_spawn_egg": "Afasfafafafaff Spawn Egg",
       "subtitles.sao_bossfight": "",
+      "item.spooky.druid_set_chestplate": "Bronze Body",
+      "item.spooky.bronze_shovel": "Bronze Shovel",
       "subtitles.sao_first_town": "",
       "entity.spooky.mummy": "Mummy",
       "item.spooky.chicken_knife": "Chicken Knife",
       "item.spooky.bronze_set_helmet": "Bronze Helmet",
+      "item.spooky.druid_set_leggings": "Bronze Leggings",
       "item.spooky.gorila_spawn_egg": "Gorila Spawn Egg",
       "entity.spooky.goat": "Goat",
+      "item.spooky.bronze_axe": "Bronze Axe",
       "item.spooky.bronze_dust": "Bronze Dust",
       "entity.spooky.angry_chicken": "Angry Chicken",
       "item.spooky.goat_spawn_egg": "Goat Spawn Egg",
@@ -5162,7 +5219,6 @@
       "entity.spooky.cactus": "Cactus",
       "entity.spooky.sunflower": "Sunflower",
       "item.spooky.spawn_o_matic": "Spawn-O-Matic",
-      "entity.spooky.huiii": "Huiii",
       "item.spooky.angry_chicken_spawn_egg": "Angry Chicken Spawn Egg",
       "subtitles.goblindies": ""
     }
@@ -5299,12 +5355,7 @@
         "children": [
           {
             "name": "BronzeDustEquip",
-            "children": [
-              {
-                "name": "B Actionkey",
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "name": "armor",
@@ -5338,6 +5389,10 @@
           },
           {
             "name": "Dust",
+            "children": []
+          },
+          {
+            "name": "B Actionkey",
             "children": []
           }
         ]

@@ -67,9 +67,23 @@
             "item": {
               "value": "Blocks.AIR"
             },
-            "weight": 80,
+            "weight": 75,
             "minCount": 0,
             "maxCount": 0,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:DruidDust"
+            },
+            "weight": 5,
+            "minCount": 0,
+            "maxCount": 3,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,

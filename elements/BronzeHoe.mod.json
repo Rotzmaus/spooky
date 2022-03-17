@@ -3,20 +3,20 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "bronze_sword",
+    "texture": "bronze_hoe",
     "customModelName": "Normal",
-    "name": "Bronze Sword",
+    "name": "Bronze Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "TOOLS"
     },
-    "toolType": "Sword",
+    "toolType": "Hoe",
     "harvestLevel": 2,
     "efficiency": 6.0,
     "attackSpeed": 1.0,
     "enchantability": 14,
     "damageVsEntity": 2.0,
-    "usageCount": 250,
+    "usageCount": 450,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [

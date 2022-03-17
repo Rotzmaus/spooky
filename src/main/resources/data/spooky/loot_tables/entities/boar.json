@@ -57,13 +57,27 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 80,
+          "weight": 75,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 0,
                 "max": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spooky:druid_dust",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 3
               }
             }
           ]
