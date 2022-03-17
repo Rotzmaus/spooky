@@ -4666,7 +4666,7 @@
       "name": "SpawnamonguscommandCommandExecuted",
       "type": "procedure",
       "sortid": 250,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "spawnamonguscommand_command_executed",
       "metadata": {
@@ -4704,7 +4704,7 @@
       "name": "Amongus",
       "type": "livingentity",
       "sortid": 249,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "amongus",
       "path": "~/autismus"
@@ -4713,7 +4713,7 @@
       "name": "Afasfafafafaff",
       "type": "livingentity",
       "sortid": 249,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "afasfafafafaff"
     }
@@ -5448,11 +5448,13 @@
     "modid": "spooky",
     "modName": "spooky",
     "version": "1.0.0",
+    "description": "stinky",
     "author": "admin, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "frame18",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
