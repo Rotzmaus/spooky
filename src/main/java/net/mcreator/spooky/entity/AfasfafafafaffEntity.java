@@ -1,5 +1,6 @@
 
 package net.mcreator.spooky.entity;
+
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fmllegacy.network.NetworkHooks;
 import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
@@ -32,17 +33,17 @@ import net.minecraft.network.protocol.Packet;
 import net.mcreator.spooky.init.SpookyModEntities;
 
 @Mod.EventBusSubscriber
-public class HuiiiEntity extends Monster {
+public class AfasfafafafaffEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SpookyModEntities.HUIII, 20, 4, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SpookyModEntities.AFASFAFAFAFAFF, 20, 4, 4));
 	}
 
-	public HuiiiEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(SpookyModEntities.HUIII, world);
+	public AfasfafafafaffEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
+		this(SpookyModEntities.AFASFAFAFAFAFF, world);
 	}
 
-	public HuiiiEntity(EntityType<HuiiiEntity> type, Level world) {
+	public AfasfafafafaffEntity(EntityType<AfasfafafafaffEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
@@ -79,7 +80,7 @@ public class HuiiiEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(SpookyModEntities.HUIII, SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(SpookyModEntities.AFASFAFAFAFAFF, SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
