@@ -4663,15 +4663,6 @@
       "registry_name": "huiii"
     },
     {
-      "name": "Amongus",
-      "type": "livingentity",
-      "sortid": 249,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amongus",
-      "path": "~/autismus"
-    },
-    {
       "name": "SpawnamonguscommandCommandExecuted",
       "type": "procedure",
       "sortid": 250,
@@ -4708,6 +4699,23 @@
       "locked_code": false,
       "registry_name": "spawnamonguscommand",
       "path": "~/autismus"
+    },
+    {
+      "name": "Amongus",
+      "type": "livingentity",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amongus",
+      "path": "~/autismus"
+    },
+    {
+      "name": "Afasfafafafaff",
+      "type": "livingentity",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "afasfafafafaff"
     }
   ],
   "variable_elements": [
@@ -5128,7 +5136,6 @@
       "item.spooky.bronze_set_leggings": "Bronze Leggings",
       "item.spooky.steel_dust": "Steel Dust",
       "effect.spooky.entity_tick": "EntityTick",
-      "item.spooky.amongus_spawn_egg": "Amongus Spawn Egg",
       "item.spooky.angelic_dust": "Angelic Dust",
       "subtitles.amongus_sound_effect": "sus",
       "item.spooky.sunflower_spawn_egg": "Sunflower Spawn Egg",
@@ -5148,7 +5155,6 @@
       "entity.spooky.cweeper": "Cweepy",
       "entity.spooky.sandgoblin": "Sandgoblin",
       "item.spooky.bronze_sword": "Bronze Sword",
-      "entity.spooky.amongus": "Amongus",
       "entity.spooky.cactus": "Cactus",
       "entity.spooky.sunflower": "Sunflower",
       "item.spooky.spawn_o_matic": "Spawn-O-Matic",
@@ -5167,10 +5173,6 @@
             "name": "Health",
             "children": [
               {
-                "name": "commands",
-                "children": []
-              },
-              {
                 "name": "Health Gui",
                 "children": [
                   {
@@ -5182,6 +5184,10 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "commands",
+                "children": []
               }
             ]
           },
@@ -5196,6 +5202,14 @@
                 "name": "biomeLevels",
                 "children": [
                   {
+                    "name": "ColdPlacesLevel",
+                    "children": []
+                  },
+                  {
+                    "name": "WaterLevel",
+                    "children": []
+                  },
+                  {
                     "name": "HotplacesLevel",
                     "children": []
                   },
@@ -5206,14 +5220,6 @@
                   {
                     "name": "ForestLevel",
                     "children": []
-                  },
-                  {
-                    "name": "WaterLevel",
-                    "children": []
-                  },
-                  {
-                    "name": "ColdPlacesLevel",
-                    "children": []
                   }
                 ]
               }
@@ -5222,85 +5228,62 @@
         ]
       },
       {
-        "name": "entitys",
+        "name": "Spawning",
         "children": [
           {
-            "name": "HotPlaces",
-            "children": [
-              {
-                "name": "ostrich",
-                "children": []
-              },
-              {
-                "name": "sandgoblin",
-                "children": []
-              },
-              {
-                "name": "mummy",
-                "children": []
-              },
-              {
-                "name": "cactus",
-                "children": []
-              },
-              {
-                "name": "cweeper",
-                "children": []
-              }
-            ]
+            "name": "SpawnWater",
+            "children": []
           },
           {
-            "name": "Plains",
-            "children": [
-              {
-                "name": "Angry Chicken",
-                "children": []
-              },
-              {
-                "name": "animeCow",
-                "children": []
-              },
-              {
-                "name": "Goat",
-                "children": []
-              },
-              {
-                "name": "SunFlower",
-                "children": []
-              }
-            ]
+            "name": "SpawnHotPlaces",
+            "children": []
           },
           {
-            "name": "Forest",
+            "name": "SpawnForest",
+            "children": []
+          },
+          {
+            "name": "SpawnPlains",
+            "children": []
+          },
+          {
+            "name": "SpawnColdPlaces",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "autismus",
+        "children": []
+      },
+      {
+        "name": "Wiki",
+        "children": [
+          {
+            "name": "Entities",
             "children": [
               {
                 "name": "Boar",
                 "children": []
               },
               {
-                "name": "Gorilla",
+                "name": "AnimeCow",
                 "children": []
-              }
-            ]
-          },
-          {
-            "name": "Cold Places",
-            "children": []
-          },
-          {
-            "name": "Water",
-            "children": [
+              },
               {
-                "name": "Fish",
+                "name": "AngryChicken",
                 "children": []
-              }
-            ]
-          },
-          {
-            "name": "OtherStuff",
-            "children": [
+              },
               {
-                "name": "goals",
+                "name": "Ostrich",
+                "children": []
+              },
+              {
+                "name": "sandGolin",
+                "children": []
+              },
+              {
+                "name": "ReturnIfKilled",
                 "children": []
               }
             ]
@@ -5311,23 +5294,6 @@
         "name": "equip",
         "children": [
           {
-            "name": "armor",
-            "children": [
-              {
-                "name": "ArmorTickEvents",
-                "children": []
-              },
-              {
-                "name": "BronzeSet",
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "Dust",
-            "children": []
-          },
-          {
             "name": "BronzeDustEquip",
             "children": [
               {
@@ -5337,14 +5303,27 @@
             ]
           },
           {
-            "name": "Spawn-O-matic",
+            "name": "armor",
             "children": [
               {
-                "name": "Plains",
+                "name": "BronzeSet",
                 "children": []
               },
               {
+                "name": "ArmorTickEvents",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Spawn-O-matic",
+            "children": [
+              {
                 "name": "HotPlaces",
+                "children": []
+              },
+              {
+                "name": "Plains",
                 "children": []
               }
             ]
@@ -5352,65 +5331,10 @@
           {
             "name": "abilities",
             "children": []
-          }
-        ]
-      },
-      {
-        "name": "Spawning",
-        "children": [
-          {
-            "name": "SpawnHotPlaces",
-            "children": []
           },
           {
-            "name": "SpawnPlains",
+            "name": "Dust",
             "children": []
-          },
-          {
-            "name": "SpawnForest",
-            "children": []
-          },
-          {
-            "name": "SpawnWater",
-            "children": []
-          },
-          {
-            "name": "SpawnColdPlaces",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Wiki",
-        "children": [
-          {
-            "name": "Entities",
-            "children": [
-              {
-                "name": "ReturnIfKilled",
-                "children": []
-              },
-              {
-                "name": "AngryChicken",
-                "children": []
-              },
-              {
-                "name": "AnimeCow",
-                "children": []
-              },
-              {
-                "name": "Ostrich",
-                "children": []
-              },
-              {
-                "name": "Boar",
-                "children": []
-              },
-              {
-                "name": "sandGolin",
-                "children": []
-              }
-            ]
           }
         ]
       },
@@ -5433,8 +5357,90 @@
         ]
       },
       {
-        "name": "autismus",
-        "children": []
+        "name": "entitys",
+        "children": [
+          {
+            "name": "Forest",
+            "children": [
+              {
+                "name": "Boar",
+                "children": []
+              },
+              {
+                "name": "Gorilla",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Water",
+            "children": [
+              {
+                "name": "Fish",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "OtherStuff",
+            "children": [
+              {
+                "name": "goals",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Plains",
+            "children": [
+              {
+                "name": "animeCow",
+                "children": []
+              },
+              {
+                "name": "SunFlower",
+                "children": []
+              },
+              {
+                "name": "Angry Chicken",
+                "children": []
+              },
+              {
+                "name": "Goat",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Cold Places",
+            "children": []
+          },
+          {
+            "name": "HotPlaces",
+            "children": [
+              {
+                "name": "sandgoblin",
+                "children": []
+              },
+              {
+                "name": "mummy",
+                "children": []
+              },
+              {
+                "name": "cactus",
+                "children": []
+              },
+              {
+                "name": "cweeper",
+                "children": []
+              },
+              {
+                "name": "ostrich",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },
