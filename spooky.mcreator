@@ -4653,6 +4653,14 @@
         ]
       },
       "path": "~/equip/abilities"
+    },
+    {
+      "name": "Huiii",
+      "type": "livingentity",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "huiii"
     }
   ],
   "variable_elements": [
@@ -5025,6 +5033,7 @@
       "itemGroup.tabmod_items": "Mod Items",
       "entity.spooky.ostrich": "ostrich",
       "itemGroup.tabentities": "Entities",
+      "item.spooky.huiii_spawn_egg": "Huiii Spawn Egg",
       "item.spooky.fish_spawn_egg": "Fish Spawn Egg",
       "subtitles.sao_death": "",
       "item.spooky.bronze_set_boots": "Bronze Boots",
@@ -5085,6 +5094,7 @@
       "entity.spooky.cactus": "Cactus",
       "entity.spooky.sunflower": "Sunflower",
       "item.spooky.spawn_o_matic": "Spawn-O-Matic",
+      "entity.spooky.huiii": "Huiii",
       "item.spooky.angry_chicken_spawn_egg": "Angry Chicken Spawn Egg",
       "subtitles.goblindies": ""
     }

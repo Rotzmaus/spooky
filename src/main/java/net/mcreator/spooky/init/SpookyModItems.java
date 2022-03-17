@@ -105,6 +105,8 @@ public class SpookyModItems {
 			new SpawnEggItem(SpookyModEntities.FISH, -26215, -3355444, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("fish_spawn_egg"));
 	public static final Item SPAWN_O_MATIC = register(new SpawnOMaticItem());
+	public static final Item HUIII = register(new SpawnEggItem(SpookyModEntities.HUIII, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+			.setRegistryName("huiii_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
