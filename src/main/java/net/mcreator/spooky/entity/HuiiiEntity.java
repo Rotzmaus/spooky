@@ -1,5 +1,6 @@
 
 package net.mcreator.spooky.entity;
+
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fmllegacy.network.NetworkHooks;
 import net.minecraftforge.fmllegacy.network.FMLPlayMessages;

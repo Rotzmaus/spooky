@@ -1,14 +1,31 @@
 
 package net.mcreator.spooky.entity;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fmllegacy.network.NetworkHooks;
+import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.nbt.Tag;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.Packet;
+
+import net.mcreator.spooky.init.SpookyModEntities;
 
 public class AmongusEntity extends Monster {
-
 	public AmongusEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
 		this(SpookyModEntities.AMONGUS, world);
 	}
@@ -17,9 +34,7 @@ public class AmongusEntity extends Monster {
 		super(type, world);
 		xpReward = 15;
 		setNoAi(false);
-
 		setPersistenceRequired();
-
 	}
 
 	@Override
@@ -30,13 +45,11 @@ public class AmongusEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
-
 	}
 
 	@Override
@@ -72,7 +85,6 @@ public class AmongusEntity extends Monster {
 	}
 
 	public static void init() {
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -81,12 +93,8 @@ public class AmongusEntity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 30);
 		builder = builder.add(Attributes.ARMOR, 5);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 1);
-
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);
-
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 7);
-
 		return builder;
 	}
-
 }

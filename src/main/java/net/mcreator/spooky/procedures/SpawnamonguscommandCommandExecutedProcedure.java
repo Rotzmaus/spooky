@@ -1,6 +1,13 @@
 package net.mcreator.spooky.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+
+import net.mcreator.spooky.init.SpookyModEntities;
+import net.mcreator.spooky.entity.AmongusEntity;
 
 public class SpawnamonguscommandCommandExecutedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
