@@ -92,190 +92,190 @@ public class HealthBarOverlay {
 			if (true) {
 				if (Frame1Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame1.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -92, posY + 71, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame2Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame2.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame3Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame3.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame4Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame4.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame5Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame5.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame6Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame6.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame7Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame7.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame8Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame8.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame9Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame9.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame10Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame10.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame11Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame11.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame12Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame12.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame13Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame13.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame14Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame14.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame15Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame15.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame16Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame16.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame17Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame17.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame18Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame18.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame19Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame19.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Frame20Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/frame20.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 72, 0, 0, 64, 16, 64, 16);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -91, posY + 60, 0, 0, 64, 16, 64, 16);
 				}
 				if (Expframe1Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe1.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe2Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe2.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe3Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe3.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe4Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe4.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe5Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe5.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe6Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe6.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe7Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe7.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe8Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe8.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe9Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe9.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe10Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe10.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe11Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe11.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe12Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe12.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe13Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe13.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe14Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe14.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe15Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe15.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe16Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe16.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe17Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe17.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe18Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe18.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe19Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe19.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				if (Expframe20Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/expframe20.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 78, 0, 0, 32, 8, 32, 8);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -28, posY + 69, 0, 0, 32, 8, 32, 8);
 				}
 				Minecraft.getInstance().font.draw(event.getMatrixStack(),
 						"" + (int) ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new SpookyModVariables.PlayerVariables())).playerEXP) + "",
-						posX + 8, posY + 78, -16777216);
+						posX + 2, posY + 68, -16777216);
 				Minecraft
 						.getInstance().font
 								.draw(event.getMatrixStack(),
 										"" + (int) ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 												.orElse(new SpookyModVariables.PlayerVariables())).playerEXPneeded) + "",
-										posX + 41, posY + 78, -16777216);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "/", posX + 35, posY + 78, -16777216);
+										posX + 34, posY + 68, -16777216);
+				Minecraft.getInstance().font.draw(event.getMatrixStack(), "/", posX + 26, posY + 69, -16777216);
 				Minecraft.getInstance().font.draw(event.getMatrixStack(),
 						"" + (int) ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new SpookyModVariables.PlayerVariables())).playerLevel) + "",
-						posX + -18, posY + 69, -13312);
+						posX + 1, posY + 50, -13312);
 				Minecraft.getInstance().font
 						.draw(event.getMatrixStack(),
 								"" + (int) ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new SpookyModVariables.PlayerVariables())).effectiveHealthPointsMax) + "",
-								posX + -61, posY + 76, -16777216);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "/", posX + -67, posY + 76, -16777216);
+								posX + -59, posY + 62, -16777216);
+				Minecraft.getInstance().font.draw(event.getMatrixStack(), "/", posX + -66, posY + 63, -16777216);
 				Minecraft.getInstance().font
 						.draw(event.getMatrixStack(),
 								"" + (int) ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new SpookyModVariables.PlayerVariables())).effectiveHealthPoints) + "",
-								posX + -86, posY + 76, -16777216);
+								posX + -88, posY + 62, -16777216);
 			}
 			RenderSystem.depthMask(true);
 			RenderSystem.defaultBlendFunc();
