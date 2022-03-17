@@ -26,6 +26,9 @@ public class CheckChestplateProcedure {
 				} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
 						.getItem() == SpookyModItems.BRONZE_SET_AUG_CHESTPLATE) {
 					AugBronzeSetChesplateProcedure.execute(entity);
+				} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
+						.getItem() == SpookyModItems.DRUID_SET_CHESTPLATE) {
+					DruidSetChestplateProcedure.execute(entity);
 				}
 			}
 		} else {

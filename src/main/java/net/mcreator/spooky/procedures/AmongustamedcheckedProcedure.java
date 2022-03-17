@@ -1,6 +1,7 @@
 package net.mcreator.spooky.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.Entity;
 
 public class AmongustamedcheckedProcedure {
 	public static boolean execute(Entity entity) {

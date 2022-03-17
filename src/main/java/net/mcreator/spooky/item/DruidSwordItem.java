@@ -1,7 +1,14 @@
 
 package net.mcreator.spooky.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+
+import net.mcreator.spooky.init.SpookyModItems;
 
 public class DruidSwordItem extends SwordItem {
 	public DruidSwordItem() {
@@ -29,13 +36,7 @@ public class DruidSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(SpookyModItems.DRUID_DUST));
 			}
-		},
-
-				3, -2.2999999999999998f,
-
-				new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-
+		}, 3, -2.2999999999999998f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
 		setRegistryName("druid_sword");
 	}
-
 }

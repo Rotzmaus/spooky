@@ -1,7 +1,14 @@
 
 package net.mcreator.spooky.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.AxeItem;
+
+import net.mcreator.spooky.init.SpookyModItems;
 
 public class DruidAxeItem extends AxeItem {
 	public DruidAxeItem() {
@@ -29,13 +36,7 @@ public class DruidAxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(SpookyModItems.DRUID_DUST));
 			}
-		},
-
-				1, -3f,
-
-				new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
-
+		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 		setRegistryName("druid_axe");
 	}
-
 }

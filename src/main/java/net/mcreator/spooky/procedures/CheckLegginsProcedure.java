@@ -21,44 +21,10 @@ public class CheckLegginsProcedure {
 					.orElse(new SpookyModVariables.PlayerVariables())).LegginsMathOn) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
 						.getItem() == SpookyModItems.BRONZE_SET_LEGGINGS) {
-					LegginsCalcOn = 1.075;
-					{
-						double _setval = 1.075;
-						entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.LegginsCalcOff = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					{
-						double _setval = (entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new SpookyModVariables.PlayerVariables())).effectiveHealthPointsMax * LegginsCalcOn;
-						entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.effectiveHealthPointsMax = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					{
-						double _setval = (entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new SpookyModVariables.PlayerVariables())).effectiveHealthPoints * LegginsCalcOn;
-						entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.effectiveHealthPoints = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					{
-						boolean _setval = true;
-						entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.LegginsMathOn = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					{
-						boolean _setval = false;
-						entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.LegginsMathOff = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
+					BronzeSetLegginsProcedure.execute(entity);
+				} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
+						.getItem() == SpookyModItems.DRUID_SET_LEGGINGS) {
+					DruidSetLegginsProcedure.execute(entity);
 				}
 			}
 		} else {

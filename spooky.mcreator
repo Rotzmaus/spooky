@@ -2865,7 +2865,7 @@
           }
         ]
       },
-      "path": "~/equip/armor/BronzeSet"
+      "path": "~/equip/armor"
     },
     {
       "name": "EquipmentTab",
@@ -3271,7 +3271,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/equip/abilities/B Actionkey"
     },
     {
       "name": "CrocsSportModeDisplayOverlayIngame",
@@ -3288,7 +3289,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/equip/abilities/B Actionkey"
     },
     {
       "name": "CrocsSportMode",
@@ -3296,7 +3298,8 @@
       "sortid": 177,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crocs_sport_mode"
+      "registry_name": "crocs_sport_mode",
+      "path": "~/equip/abilities/B Actionkey"
     },
     {
       "name": "B",
@@ -3304,7 +3307,8 @@
       "sortid": 176,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "b"
+      "registry_name": "b",
+      "path": "~/equip/abilities/B Actionkey"
     },
     {
       "name": "BoarFang",
@@ -4736,7 +4740,7 @@
         "eb": true,
         "ec": true
       },
-      "path": "~/equip/BronzeDustEquip"
+      "path": "~/equip/druidDustEquip"
     },
     {
       "name": "BronzeShovel",
@@ -4868,6 +4872,108 @@
         ]
       },
       "path": "~/autismus"
+    },
+    {
+      "name": "BronzeSetLeggins",
+      "type": "procedure",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_set_leggins",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/armor/BronzeSet"
+    },
+    {
+      "name": "BronzeSetBoots",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_set_boots",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/armor/BronzeSet"
+    },
+    {
+      "name": "DruidSetHelmet",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "druid_set_helmet",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/armor/DruidSet"
+    },
+    {
+      "name": "DruidSetChestplate",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "druid_set_chestplate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/armor/DruidSet"
+    },
+    {
+      "name": "DruidSetLeggins",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "druid_set_leggins",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/armor/DruidSet"
+    },
+    {
+      "name": "DruidSetBoots",
+      "type": "procedure",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "druid_set_boots",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/armor/DruidSet"
     }
   ],
   "variable_elements": [
@@ -5494,14 +5600,15 @@
           },
           {
             "name": "abilities",
-            "children": []
+            "children": [
+              {
+                "name": "B Actionkey",
+                "children": []
+              }
+            ]
           },
           {
             "name": "druidDustEquip",
-            "children": []
-          },
-          {
-            "name": "B Actionkey",
             "children": []
           },
           {

@@ -19,6 +19,9 @@ public class CheckHelmetProcedure {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
 						.getItem() == SpookyModItems.BRONZE_SET_HELMET) {
 					BronzeSetHelmetProcedure.execute(entity);
+				} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
+						.getItem() == SpookyModItems.DRUID_SET_HELMET) {
+					DruidSetHelmetProcedure.execute(entity);
 				}
 			}
 		} else {
