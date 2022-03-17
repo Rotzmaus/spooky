@@ -13,6 +13,7 @@ import net.mcreator.spooky.client.model.Modelnewversionostrich;
 import net.mcreator.spooky.client.model.Modelgorilla;
 import net.mcreator.spooky.client.model.Modelcactus_small;
 import net.mcreator.spooky.client.model.Modelbigheadedfish;
+import net.mcreator.spooky.client.model.Modelamogus;
 import net.mcreator.spooky.client.model.ModelSunflower;
 import net.mcreator.spooky.client.model.ModelGoblin;
 
@@ -25,6 +26,7 @@ public class SpookyModModels {
 		event.registerLayerDefinition(Modelgorilla.LAYER_LOCATION, Modelgorilla::createBodyLayer);
 		event.registerLayerDefinition(ModelGoblin.LAYER_LOCATION, ModelGoblin::createBodyLayer);
 		event.registerLayerDefinition(Modelcactus_small.LAYER_LOCATION, Modelcactus_small::createBodyLayer);
+		event.registerLayerDefinition(Modelamogus.LAYER_LOCATION, Modelamogus::createBodyLayer);
 		event.registerLayerDefinition(Modelbigheadedfish.LAYER_LOCATION, Modelbigheadedfish::createBodyLayer);
 	}
 }

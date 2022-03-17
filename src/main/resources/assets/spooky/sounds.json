@@ -43,5 +43,15 @@
         "stream": false
       }
     ]
+  },
+  "amongus_sound_effect": {
+    "category": "master",
+    "subtitle": "subtitles.amongus_sound_effect",
+    "sounds": [
+      {
+        "name": "spooky:amogus_living",
+        "stream": false
+      }
+    ]
   }
 }

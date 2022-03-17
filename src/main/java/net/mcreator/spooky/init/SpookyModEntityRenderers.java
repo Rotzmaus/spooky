@@ -26,6 +26,7 @@ import net.mcreator.spooky.client.renderer.CactusRenderer;
 import net.mcreator.spooky.client.renderer.BoarRenderer;
 import net.mcreator.spooky.client.renderer.AnimeCowRenderer;
 import net.mcreator.spooky.client.renderer.AngryChickenRenderer;
+import net.mcreator.spooky.client.renderer.AmongusRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SpookyModEntityRenderers {
@@ -47,5 +48,6 @@ public class SpookyModEntityRenderers {
 		event.registerEntityRenderer(SpookyModEntities.SUNFLOWER_PROJECTILE, ThrownItemRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.FISH, FishRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.HUIII, HuiiiRenderer::new);
+		event.registerEntityRenderer(SpookyModEntities.AMONGUS, AmongusRenderer::new);
 	}
 }
