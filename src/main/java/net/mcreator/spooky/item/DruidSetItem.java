@@ -1,10 +1,33 @@
 
 package net.mcreator.spooky.item;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.spooky.procedures.LegginsTickEventProcedure;
+import net.mcreator.spooky.procedures.HelmettickeventProcedure;
+import net.mcreator.spooky.procedures.ChestplateTickEventProcedure;
+import net.mcreator.spooky.procedures.BootsTickEventProcedure;
+import net.mcreator.spooky.init.SpookyModItems;
+
+import java.util.List;
 
 public abstract class DruidSetItem extends ArmorItem {
-
 	public DruidSetItem(EquipmentSlot slot, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -14,22 +37,22 @@ public abstract class DruidSetItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{2, 4, 5, 2}[slot.getIndex()];
+				return new int[]{2, 4, 6, 3}[slot.getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 9;
+				return 10;
 			}
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_iron"));
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_chain"));
 			}
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(SpookyModItems.BRONZE_DUST));
+				return Ingredient.of(new ItemStack(SpookyModItems.DRUID_DUST));
 			}
 
 			@Override
@@ -39,7 +62,7 @@ public abstract class DruidSetItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 1f;
+				return 1.2000000000000002f;
 			}
 
 			@Override
@@ -50,10 +73,8 @@ public abstract class DruidSetItem extends ArmorItem {
 	}
 
 	public static class Helmet extends DruidSetItem {
-
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-
 			setRegistryName("druid_set_helmet");
 		}
 
@@ -65,7 +86,7 @@ public abstract class DruidSetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "spooky:textures/models/armor/bronzeset_layer_1.png";
+			return "spooky:textures/models/armor/druidset_layer_1.png";
 		}
 
 		@Override
@@ -75,10 +96,8 @@ public abstract class DruidSetItem extends ArmorItem {
 	}
 
 	public static class Chestplate extends DruidSetItem {
-
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-
 			setRegistryName("druid_set_chestplate");
 		}
 
@@ -90,7 +109,7 @@ public abstract class DruidSetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "spooky:textures/models/armor/bronzeset_layer_1.png";
+			return "spooky:textures/models/armor/druidset_layer_1.png";
 		}
 
 		@Override
@@ -100,10 +119,8 @@ public abstract class DruidSetItem extends ArmorItem {
 	}
 
 	public static class Leggings extends DruidSetItem {
-
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-
 			setRegistryName("druid_set_leggings");
 		}
 
@@ -115,7 +132,7 @@ public abstract class DruidSetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "spooky:textures/models/armor/bronzeset_layer_2.png";
+			return "spooky:textures/models/armor/druidset_layer_2.png";
 		}
 
 		@Override
@@ -125,10 +142,8 @@ public abstract class DruidSetItem extends ArmorItem {
 	}
 
 	public static class Boots extends DruidSetItem {
-
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-
 			setRegistryName("druid_set_boots");
 		}
 
@@ -140,7 +155,7 @@ public abstract class DruidSetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "spooky:textures/models/armor/bronzeset_layer_1.png";
+			return "spooky:textures/models/armor/druidset_layer_1.png";
 		}
 
 		@Override
@@ -148,5 +163,4 @@ public abstract class DruidSetItem extends ArmorItem {
 			BootsTickEventProcedure.execute(entity);
 		}
 	}
-
 }

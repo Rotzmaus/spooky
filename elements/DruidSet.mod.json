@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "bronzeset_head",
+    "textureHelmet": "druidset_head",
     "enableBody": true,
-    "textureBody": "bronzeset_body",
+    "textureBody": "druidset_body",
     "enableLeggings": true,
-    "textureLeggings": "bronzeset_leggings",
+    "textureLeggings": "druidset_leggings",
     "enableBoots": true,
-    "textureBoots": "bronzeset_boots",
+    "textureBoots": "druidset_boots",
     "onHelmetTick": {
       "name": "Helmettickevent"
     },
@@ -25,7 +25,7 @@
     "creativeTab": {
       "value": "COMBAT"
     },
-    "armorTextureFile": "bronzeset",
+    "armorTextureFile": "druidset",
     "helmetName": "Bronze Helmet",
     "bodyName": "Bronze Body",
     "leggingsName": "Bronze Leggings",
@@ -63,19 +63,19 @@
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
     "maxDamage": 50,
-    "damageValueHelmet": 2,
-    "damageValueBody": 5,
+    "damageValueHelmet": 3,
+    "damageValueBody": 6,
     "damageValueLeggings": 4,
     "damageValueBoots": 2,
-    "enchantability": 9,
-    "toughness": 1.0,
+    "enchantability": 10,
+    "toughness": 1.2000000000000002,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "item.armor.equip_iron"
+      "value": "item.armor.equip_chain"
     },
     "repairItems": [
       {
-        "value": "CUSTOM:BronzeDust"
+        "value": "CUSTOM:DruidDust"
       }
     ]
   }

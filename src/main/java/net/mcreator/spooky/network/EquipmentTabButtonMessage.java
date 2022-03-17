@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.spooky.world.inventory.EquipmentTabMenu;
+import net.mcreator.spooky.procedures.BuyToolsProcedure;
 import net.mcreator.spooky.procedures.BuySwordProcedure;
 import net.mcreator.spooky.procedures.BuyLegginsProcedure;
 import net.mcreator.spooky.procedures.BuyHelmetProcedure;
@@ -85,6 +86,10 @@ public class EquipmentTabButtonMessage {
 		if (buttonID == 4) {
 
 			BuyBootsProcedure.execute(entity);
+		}
+		if (buttonID == 5) {
+
+			BuyToolsProcedure.execute(entity);
 		}
 	}
 

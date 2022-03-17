@@ -99,6 +99,21 @@ public class EquipmentTabScreen extends AbstractContainerScreen<EquipmentTabMenu
 		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/bronzeset_boots.png"));
 		this.blit(ms, this.leftPos + 33, this.topPos + 135, 0, 0, 16, 16, 16, 16);
 
+		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/druidsword.png"));
+		this.blit(ms, this.leftPos + 60, this.topPos + 27, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/druidset_head.png"));
+		this.blit(ms, this.leftPos + 60, this.topPos + 54, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/druidset_body.png"));
+		this.blit(ms, this.leftPos + 60, this.topPos + 81, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/druidset_leggings.png"));
+		this.blit(ms, this.leftPos + 60, this.topPos + 108, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/druidset_boots.png"));
+		this.blit(ms, this.leftPos + 60, this.topPos + 135, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -170,6 +185,10 @@ public class EquipmentTabScreen extends AbstractContainerScreen<EquipmentTabMenu
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 366, this.topPos + 189, 51, 20, new TextComponent("Tools"), e -> {
+			if (true) {
+				SpookyMod.PACKET_HANDLER.sendToServer(new EquipmentTabButtonMessage(5, x, y, z));
+				EquipmentTabButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
 		}));
 	}
 }

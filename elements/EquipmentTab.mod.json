@@ -353,6 +353,9 @@
         "type": "button",
         "data": {
           "text": "Tools",
+          "onClick": {
+            "name": "BuyTools"
+          },
           "width": 51,
           "height": 20,
           "name": "Tools",
@@ -384,6 +387,56 @@
           "name": "complete Toolset",
           "x": 285,
           "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druidsword.png",
+          "use1Xscale": false,
+          "name": "druidsword.png",
+          "x": 60,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druidset_head.png",
+          "use1Xscale": false,
+          "name": "druidset_head.png",
+          "x": 60,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druidset_body.png",
+          "use1Xscale": false,
+          "name": "druidset_body.png",
+          "x": 60,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druidset_leggings.png",
+          "use1Xscale": false,
+          "name": "druidset_leggings.png",
+          "x": 60,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druidset_boots.png",
+          "use1Xscale": false,
+          "name": "druidset_boots.png",
+          "x": 60,
+          "y": 134
         }
       }
     ],

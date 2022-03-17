@@ -20,8 +20,13 @@ import net.mcreator.spooky.item.IronDustItem;
 import net.mcreator.spooky.item.InfernoDustItem;
 import net.mcreator.spooky.item.IceDustItem;
 import net.mcreator.spooky.item.HolySteelDustItem;
+import net.mcreator.spooky.item.DruidSwordItem;
+import net.mcreator.spooky.item.DruidShovelItem;
 import net.mcreator.spooky.item.DruidSetItem;
+import net.mcreator.spooky.item.DruidPickaxeItem;
+import net.mcreator.spooky.item.DruidHoeItem;
 import net.mcreator.spooky.item.DruidDustItem;
+import net.mcreator.spooky.item.DruidAxeItem;
 import net.mcreator.spooky.item.DarkIronDustItem;
 import net.mcreator.spooky.item.DamascusDustItem;
 import net.mcreator.spooky.item.CuteLeatherItem;
@@ -118,6 +123,11 @@ public class SpookyModItems {
 	public static final Item DRUID_SET_CHESTPLATE = register(new DruidSetItem.Chestplate());
 	public static final Item DRUID_SET_LEGGINGS = register(new DruidSetItem.Leggings());
 	public static final Item DRUID_SET_BOOTS = register(new DruidSetItem.Boots());
+	public static final Item DRUID_PICKAXE = register(new DruidPickaxeItem());
+	public static final Item DRUID_AXE = register(new DruidAxeItem());
+	public static final Item DRUID_SWORD = register(new DruidSwordItem());
+	public static final Item DRUID_SHOVEL = register(new DruidShovelItem());
+	public static final Item DRUID_HOE = register(new DruidHoeItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

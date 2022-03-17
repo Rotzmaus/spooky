@@ -14,7 +14,7 @@ public class BronzeSwordItem extends SwordItem {
 	public BronzeSwordItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 250;
+				return 500;
 			}
 
 			public float getSpeed() {
@@ -22,7 +22,7 @@ public class BronzeSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0f;
+				return 4f;
 			}
 
 			public int getLevel() {
@@ -36,7 +36,7 @@ public class BronzeSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(SpookyModItems.BRONZE_DUST));
 			}
-		}, 3, -3f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+		}, 3, -2.3f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
 		setRegistryName("bronze_sword");
 	}
 }
