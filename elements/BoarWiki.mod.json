@@ -120,8 +120,8 @@
             "falpha": 0.0
           },
           "name": "/Kill",
-          "x": 199,
-          "y": 179
+          "x": 194,
+          "y": 172
         }
       },
       {
@@ -173,7 +173,7 @@
           "width": 46,
           "height": 20,
           "name": "Back",
-          "x": 227,
+          "x": 224,
           "y": 185
         }
       },
@@ -188,29 +188,6 @@
           "name": "better leave it be.",
           "x": 149,
           "y": 68
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "0.075",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "0.075",
-          "x": 153,
-          "y": 185
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "druiddust.png",
-          "use1Xscale": false,
-          "name": "druiddust.png",
-          "x": 180,
-          "y": 179
         }
       }
     ],

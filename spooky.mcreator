@@ -3271,8 +3271,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/equip/B Actionkey"
+      }
     },
     {
       "name": "CrocsSportModeDisplayOverlayIngame",
@@ -3289,8 +3288,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/equip/B Actionkey"
+      }
     },
     {
       "name": "CrocsSportMode",
@@ -3298,8 +3296,7 @@
       "sortid": 177,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crocs_sport_mode",
-      "path": "~/equip/B Actionkey"
+      "registry_name": "crocs_sport_mode"
     },
     {
       "name": "B",
@@ -3307,8 +3304,7 @@
       "sortid": 176,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "b",
-      "path": "~/equip/B Actionkey"
+      "registry_name": "b"
     },
     {
       "name": "BoarFang",
@@ -4740,7 +4736,7 @@
         "eb": true,
         "ec": true
       },
-      "path": "~/equip/druidDustEquip"
+      "path": "~/equip/BronzeDustEquip"
     },
     {
       "name": "BronzeShovel",
@@ -4811,21 +4807,21 @@
       "path": "~/autismus"
     },
     {
+      "name": "DruidShovel",
+      "type": "tool",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "druid_shovel",
+      "path": "~/equip/druidDustEquip"
+    },
+    {
       "name": "DruidPickaxe",
       "type": "tool",
       "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "druid_pickaxe",
-      "path": "~/equip/druidDustEquip"
-    },
-    {
-      "name": "DruidAxe",
-      "type": "tool",
-      "sortid": 259,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "druid_axe",
       "path": "~/equip/druidDustEquip"
     },
     {
@@ -4838,12 +4834,12 @@
       "path": "~/equip/druidDustEquip"
     },
     {
-      "name": "DruidShovel",
+      "name": "DruidAxe",
       "type": "tool",
-      "sortid": 261,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "druid_shovel",
+      "registry_name": "druid_axe",
       "path": "~/equip/druidDustEquip"
     },
     {
@@ -4854,6 +4850,24 @@
       "locked_code": false,
       "registry_name": "druid_hoe",
       "path": "~/equip/druidDustEquip"
+    },
+    {
+      "name": "Amongustamedchecked",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amongustamedchecked",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/autismus"
     }
   ],
   "variable_elements": [
@@ -5483,15 +5497,15 @@
             "children": []
           },
           {
+            "name": "druidDustEquip",
+            "children": []
+          },
+          {
             "name": "B Actionkey",
             "children": []
           },
           {
             "name": "Dust",
-            "children": []
-          },
-          {
-            "name": "druidDustEquip",
             "children": []
           }
         ]
