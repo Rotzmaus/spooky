@@ -95,6 +95,7 @@ public class SpookyModItems {
 	public static final Item DARK_IRON_DUST = register(new DarkIronDustItem());
 	public static final Item PLATE_DUST = register(new PlateDustItem());
 	public static final Item ICE_DUST = register(new IceDustItem());
+	public static final Item BRONZE_SWORD = register(new BronzeSwordItem());
 	public static final Item BRONZE_SET_HELMET = register(new BronzeSetItem.Helmet());
 	public static final Item BRONZE_SET_CHESTPLATE = register(new BronzeSetItem.Chestplate());
 	public static final Item BRONZE_SET_LEGGINGS = register(new BronzeSetItem.Leggings());
@@ -111,7 +112,6 @@ public class SpookyModItems {
 	public static final Item SPAWN_O_MATIC = register(new SpawnOMaticItem());
 	public static final Item BRONZE_PICKAXE = register(new BronzePickaxeItem());
 	public static final Item BRONZE_AXE = register(new BronzeAxeItem());
-	public static final Item BRONZE_SWORD = register(new BronzeSwordItem());
 	public static final Item BRONZE_SHOVEL = register(new BronzeShovelItem());
 	public static final Item BRONZE_HOE = register(new BronzeHoeItem());
 	public static final Item DRUID_SET_HELMET = register(new DruidSetItem.Helmet());

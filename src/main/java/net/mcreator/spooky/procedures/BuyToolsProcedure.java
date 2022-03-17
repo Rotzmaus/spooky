@@ -1,17 +1,6 @@
 package net.mcreator.spooky.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-
-import net.mcreator.spooky.init.SpookyModItems;
-
-import java.util.function.Supplier;
-import java.util.Map;
+import net.minecraftforge.eventbus.api.Event;
 
 public class BuyToolsProcedure {
 	public static void execute(Entity entity) {
