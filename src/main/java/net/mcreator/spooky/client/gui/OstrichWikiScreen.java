@@ -52,10 +52,7 @@ public class OstrichWikiScreen extends AbstractContainerScreen<OstrichWikiMenu> 
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/bronzedust.png"));
-		this.blit(ms, this.leftPos + 31, this.topPos + 133, 0, 0, 16, 16, 16, 16);
-
-		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/druiddust.png"));
-		this.blit(ms, this.leftPos + 31, this.topPos + 147, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 30, this.topPos + 145, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -81,15 +78,14 @@ public class OstrichWikiScreen extends AbstractContainerScreen<OstrichWikiMenu> 
 		this.font.draw(poseStack, "health:", 3, 93, -12829636);
 		this.font.draw(poseStack, "Armor:", 4, 105, -12829636);
 		this.font.draw(poseStack, "Regen Level:", 4, 118, -12829636);
-		this.font.draw(poseStack, "0.35", 5, 139, -12829636);
+		this.font.draw(poseStack, "0.35", 6, 150, -12829636);
 		this.font.draw(poseStack, "Spawns in Hot Places", 3, 76, -12829636);
-		this.font.draw(poseStack, "/Kill", 49, 145, -12829636);
+		this.font.draw(poseStack, "/Kill", 46, 150, -12829636);
 		this.font.draw(poseStack, "1", 68, 118, -12829636);
 		this.font.draw(poseStack, "15", 38, 106, -12829636);
 		this.font.draw(poseStack, "50", 40, 93, -12829636);
 		this.font.draw(poseStack, "with grey feathers-", 4, 34, -12829636);
 		this.font.draw(poseStack, "and a yellow beak.", 4, 46, -12829636);
-		this.font.draw(poseStack, "0.105", 5, 153, -12829636);
 	}
 
 	@Override

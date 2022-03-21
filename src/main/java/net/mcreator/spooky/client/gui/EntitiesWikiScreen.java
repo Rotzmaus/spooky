@@ -16,6 +16,8 @@ import net.mcreator.spooky.procedures.SandgoblinNotKilledProcedure;
 import net.mcreator.spooky.procedures.SandgoblinKilledProcedure;
 import net.mcreator.spooky.procedures.OstrichNotKilledProcedure;
 import net.mcreator.spooky.procedures.OstrichKilledProcedure;
+import net.mcreator.spooky.procedures.NaturalEssenceNotKilledProcedure;
+import net.mcreator.spooky.procedures.NaturalEssenceKilledProcedure;
 import net.mcreator.spooky.procedures.BoarNotKilledProcedure;
 import net.mcreator.spooky.procedures.BoarKilledProcedure;
 import net.mcreator.spooky.procedures.AnimeCowNotKilledProcedure;
@@ -65,7 +67,7 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 		this.blit(ms, this.leftPos + 73, this.topPos + 21, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/druiddust.png"));
-		this.blit(ms, this.leftPos + 181, this.topPos + 21, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 172, this.topPos + 21, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -96,7 +98,20 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 		this.font.draw(poseStack, "PL", 10, 66, -12829636);
 		this.font.draw(poseStack, "FO", 10, 93, -12829636);
 		this.font.draw(poseStack, "HP", 10, 120, -12829636);
-		this.font.draw(poseStack, "HP", 145, 39, -12829636);
+		this.font.draw(poseStack, "HP", 10, 174, -12829636);
+		this.font.draw(poseStack, "WA", 10, 147, -12829636);
+		if (AngryChickenNotKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "???", 37, 39, -12829636);
+		if (AnimeCowNotKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "???", 37, 66, -12829636);
+		if (OstrichNotKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "???", 37, 174, -12829636);
+		if (BoarNotKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "???", 37, 93, -12829636);
+		if (SandgoblinNotKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "???", 37, 120, -12829636);
+		if (NaturalEssenceNotKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "???", 37, 147, -12829636);
 	}
 
 	@Override
@@ -109,18 +124,10 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 39, 40, 20, new TextComponent("???"), e -> {
-		}) {
-			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
-				if (AngryChickenNotKilledProcedure.execute(entity))
-					super.render(ms, gx, gy, ticks);
-			}
-		});
 		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 39, 93, 20, new TextComponent("Angry Chicken"), e -> {
 			if (AngryChickenKilledProcedure.execute(entity)) {
-				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(1, x, y, z));
-				EntitiesWikiButtonMessage.handleButtonAction(entity, 1, x, y, z);
+				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(0, x, y, z));
+				EntitiesWikiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}) {
 			@Override
@@ -131,8 +138,8 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 		});
 		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 66, 72, 20, new TextComponent("Anime Cow"), e -> {
 			if (AnimeCowKilledProcedure.execute(entity)) {
-				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(2, x, y, z));
-				EntitiesWikiButtonMessage.handleButtonAction(entity, 2, x, y, z);
+				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(1, x, y, z));
+				EntitiesWikiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}) {
 			@Override
@@ -141,26 +148,10 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 					super.render(ms, gx, gy, ticks);
 			}
 		});
-		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 66, 40, 20, new TextComponent("???"), e -> {
-		}) {
-			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
-				if (AnimeCowNotKilledProcedure.execute(entity))
-					super.render(ms, gx, gy, ticks);
-			}
-		});
-		this.addRenderableWidget(new Button(this.leftPos + 163, this.topPos + 39, 40, 20, new TextComponent("???"), e -> {
-		}) {
-			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
-				if (OstrichNotKilledProcedure.execute(entity))
-					super.render(ms, gx, gy, ticks);
-			}
-		});
-		this.addRenderableWidget(new Button(this.leftPos + 163, this.topPos + 39, 61, 20, new TextComponent("Ostrich"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 174, 61, 20, new TextComponent("Ostrich"), e -> {
 			if (OstrichKilledProcedure.execute(entity)) {
-				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(5, x, y, z));
-				EntitiesWikiButtonMessage.handleButtonAction(entity, 5, x, y, z);
+				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(2, x, y, z));
+				EntitiesWikiButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}) {
 			@Override
@@ -169,18 +160,10 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 					super.render(ms, gx, gy, ticks);
 			}
 		});
-		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 93, 40, 20, new TextComponent("???"), e -> {
-		}) {
-			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
-				if (BoarNotKilledProcedure.execute(entity))
-					super.render(ms, gx, gy, ticks);
-			}
-		});
 		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 93, 46, 20, new TextComponent("Boar"), e -> {
 			if (BoarKilledProcedure.execute(entity)) {
-				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(7, x, y, z));
-				EntitiesWikiButtonMessage.handleButtonAction(entity, 7, x, y, z);
+				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(3, x, y, z));
+				EntitiesWikiButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}) {
 			@Override
@@ -189,23 +172,27 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 					super.render(ms, gx, gy, ticks);
 			}
 		});
-		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 120, 40, 20, new TextComponent("???"), e -> {
-		}) {
-			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
-				if (SandgoblinNotKilledProcedure.execute(entity))
-					super.render(ms, gx, gy, ticks);
-			}
-		});
 		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 120, 87, 20, new TextComponent("Sand  Goblin"), e -> {
 			if (SandgoblinKilledProcedure.execute(entity)) {
-				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(9, x, y, z));
-				EntitiesWikiButtonMessage.handleButtonAction(entity, 9, x, y, z);
+				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(4, x, y, z));
+				EntitiesWikiButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}) {
 			@Override
 			public void render(PoseStack ms, int gx, int gy, float ticks) {
 				if (SandgoblinKilledProcedure.execute(entity))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
+		this.addRenderableWidget(new Button(this.leftPos + 28, this.topPos + 147, 103, 20, new TextComponent("Natural Essence"), e -> {
+			if (NaturalEssenceKilledProcedure.execute(entity)) {
+				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(5, x, y, z));
+				EntitiesWikiButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (NaturalEssenceKilledProcedure.execute(entity))
 					super.render(ms, gx, gy, ticks);
 			}
 		});

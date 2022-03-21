@@ -26,20 +26,6 @@
       {
         "type": "button",
         "data": {
-          "text": "???",
-          "displayCondition": {
-            "name": "AngryChickenNotKilled"
-          },
-          "width": 40,
-          "height": 20,
-          "name": "???",
-          "x": 24,
-          "y": 44
-        }
-      },
-      {
-        "type": "button",
-        "data": {
           "text": "Angry Chicken",
           "onClick": {
             "name": "OpenAngryChicken"
@@ -74,34 +60,6 @@
       {
         "type": "button",
         "data": {
-          "text": "???",
-          "displayCondition": {
-            "name": "AnimeCowNotKilled"
-          },
-          "width": 40,
-          "height": 20,
-          "name": "???",
-          "x": 24,
-          "y": 71
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "???",
-          "displayCondition": {
-            "name": "OstrichNotKilled"
-          },
-          "width": 40,
-          "height": 20,
-          "name": "???",
-          "x": 159,
-          "y": 44
-        }
-      },
-      {
-        "type": "button",
-        "data": {
           "text": "Ostrich",
           "onClick": {
             "name": "OpenOstrichWiki"
@@ -112,22 +70,8 @@
           "width": 61,
           "height": 20,
           "name": "Ostrich",
-          "x": 159,
-          "y": 44
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "???",
-          "displayCondition": {
-            "name": "BoarNotKilled"
-          },
-          "width": 40,
-          "height": 20,
-          "name": "???",
           "x": 24,
-          "y": 98
+          "y": 179
         }
       },
       {
@@ -145,20 +89,6 @@
           "name": "Boar",
           "x": 24,
           "y": 98
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "???",
-          "displayCondition": {
-            "name": "SandgoblinNotKilled"
-          },
-          "width": 40,
-          "height": 20,
-          "name": "???",
-          "x": 24,
-          "y": 125
         }
       },
       {
@@ -194,7 +124,7 @@
           "image": "druiddust.png",
           "use1Xscale": false,
           "name": "druiddust.png",
-          "x": 177,
+          "x": 168,
           "y": 26
         }
       },
@@ -324,8 +254,134 @@
             "falpha": 0.0
           },
           "name": "HP",
-          "x": 141,
+          "x": 6,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "WA",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "WA",
+          "x": 6,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Natural Essence",
+          "onClick": {
+            "name": "OpenNaturalEssenceWiki"
+          },
+          "displayCondition": {
+            "name": "NaturalEssenceKilled"
+          },
+          "width": 103,
+          "height": 20,
+          "name": "Natural Essence",
+          "x": 24,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AngryChickenNotKilled"
+          },
+          "name": "???",
+          "x": 33,
           "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AnimeCowNotKilled"
+          },
+          "name": "???",
+          "x": 33,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "OstrichNotKilled"
+          },
+          "name": "???",
+          "x": 33,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BoarNotKilled"
+          },
+          "name": "???",
+          "x": 33,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SandgoblinNotKilled"
+          },
+          "name": "???",
+          "x": 33,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "NaturalEssenceNotKilled"
+          },
+          "name": "???",
+          "x": 33,
+          "y": 152
         }
       }
     ],

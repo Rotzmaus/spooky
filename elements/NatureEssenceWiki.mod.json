@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 125,
+    "width": 135,
     "height": 180,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -13,12 +13,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Ostrich",
+          "text": "Nature Essence",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Ostrich",
+          "name": "Nature Essence",
           "x": 188,
           "y": 35
         }
@@ -26,14 +26,14 @@
       {
         "type": "label",
         "data": {
-          "text": "A Birdlike creature-",
+          "text": "A floaty Essence",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "A Birdlike creature-",
-          "x": 155,
-          "y": 52
+          "name": "A floaty Essence",
+          "x": 150,
+          "y": 53
         }
       },
       {
@@ -78,14 +78,14 @@
       {
         "type": "label",
         "data": {
-          "text": "0.35",
+          "text": "0.45",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "0.35",
-          "x": 157,
-          "y": 180
+          "name": "0.45",
+          "x": 155,
+          "y": 173
         }
       },
       {
@@ -94,21 +94,21 @@
           "image": "bronzedust.png",
           "use1Xscale": false,
           "name": "bronzedust.png",
-          "x": 181,
-          "y": 175
+          "x": 175,
+          "y": 167
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Spawns in Hot Places",
+          "text": "Spawns in Rivers and",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Spawns in Hot Places",
-          "x": 154,
-          "y": 106
+          "name": "Spawns in Rivers and",
+          "x": 150,
+          "y": 95
         }
       },
       {
@@ -120,8 +120,8 @@
             "falpha": 0.0
           },
           "name": "/Kill",
-          "x": 197,
-          "y": 180
+          "x": 194,
+          "y": 172
         }
       },
       {
@@ -140,12 +140,12 @@
       {
         "type": "label",
         "data": {
-          "text": "15",
+          "text": "0",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "15",
+          "name": "0",
           "x": 189,
           "y": 136
         }
@@ -153,40 +153,14 @@
       {
         "type": "label",
         "data": {
-          "text": "50",
+          "text": "15",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "50",
-          "x": 191,
-          "y": 123
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "with grey feathers-",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "with grey feathers-",
-          "x": 155,
-          "y": 64
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "and a yellow beak.",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "and a yellow beak.",
-          "x": 155,
-          "y": 76
+          "name": "15",
+          "x": 190,
+          "y": 122
         }
       },
       {
@@ -201,6 +175,32 @@
           "name": "Back",
           "x": 224,
           "y": 185
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Calm and quiet",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Calm and quiet",
+          "x": 148,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "other Watery places",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "other Watery places",
+          "x": 150,
+          "y": 107
         }
       }
     ],

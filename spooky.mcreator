@@ -4974,6 +4974,140 @@
         ]
       },
       "path": "~/equip/armor/DruidSet"
+    },
+    {
+      "name": "NatureEssenceDies",
+      "type": "procedure",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_essence_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/entitys/Water/Nature Essence"
+    },
+    {
+      "name": "NatureEssenceEntityIsHurt",
+      "type": "procedure",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_essence_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/entitys/Water/Nature Essence"
+    },
+    {
+      "name": "NatureEssence",
+      "type": "livingentity",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_essence",
+      "path": "~/entitys/Water/Nature Essence"
+    },
+    {
+      "name": "NatureEssenceLoot",
+      "type": "loottable",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_essence_loot",
+      "path": "~/entitys/Water/Nature Essence"
+    },
+    {
+      "name": "NatureEssenceWiki",
+      "type": "gui",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_essence_wiki",
+      "path": "~/Wiki/Entities/NatureEssence"
+    },
+    {
+      "name": "OpenNaturalEssenceWiki",
+      "type": "procedure",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_natural_essence_wiki",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wiki/Entities/NatureEssence"
+    },
+    {
+      "name": "NaturalEssenceKilled",
+      "type": "procedure",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "natural_essence_killed",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Wiki/Entities/ReturnIfKilled"
+    },
+    {
+      "name": "NaturalEssenceNotKilled",
+      "type": "procedure",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "natural_essence_not_killed",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Wiki/Entities/ReturnIfKilled"
     }
   ],
   "variable_elements": [
@@ -5294,6 +5428,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "true"
+    },
+    {
+      "name": "NatureEssenceKilled",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -5354,6 +5494,7 @@
       "itemGroup.tabmod_items": "Mod Items",
       "entity.spooky.ostrich": "ostrich",
       "itemGroup.tabentities": "Entities",
+      "entity.spooky.nature_essence": "Nature Essence",
       "item.spooky.fish_spawn_egg": "Fish Spawn Egg",
       "item.spooky.druid_set_helmet": "Bronze Helmet",
       "subtitles.sao_death": "",
@@ -5377,6 +5518,7 @@
       "item.spooky.bronze_set_chestplate": "Bronze Body",
       "item.spooky.druid_sword": "Druid Sword",
       "entity.spooky.fish": "Fish",
+      "item.spooky.nature_essence_spawn_egg": "Nature Essence Spawn Egg",
       "effect.spooky.player": "Player",
       "effect.spooky.mummy_ticks": "MummyTicks",
       "item.spooky.plate_dust": "Plate Dust",
@@ -5556,6 +5698,10 @@
               {
                 "name": "ReturnIfKilled",
                 "children": []
+              },
+              {
+                "name": "NatureEssence",
+                "children": []
               }
             ]
           }
@@ -5656,6 +5802,10 @@
             "children": [
               {
                 "name": "Fish",
+                "children": []
+              },
+              {
+                "name": "Nature Essence",
                 "children": []
               }
             ]

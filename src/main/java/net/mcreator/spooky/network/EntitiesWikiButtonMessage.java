@@ -14,6 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.spooky.world.inventory.EntitiesWikiMenu;
 import net.mcreator.spooky.procedures.OpenSandgoblinWikiProcedure;
 import net.mcreator.spooky.procedures.OpenOstrichWikiProcedure;
+import net.mcreator.spooky.procedures.OpenNaturalEssenceWikiProcedure;
 import net.mcreator.spooky.procedures.OpenBoarWikiProcedure;
 import net.mcreator.spooky.procedures.OpenAnimeCowProcedure;
 import net.mcreator.spooky.procedures.OpenAngryChickenProcedure;
@@ -66,25 +67,29 @@ public class EntitiesWikiButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 1) {
+		if (buttonID == 0) {
 
 			OpenAngryChickenProcedure.execute(world, x, y, z, entity);
 		}
-		if (buttonID == 2) {
+		if (buttonID == 1) {
 
 			OpenAnimeCowProcedure.execute(world, x, y, z, entity);
 		}
-		if (buttonID == 5) {
+		if (buttonID == 2) {
 
 			OpenOstrichWikiProcedure.execute(world, x, y, z, entity);
 		}
-		if (buttonID == 7) {
+		if (buttonID == 3) {
 
 			OpenBoarWikiProcedure.execute(world, x, y, z, entity);
 		}
-		if (buttonID == 9) {
+		if (buttonID == 4) {
 
 			OpenSandgoblinWikiProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 5) {
+
+			OpenNaturalEssenceWikiProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

@@ -16,6 +16,7 @@ import net.mcreator.spooky.world.inventory.WikipediaMenu;
 import net.mcreator.spooky.world.inventory.SandgoblinWikiMenu;
 import net.mcreator.spooky.world.inventory.PlainsSpawnomaticMenu;
 import net.mcreator.spooky.world.inventory.OstrichWikiMenu;
+import net.mcreator.spooky.world.inventory.NatureEssenceWikiMenu;
 import net.mcreator.spooky.world.inventory.MarketMenu;
 import net.mcreator.spooky.world.inventory.HotPlacesSpawnomaticMenu;
 import net.mcreator.spooky.world.inventory.EquipmentTabMenu;
@@ -52,6 +53,8 @@ public class SpookyModMenus {
 			(id, inv, extraData) -> new PlainsSpawnomaticMenu(id, inv, extraData));
 	public static final MenuType<HotPlacesSpawnomaticMenu> HOT_PLACES_SPAWNOMATIC = register("hot_places_spawnomatic",
 			(id, inv, extraData) -> new HotPlacesSpawnomaticMenu(id, inv, extraData));
+	public static final MenuType<NatureEssenceWikiMenu> NATURE_ESSENCE_WIKI = register("nature_essence_wiki",
+			(id, inv, extraData) -> new NatureEssenceWikiMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

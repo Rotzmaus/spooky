@@ -15,6 +15,7 @@ import net.mcreator.spooky.client.renderer.SunflowerRenderer;
 import net.mcreator.spooky.client.renderer.SpankyRenderer;
 import net.mcreator.spooky.client.renderer.SandgoblinRenderer;
 import net.mcreator.spooky.client.renderer.OstrichRenderer;
+import net.mcreator.spooky.client.renderer.NatureEssenceRenderer;
 import net.mcreator.spooky.client.renderer.MummyRenderer;
 import net.mcreator.spooky.client.renderer.MummyDigAnimationRenderer;
 import net.mcreator.spooky.client.renderer.GorilaRenderer;
@@ -47,5 +48,6 @@ public class SpookyModEntityRenderers {
 		event.registerEntityRenderer(SpookyModEntities.SUNFLOWER_PROJECTILE, ThrownItemRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.FISH, FishRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.AMONGUS, AmongusRenderer::new);
+		event.registerEntityRenderer(SpookyModEntities.NATURE_ESSENCE, NatureEssenceRenderer::new);
 	}
 }

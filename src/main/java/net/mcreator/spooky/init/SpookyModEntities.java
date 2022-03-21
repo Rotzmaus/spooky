@@ -19,6 +19,7 @@ import net.mcreator.spooky.entity.SunflowerEntity;
 import net.mcreator.spooky.entity.SpankyEntity;
 import net.mcreator.spooky.entity.SandgoblinEntity;
 import net.mcreator.spooky.entity.OstrichEntity;
+import net.mcreator.spooky.entity.NatureEssenceEntity;
 import net.mcreator.spooky.entity.MummyEntity;
 import net.mcreator.spooky.entity.MummyDigAnimationEntity;
 import net.mcreator.spooky.entity.GorilaEntity;
@@ -85,6 +86,9 @@ public class SpookyModEntities {
 	public static final EntityType<AmongusEntity> AMONGUS = register("amongus",
 			EntityType.Builder.<AmongusEntity>of(AmongusEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(AmongusEntity::new).sized(0.4f, 0.7000000000000001f));
+	public static final EntityType<NatureEssenceEntity> NATURE_ESSENCE = register("nature_essence",
+			EntityType.Builder.<NatureEssenceEntity>of(NatureEssenceEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NatureEssenceEntity::new).fireImmune().sized(0.7f, 2f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -115,6 +119,7 @@ public class SpookyModEntities {
 			SunflowerEntity.init();
 			FishEntity.init();
 			AmongusEntity.init();
+			NatureEssenceEntity.init();
 		});
 	}
 
@@ -135,5 +140,6 @@ public class SpookyModEntities {
 		event.put(SUNFLOWER, SunflowerEntity.createAttributes().build());
 		event.put(FISH, FishEntity.createAttributes().build());
 		event.put(AMONGUS, AmongusEntity.createAttributes().build());
+		event.put(NATURE_ESSENCE, NatureEssenceEntity.createAttributes().build());
 	}
 }

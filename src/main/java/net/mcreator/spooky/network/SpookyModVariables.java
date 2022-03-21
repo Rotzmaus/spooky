@@ -125,6 +125,7 @@ public class SpookyModVariables {
 			clone.ColdPLacesEXP = original.ColdPLacesEXP;
 			clone.ColdPlacesEXPNeeded = original.ColdPlacesEXPNeeded;
 			clone.DoublejumpReady = original.DoublejumpReady;
+			clone.NatureEssenceKilled = original.NatureEssenceKilled;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -214,6 +215,7 @@ public class SpookyModVariables {
 		public double ColdPLacesEXP = 0;
 		public double ColdPlacesEXPNeeded = 100.0;
 		public boolean DoublejumpReady = true;
+		public boolean NatureEssenceKilled = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -275,6 +277,7 @@ public class SpookyModVariables {
 			nbt.putDouble("ColdPLacesEXP", ColdPLacesEXP);
 			nbt.putDouble("ColdPlacesEXPNeeded", ColdPlacesEXPNeeded);
 			nbt.putBoolean("DoublejumpReady", DoublejumpReady);
+			nbt.putBoolean("NatureEssenceKilled", NatureEssenceKilled);
 			return nbt;
 		}
 
@@ -333,6 +336,7 @@ public class SpookyModVariables {
 			ColdPLacesEXP = nbt.getDouble("ColdPLacesEXP");
 			ColdPlacesEXPNeeded = nbt.getDouble("ColdPlacesEXPNeeded");
 			DoublejumpReady = nbt.getBoolean("DoublejumpReady");
+			NatureEssenceKilled = nbt.getBoolean("NatureEssenceKilled");
 		}
 	}
 
@@ -411,6 +415,7 @@ public class SpookyModVariables {
 					variables.ColdPLacesEXP = message.data.ColdPLacesEXP;
 					variables.ColdPlacesEXPNeeded = message.data.ColdPlacesEXPNeeded;
 					variables.DoublejumpReady = message.data.DoublejumpReady;
+					variables.NatureEssenceKilled = message.data.NatureEssenceKilled;
 				}
 			});
 			context.setPacketHandled(true);
