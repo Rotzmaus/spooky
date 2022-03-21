@@ -11,15 +11,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -40,9 +38,8 @@ import net.mcreator.spooky.procedures.NatureEssenceDiesProcedure;
 import net.mcreator.spooky.init.SpookyModEntities;
 
 import java.util.Random;
-import java.util.EnumSet;
 
-public class NatureEssenceEntity extends Monster {
+public class NatureEssenceEntity extends Monster implements RangedAttackMob {
 	public NatureEssenceEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
 		this(SpookyModEntities.NATURE_ESSENCE, world);
 	}
@@ -70,46 +67,7 @@ public class NatureEssenceEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new Goal() {
-			{
-				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
-			}
-
-			public boolean canUse() {
-				if (NatureEssenceEntity.this.getTarget() != null && !NatureEssenceEntity.this.getMoveControl().hasWanted()) {
-					return true;
-				} else {
-					return false;
-				}
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				return NatureEssenceEntity.this.getMoveControl().hasWanted() && NatureEssenceEntity.this.getTarget() != null
-						&& NatureEssenceEntity.this.getTarget().isAlive();
-			}
-
-			@Override
-			public void start() {
-				LivingEntity livingentity = NatureEssenceEntity.this.getTarget();
-				Vec3 vec3d = livingentity.getEyePosition(1);
-				NatureEssenceEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 2.5);
-			}
-
-			@Override
-			public void tick() {
-				LivingEntity livingentity = NatureEssenceEntity.this.getTarget();
-				if (NatureEssenceEntity.this.getBoundingBox().intersects(livingentity.getBoundingBox())) {
-					NatureEssenceEntity.this.doHurtTarget(livingentity);
-				} else {
-					double d0 = NatureEssenceEntity.this.distanceToSqr(livingentity);
-					if (d0 < 16) {
-						Vec3 vec3d = livingentity.getEyePosition(1);
-						NatureEssenceEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 2.5);
-					}
-				}
-			}
-		});
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.7, 20) {
 			@Override
 			protected Vec3 getPosition() {
@@ -120,10 +78,12 @@ public class NatureEssenceEntity extends Monster {
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 2.5, false));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, true, true));
-		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers(this.getClass()));
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+			@Override
+			public boolean canContinueToUse() {
+				return this.canUse();
+			}
+		});
 	}
 
 	@Override
@@ -212,6 +172,16 @@ public class NatureEssenceEntity extends Monster {
 	}
 
 	@Override
+	public void performRangedAttack(LivingEntity target, float flval) {
+		NatureEssenceEntityProjectile entityarrow = new NatureEssenceEntityProjectile(SpookyModEntities.NATURE_ESSENCE_PROJECTILE, this, this.level);
+		double d0 = target.getY() + target.getEyeHeight() - 1.1;
+		double d1 = target.getX() - this.getX();
+		double d3 = target.getZ() - this.getZ();
+		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
+		level.addFreshEntity(entityarrow);
+	}
+
+	@Override
 	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
 	}
 
@@ -231,7 +201,7 @@ public class NatureEssenceEntity extends Monster {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 15);
+		builder = builder.add(Attributes.MAX_HEALTH, 25);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);

@@ -49,5 +49,6 @@ public class SpookyModEntityRenderers {
 		event.registerEntityRenderer(SpookyModEntities.FISH, FishRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.AMONGUS, AmongusRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.NATURE_ESSENCE, NatureEssenceRenderer::new);
+		event.registerEntityRenderer(SpookyModEntities.NATURE_ESSENCE_PROJECTILE, ThrownItemRenderer::new);
 	}
 }

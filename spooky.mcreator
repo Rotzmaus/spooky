@@ -5108,6 +5108,75 @@
         ]
       },
       "path": "~/Wiki/Entities/ReturnIfKilled"
+    },
+    {
+      "name": "NaturalEssenceAttack",
+      "type": "code",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "natural_essence_attack",
+      "path": "~/entitys/OtherStuff/goals"
+    },
+    {
+      "name": "NaturalEssenceProjectile",
+      "type": "item",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "natural_essence_projectile",
+      "path": "~/entitys/Water/Nature Essence"
+    },
+    {
+      "name": "GoatWiki",
+      "type": "gui",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goat_wiki",
+      "path": "~/Wiki/Entities/Goat"
+    },
+    {
+      "name": "OpenGoatWiki",
+      "type": "procedure",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_goat_wiki",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wiki/Entities/Goat"
+    },
+    {
+      "name": "GoatLoot",
+      "type": "loottable",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goat_loot",
+      "path": "~/entitys/Plains/Goat"
     }
   ],
   "variable_elements": [
@@ -5559,6 +5628,7 @@
       "item.spooky.gorila_spawn_egg": "Gorila Spawn Egg",
       "entity.spooky.goat": "Goat",
       "item.spooky.bronze_axe": "Bronze Axe",
+      "item.spooky.natural_essence_projectile": "Natural Essence Projectile",
       "item.spooky.bronze_dust": "Bronze Dust",
       "entity.spooky.angry_chicken": "Angry Chicken",
       "item.spooky.goat_spawn_egg": "Goat Spawn Egg",
@@ -5701,6 +5771,10 @@
               },
               {
                 "name": "NatureEssence",
+                "children": []
+              },
+              {
+                "name": "Goat",
                 "children": []
               }
             ]

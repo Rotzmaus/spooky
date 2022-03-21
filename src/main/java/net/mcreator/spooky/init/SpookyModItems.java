@@ -16,6 +16,7 @@ import net.mcreator.spooky.item.SteelDustItem;
 import net.mcreator.spooky.item.SpawnOMaticItem;
 import net.mcreator.spooky.item.PlateDustItem;
 import net.mcreator.spooky.item.OstrichFeatherItem;
+import net.mcreator.spooky.item.NaturalEssenceProjectileItem;
 import net.mcreator.spooky.item.IronDustItem;
 import net.mcreator.spooky.item.InfernoDustItem;
 import net.mcreator.spooky.item.IceDustItem;
@@ -131,6 +132,7 @@ public class SpookyModItems {
 	public static final Item NATURE_ESSENCE = register(
 			new SpawnEggItem(SpookyModEntities.NATURE_ESSENCE, -16724890, -16737946, new Item.Properties().tab(SpookyModTabs.TAB_ENTITIES))
 					.setRegistryName("nature_essence_spawn_egg"));
+	public static final Item NATURAL_ESSENCE_PROJECTILE = register(new NaturalEssenceProjectileItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

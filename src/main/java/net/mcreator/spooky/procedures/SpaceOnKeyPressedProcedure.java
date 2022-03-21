@@ -11,7 +11,7 @@ public class SpaceOnKeyPressedProcedure {
 		if ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new SpookyModVariables.PlayerVariables())).DoublejumpReady && !entity.isOnGround()) {
 			if (entity.getDeltaMovement().y() > 0) {
-				entity.setDeltaMovement((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() + 0.5), (entity.getDeltaMovement().z()));
+				entity.setDeltaMovement((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() + 0.4), (entity.getDeltaMovement().z()));
 				{
 					boolean _setval = false;
 					entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

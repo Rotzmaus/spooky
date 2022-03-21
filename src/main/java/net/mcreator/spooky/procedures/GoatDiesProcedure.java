@@ -11,7 +11,7 @@ public class GoatDiesProcedure {
 			return;
 		{
 			double _setval = (sourceentity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new SpookyModVariables.PlayerVariables())).playerEXP + 20;
+					.orElse(new SpookyModVariables.PlayerVariables())).playerEXP + 30;
 			sourceentity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.playerEXP = _setval;
 				capability.syncPlayerVariables(sourceentity);
@@ -19,7 +19,7 @@ public class GoatDiesProcedure {
 		}
 		{
 			double _setval = (sourceentity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new SpookyModVariables.PlayerVariables())).PlainsEXP + 8;
+					.orElse(new SpookyModVariables.PlayerVariables())).PlainsEXP + 10;
 			sourceentity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.PlainsEXP = _setval;
 				capability.syncPlayerVariables(sourceentity);

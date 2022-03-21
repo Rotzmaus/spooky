@@ -34,8 +34,9 @@ public class PlayerHurtProcedure {
 			return;
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(SpookyModMobEffects.PLAYER) : false) {
 			if ((sourceentity.getDisplayName().getString()).equals("Chicken") || (sourceentity.getDisplayName().getString()).equals("Angry Chicken")
-					|| (sourceentity.getDisplayName().getString()).equals("spanky") || (sourceentity.getDisplayName().getString()).equals("ostrich")
-					|| (sourceentity.getDisplayName().getString()).equals("Boar")) {
+					|| (sourceentity.getDisplayName().getString()).equals("spanky")
+					|| (sourceentity.getDisplayName().getString()).equals("Nature Essence")
+					|| (sourceentity.getDisplayName().getString()).equals("ostrich") || (sourceentity.getDisplayName().getString()).equals("Boar")) {
 				{
 					double _setval = (entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new SpookyModVariables.PlayerVariables())).effectiveHealthPoints - 1;

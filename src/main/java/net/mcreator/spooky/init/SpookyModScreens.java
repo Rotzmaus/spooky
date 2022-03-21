@@ -18,6 +18,7 @@ import net.mcreator.spooky.client.gui.OstrichWikiScreen;
 import net.mcreator.spooky.client.gui.NatureEssenceWikiScreen;
 import net.mcreator.spooky.client.gui.MarketScreen;
 import net.mcreator.spooky.client.gui.HotPlacesSpawnomaticScreen;
+import net.mcreator.spooky.client.gui.GoatWikiScreen;
 import net.mcreator.spooky.client.gui.EquipmentTabScreen;
 import net.mcreator.spooky.client.gui.EntitiesWikiScreen;
 import net.mcreator.spooky.client.gui.BoarWikiScreen;
@@ -43,6 +44,7 @@ public class SpookyModScreens {
 			MenuScreens.register(SpookyModMenus.PLAINS_SPAWNOMATIC, PlainsSpawnomaticScreen::new);
 			MenuScreens.register(SpookyModMenus.HOT_PLACES_SPAWNOMATIC, HotPlacesSpawnomaticScreen::new);
 			MenuScreens.register(SpookyModMenus.NATURE_ESSENCE_WIKI, NatureEssenceWikiScreen::new);
+			MenuScreens.register(SpookyModMenus.GOAT_WIKI, GoatWikiScreen::new);
 		});
 	}
 }

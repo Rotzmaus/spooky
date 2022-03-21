@@ -14,11 +14,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.spooky.world.inventory.NatureEssenceWikiMenu;
+import net.mcreator.spooky.world.inventory.GoatWikiMenu;
 
 import io.netty.buffer.Unpooled;
 
-public class OpenNaturalEssenceWikiProcedure {
+public class OpenGoatWikiProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -30,12 +30,12 @@ public class OpenNaturalEssenceWikiProcedure {
 				NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return new TextComponent("NatureEssenceWiki");
+						return new TextComponent("GoatWiki");
 					}
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new NatureEssenceWikiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new GoatWikiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}
