@@ -1,0 +1,167 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 244,
+    "height": 166,
+    "inventoryOffsetX": 35,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 116,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Add Modded Items To Slot",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Add Modded Items To Slot",
+          "x": 141,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:SummoningPower>",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:SummoningPower>",
+          "x": 227,
+          "y": 67
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Summoning Power",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Summoning Power",
+          "x": 252,
+          "y": 67
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1st Boss: 50",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1st Boss: 50",
+          "x": 97,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "2nd Boss: 100",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "2nd Boss: 100",
+          "x": 97,
+          "y": 157
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "3rd Boss: 150",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "3rd Boss: 150",
+          "x": 97,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "...etc. (+50)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "...etc. (+50)",
+          "x": 97,
+          "y": 182
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert to",
+          "onClick": {
+            "name": "AltarGUIWhileThisGUIIsOpenTick"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "Convert to",
+          "x": 153,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Power with Redstone to Summon Boss.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Power with Redstone to Summon Boss.",
+          "x": 98,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Please dont do this near your base.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Please dont do this near your base.",
+          "x": 98,
+          "y": 105
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

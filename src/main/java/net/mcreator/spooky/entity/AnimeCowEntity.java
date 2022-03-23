@@ -145,7 +145,7 @@ public class AnimeCowEntity extends Monster {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.28);
-		builder = builder.add(Attributes.MAX_HEALTH, 30);
+		builder = builder.add(Attributes.MAX_HEALTH, 25);
 		builder = builder.add(Attributes.ARMOR, 10);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 1);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.2);

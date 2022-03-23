@@ -15,6 +15,7 @@ import net.mcreator.spooky.world.inventory.EntitiesWikiMenu;
 import net.mcreator.spooky.procedures.OpenSandgoblinWikiProcedure;
 import net.mcreator.spooky.procedures.OpenOstrichWikiProcedure;
 import net.mcreator.spooky.procedures.OpenNaturalEssenceWikiProcedure;
+import net.mcreator.spooky.procedures.OpenGoatWikiProcedure;
 import net.mcreator.spooky.procedures.OpenBoarWikiProcedure;
 import net.mcreator.spooky.procedures.OpenAnimeCowProcedure;
 import net.mcreator.spooky.procedures.OpenAngryChickenProcedure;
@@ -90,6 +91,10 @@ public class EntitiesWikiButtonMessage {
 		if (buttonID == 5) {
 
 			OpenNaturalEssenceWikiProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 6) {
+
+			OpenGoatWikiProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

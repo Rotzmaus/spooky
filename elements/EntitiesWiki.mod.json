@@ -383,6 +383,52 @@
           "x": 33,
           "y": 152
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "GoatNotKilled"
+          },
+          "name": "???",
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "PL",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "PL",
+          "x": 141,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Goat",
+          "onClick": {
+            "name": "OpenGoatWiki"
+          },
+          "displayCondition": {
+            "name": "GoatKilled"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Goat",
+          "x": 159,
+          "y": 44
+        }
       }
     ],
     "gridSettings": {

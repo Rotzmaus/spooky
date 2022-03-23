@@ -78,7 +78,7 @@ public class OstrichWikiScreen extends AbstractContainerScreen<OstrichWikiMenu> 
 		this.font.draw(poseStack, "health:", 3, 93, -12829636);
 		this.font.draw(poseStack, "Armor:", 4, 105, -12829636);
 		this.font.draw(poseStack, "Regen Level:", 4, 118, -12829636);
-		this.font.draw(poseStack, "0.35", 6, 150, -12829636);
+		this.font.draw(poseStack, "0.7", 6, 150, -12829636);
 		this.font.draw(poseStack, "Spawns in Hot Places", 3, 76, -12829636);
 		this.font.draw(poseStack, "/Kill", 46, 150, -12829636);
 		this.font.draw(poseStack, "1", 68, 118, -12829636);

@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "altar",
+	"texture_size": [64, 64],
+	"textures": {
+		"4": "spooky:blocks/enchanting_table_whole"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 12, 16],
+			"faces": {
+				"north": {"uv": [8.5, 4.25, 12.5, 7.75], "texture": "#4"},
+				"east": {"uv": [0.5, 4.25, 4.5, 8], "texture": "#4"},
+				"south": {"uv": [12.5, 4.25, 16, 7.75], "texture": "#4"},
+				"west": {"uv": [4.5, 4.25, 8.5, 8], "texture": "#4"},
+				"up": {"uv": [8.5, 4.25, 4.5, 0.25], "texture": "#4"},
+				"down": {"uv": [8.5, 7.75, 4.5, 11.25], "texture": "#4"}
+			}
+		}
+	]
+}

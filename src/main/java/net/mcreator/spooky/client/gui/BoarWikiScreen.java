@@ -52,7 +52,7 @@ public class BoarWikiScreen extends AbstractContainerScreen<BoarWikiMenu> {
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("spooky:textures/bronzedust.png"));
-		this.blit(ms, this.leftPos + 29, this.topPos + 137, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 17, this.topPos + 137, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -78,9 +78,9 @@ public class BoarWikiScreen extends AbstractContainerScreen<BoarWikiMenu> {
 		this.font.draw(poseStack, "health:", 8, 93, -12829636);
 		this.font.draw(poseStack, "Armor:", 9, 105, -12829636);
 		this.font.draw(poseStack, "Regen Level:", 9, 118, -12829636);
-		this.font.draw(poseStack, "0.5", 9, 143, -12829636);
+		this.font.draw(poseStack, "1", 9, 143, -12829636);
 		this.font.draw(poseStack, "Spawns in Forests", 4, 65, -12829636);
-		this.font.draw(poseStack, "/Kill", 48, 142, -12829636);
+		this.font.draw(poseStack, "/Kill", 37, 142, -12829636);
 		this.font.draw(poseStack, "2", 73, 118, -12829636);
 		this.font.draw(poseStack, "15", 43, 106, -12829636);
 		this.font.draw(poseStack, "40", 44, 92, -12829636);

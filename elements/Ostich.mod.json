@@ -53,7 +53,7 @@
             "item": {
               "value": "CUSTOM:BronzeDust"
             },
-            "weight": 20,
+            "weight": 40,
             "minCount": 0,
             "maxCount": 7,
             "minEnchantmentLevel": 0,
@@ -67,7 +67,7 @@
             "item": {
               "value": "Blocks.AIR"
             },
-            "weight": 80,
+            "weight": 60,
             "minCount": 0,
             "maxCount": 0,
             "minEnchantmentLevel": 0,

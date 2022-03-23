@@ -81,7 +81,7 @@
             "item": {
               "value": "CUSTOM:BronzeDust"
             },
-            "weight": 20,
+            "weight": 40,
             "minCount": 0,
             "maxCount": 4,
             "minEnchantmentLevel": 0,
@@ -95,7 +95,7 @@
             "item": {
               "value": "CUSTOM:BronzeDust"
             },
-            "weight": 80,
+            "weight": 60,
             "minCount": 0,
             "maxCount": 0,
             "minEnchantmentLevel": 0,

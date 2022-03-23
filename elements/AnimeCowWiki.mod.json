@@ -78,12 +78,12 @@
       {
         "type": "label",
         "data": {
-          "text": "0.4",
+          "text": "0.8",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "0.4",
+          "name": "0.8",
           "x": 159,
           "y": 152
         }
@@ -153,12 +153,12 @@
       {
         "type": "label",
         "data": {
-          "text": "30",
+          "text": "25",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "30",
+          "name": "25",
           "x": 195,
           "y": 98
         }

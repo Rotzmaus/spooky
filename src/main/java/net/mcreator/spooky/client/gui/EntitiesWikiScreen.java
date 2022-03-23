@@ -18,6 +18,8 @@ import net.mcreator.spooky.procedures.OstrichNotKilledProcedure;
 import net.mcreator.spooky.procedures.OstrichKilledProcedure;
 import net.mcreator.spooky.procedures.NaturalEssenceNotKilledProcedure;
 import net.mcreator.spooky.procedures.NaturalEssenceKilledProcedure;
+import net.mcreator.spooky.procedures.GoatNotKilledProcedure;
+import net.mcreator.spooky.procedures.GoatKilledProcedure;
 import net.mcreator.spooky.procedures.BoarNotKilledProcedure;
 import net.mcreator.spooky.procedures.BoarKilledProcedure;
 import net.mcreator.spooky.procedures.AnimeCowNotKilledProcedure;
@@ -112,6 +114,9 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 			this.font.draw(poseStack, "???", 37, 120, -12829636);
 		if (NaturalEssenceNotKilledProcedure.execute(entity))
 			this.font.draw(poseStack, "???", 37, 147, -12829636);
+		if (GoatNotKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "???", 163, 39, -12829636);
+		this.font.draw(poseStack, "PL", 145, 39, -12829636);
 	}
 
 	@Override
@@ -193,6 +198,18 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 			@Override
 			public void render(PoseStack ms, int gx, int gy, float ticks) {
 				if (NaturalEssenceKilledProcedure.execute(entity))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
+		this.addRenderableWidget(new Button(this.leftPos + 163, this.topPos + 39, 46, 20, new TextComponent("Goat"), e -> {
+			if (GoatKilledProcedure.execute(entity)) {
+				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(6, x, y, z));
+				EntitiesWikiButtonMessage.handleButtonAction(entity, 6, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (GoatKilledProcedure.execute(entity))
 					super.render(ms, gx, gy, ticks);
 			}
 		});

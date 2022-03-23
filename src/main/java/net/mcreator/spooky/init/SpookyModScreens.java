@@ -25,6 +25,7 @@ import net.mcreator.spooky.client.gui.BoarWikiScreen;
 import net.mcreator.spooky.client.gui.AugmentEquipScreen;
 import net.mcreator.spooky.client.gui.AnimeCowWikiScreen;
 import net.mcreator.spooky.client.gui.AngryChickenWikiScreen;
+import net.mcreator.spooky.client.gui.AltarGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SpookyModScreens {
@@ -45,6 +46,7 @@ public class SpookyModScreens {
 			MenuScreens.register(SpookyModMenus.HOT_PLACES_SPAWNOMATIC, HotPlacesSpawnomaticScreen::new);
 			MenuScreens.register(SpookyModMenus.NATURE_ESSENCE_WIKI, NatureEssenceWikiScreen::new);
 			MenuScreens.register(SpookyModMenus.GOAT_WIKI, GoatWikiScreen::new);
+			MenuScreens.register(SpookyModMenus.ALTAR_GUI, AltarGUIScreen::new);
 		});
 	}
 }

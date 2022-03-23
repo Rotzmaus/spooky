@@ -78,12 +78,12 @@
       {
         "type": "label",
         "data": {
-          "text": "0.5",
+          "text": "1",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "0.5",
+          "name": "1",
           "x": 155,
           "y": 173
         }
@@ -94,7 +94,7 @@
           "image": "bronzedust.png",
           "use1Xscale": false,
           "name": "bronzedust.png",
-          "x": 175,
+          "x": 163,
           "y": 167
         }
       },
@@ -120,7 +120,7 @@
             "falpha": 0.0
           },
           "name": "/Kill",
-          "x": 194,
+          "x": 183,
           "y": 172
         }
       },

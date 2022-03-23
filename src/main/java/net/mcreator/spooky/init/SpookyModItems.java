@@ -8,9 +8,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.spooky.item.SteelDustItem;
 import net.mcreator.spooky.item.SpawnOMaticItem;
@@ -133,10 +135,15 @@ public class SpookyModItems {
 			new SpawnEggItem(SpookyModEntities.NATURE_ESSENCE, -16724890, -16737946, new Item.Properties().tab(SpookyModTabs.TAB_ENTITIES))
 					.setRegistryName("nature_essence_spawn_egg"));
 	public static final Item NATURAL_ESSENCE_PROJECTILE = register(new NaturalEssenceProjectileItem());
+	public static final Item ALTAR = register(SpookyModBlocks.ALTAR, SpookyModTabs.TAB_ENTITIES);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
 		return item;
+	}
+
+	private static Item register(Block block, CreativeModeTab tab) {
+		return register(new BlockItem(block, new Item.Properties().tab(tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@SubscribeEvent

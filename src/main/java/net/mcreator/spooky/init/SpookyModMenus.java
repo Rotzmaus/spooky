@@ -26,6 +26,7 @@ import net.mcreator.spooky.world.inventory.BoarWikiMenu;
 import net.mcreator.spooky.world.inventory.AugmentEquipMenu;
 import net.mcreator.spooky.world.inventory.AnimeCowWikiMenu;
 import net.mcreator.spooky.world.inventory.AngryChickenWikiMenu;
+import net.mcreator.spooky.world.inventory.AltarGUIMenu;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -57,6 +58,7 @@ public class SpookyModMenus {
 	public static final MenuType<NatureEssenceWikiMenu> NATURE_ESSENCE_WIKI = register("nature_essence_wiki",
 			(id, inv, extraData) -> new NatureEssenceWikiMenu(id, inv, extraData));
 	public static final MenuType<GoatWikiMenu> GOAT_WIKI = register("goat_wiki", (id, inv, extraData) -> new GoatWikiMenu(id, inv, extraData));
+	public static final MenuType<AltarGUIMenu> ALTAR_GUI = register("altar_gui", (id, inv, extraData) -> new AltarGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

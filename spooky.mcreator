@@ -1541,7 +1541,7 @@
           }
         ]
       },
-      "path": "~/entitys/HotPlaces/mummy"
+      "path": "~/Bosses/mummy"
     },
     {
       "name": "MummyDies",
@@ -1562,7 +1562,7 @@
           }
         ]
       },
-      "path": "~/entitys/HotPlaces/mummy"
+      "path": "~/Bosses/mummy"
     },
     {
       "name": "Mummy",
@@ -1571,7 +1571,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mummy",
-      "path": "~/entitys/HotPlaces/mummy"
+      "path": "~/Bosses/mummy"
     },
     {
       "name": "CactusDies",
@@ -1668,7 +1668,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mummy_ticks",
-      "path": "~/entitys/HotPlaces/mummy"
+      "path": "~/Bosses/mummy"
     },
     {
       "name": "CweepyDies",
@@ -1915,7 +1915,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_dig",
-      "path": "~/entitys/HotPlaces/mummy"
+      "path": "~/Bosses/mummy"
     },
     {
       "name": "MummyDigAnimationOnInitialEntitySpawn",
@@ -1948,7 +1948,7 @@
           }
         ]
       },
-      "path": "~/entitys/HotPlaces/mummy"
+      "path": "~/Bosses/mummy"
     },
     {
       "name": "MummyDigAnimation",
@@ -1957,7 +1957,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mummy_dig_animation",
-      "path": "~/entitys/HotPlaces/mummy"
+      "path": "~/Bosses/mummy"
     },
     {
       "name": "MummyDigAnimationOnEntityTickUpdate",
@@ -1986,7 +1986,7 @@
           }
         ]
       },
-      "path": "~/entitys/HotPlaces/mummy"
+      "path": "~/Bosses/mummy"
     },
     {
       "name": "AnimeCowDies",
@@ -2061,6 +2061,10 @@
       "registry_name": "goat_dies",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -5177,6 +5181,140 @@
       "locked_code": false,
       "registry_name": "goat_loot",
       "path": "~/entitys/Plains/Goat"
+    },
+    {
+      "name": "GoatKilled",
+      "type": "procedure",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goat_killed",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Wiki/Entities/ReturnIfKilled"
+    },
+    {
+      "name": "GoatNotKilled",
+      "type": "procedure",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goat_not_killed",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Wiki/Entities/ReturnIfKilled"
+    },
+    {
+      "name": "AltarGUI",
+      "type": "gui",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_gui",
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Altar",
+      "type": "block",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar",
+      "path": "~/Bosses"
+    },
+    {
+      "name": "AltarGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "AltarRedstoneOn",
+      "type": "procedure",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "MummyLoot",
+      "type": "loottable",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mummy_loot",
+      "path": "~/Bosses/mummy"
+    },
+    {
+      "name": "AltarRecipe",
+      "type": "recipe",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_recipe",
+      "path": "~/Bosses"
     }
   ],
   "variable_elements": [
@@ -5503,6 +5641,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "GoatKilled",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SummoningPower",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -5628,6 +5778,7 @@
       "item.spooky.gorila_spawn_egg": "Gorila Spawn Egg",
       "entity.spooky.goat": "Goat",
       "item.spooky.bronze_axe": "Bronze Axe",
+      "block.spooky.altar": "Altar",
       "item.spooky.natural_essence_projectile": "Natural Essence Projectile",
       "item.spooky.bronze_dust": "Bronze Dust",
       "entity.spooky.angry_chicken": "Angry Chicken",
@@ -5926,10 +6077,6 @@
                 "children": []
               },
               {
-                "name": "mummy",
-                "children": []
-              },
-              {
                 "name": "cactus",
                 "children": []
               },
@@ -5942,6 +6089,15 @@
                 "children": []
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Bosses",
+        "children": [
+          {
+            "name": "mummy",
+            "children": []
           }
         ]
       }

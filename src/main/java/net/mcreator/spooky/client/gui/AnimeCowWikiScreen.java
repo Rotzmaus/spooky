@@ -81,12 +81,12 @@ public class AnimeCowWikiScreen extends AbstractContainerScreen<AnimeCowWikiMenu
 		this.font.draw(poseStack, "health:", 6, 57, -12829636);
 		this.font.draw(poseStack, "Armor:", 6, 75, -12829636);
 		this.font.draw(poseStack, "Regen Level:", 6, 93, -12829636);
-		this.font.draw(poseStack, "0.4", 6, 111, -12829636);
+		this.font.draw(poseStack, "0.8", 6, 111, -12829636);
 		this.font.draw(poseStack, "Plains Biome", 6, 39, -12829636);
 		this.font.draw(poseStack, "/Kill", 38, 111, -12829636);
 		this.font.draw(poseStack, "2", 69, 93, -12829636);
 		this.font.draw(poseStack, "10", 42, 75, -12829636);
-		this.font.draw(poseStack, "30", 42, 57, -12829636);
+		this.font.draw(poseStack, "25", 42, 57, -12829636);
 	}
 
 	@Override

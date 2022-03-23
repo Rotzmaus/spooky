@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "4": "enchanting_table_whole"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -81,13 +81,13 @@ public class GoatWikiScreen extends AbstractContainerScreen<GoatWikiMenu> {
 		this.font.draw(poseStack, "health:", 3, 93, -12829636);
 		this.font.draw(poseStack, "Armor:", 4, 105, -12829636);
 		this.font.draw(poseStack, "Regen Level:", 4, 118, -12829636);
-		this.font.draw(poseStack, "1", 6, 137, -12829636);
+		this.font.draw(poseStack, "2", 6, 137, -12829636);
 		this.font.draw(poseStack, "Spawns in Plains", 5, 54, -12829636);
 		this.font.draw(poseStack, "/Kill", 41, 149, -12829636);
 		this.font.draw(poseStack, "2", 68, 118, -12829636);
 		this.font.draw(poseStack, "20", 38, 106, -12829636);
-		this.font.draw(poseStack, "75", 40, 93, -12829636);
-		this.font.draw(poseStack, "0.2", 5, 155, -12829636);
+		this.font.draw(poseStack, "65", 40, 93, -12829636);
+		this.font.draw(poseStack, "0.4", 5, 155, -12829636);
 	}
 
 	@Override

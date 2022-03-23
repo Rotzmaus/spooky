@@ -81,7 +81,7 @@ public class AngryChickenWikiScreen extends AbstractContainerScreen<AngryChicken
 		this.font.draw(poseStack, "health:", 6, 57, -12829636);
 		this.font.draw(poseStack, "Armor:", 6, 75, -12829636);
 		this.font.draw(poseStack, "Regen Level:", 6, 93, -12829636);
-		this.font.draw(poseStack, "0.15", 6, 111, -12829636);
+		this.font.draw(poseStack, "0.3", 6, 111, -12829636);
 		this.font.draw(poseStack, "Plains Biome", 6, 39, -12829636);
 		this.font.draw(poseStack, "/Kill", 42, 111, -12829636);
 		this.font.draw(poseStack, "1", 69, 93, -12829636);

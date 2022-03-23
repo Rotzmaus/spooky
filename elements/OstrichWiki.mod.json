@@ -78,12 +78,12 @@
       {
         "type": "label",
         "data": {
-          "text": "0.35",
+          "text": "0.7",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "0.35",
+          "name": "0.7",
           "x": 157,
           "y": 180
         }
