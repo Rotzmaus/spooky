@@ -4630,7 +4630,7 @@
           }
         ]
       },
-      "path": "~/equip/abilities"
+      "path": "~/equip/abilities/doublejump"
     },
     {
       "name": "Space",
@@ -4639,7 +4639,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "space",
-      "path": "~/equip/abilities"
+      "path": "~/equip/abilities/doublejump"
     },
     {
       "name": "Refreshdoublejump",
@@ -4656,7 +4656,7 @@
           }
         ]
       },
-      "path": "~/equip/abilities"
+      "path": "~/equip/abilities/doublejump"
     },
     {
       "name": "SpawnamonguscommandCommandExecuted",
@@ -5315,6 +5315,87 @@
       "locked_code": false,
       "registry_name": "altar_recipe",
       "path": "~/Bosses"
+    },
+    {
+      "name": "BronzeSwordRightClickedInAir",
+      "type": "procedure",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_sword_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/equip/BronzeDustEquip"
+    },
+    {
+      "name": "MakeTheGroundShake",
+      "type": "procedure",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_the_ground_shake",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/equip/BronzeDustEquip"
+    },
+    {
+      "name": "Airborn",
+      "type": "potioneffect",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airborn",
+      "path": "~/equip/BronzeDustEquip"
+    },
+    {
+      "name": "BronzeSwordMakeItemGlow",
+      "type": "procedure",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_sword_make_item_glow",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/BronzeDustEquip"
     }
   ],
   "variable_elements": [
@@ -5653,6 +5734,12 @@
       "type": "number",
       "scope": "world",
       "value": "0"
+    },
+    {
+      "name": "CanLeap",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "true"
     }
   ],
   "sound_elements": [
@@ -5703,6 +5790,14 @@
       ],
       "category": "master",
       "subtitle": "sus"
+    },
+    {
+      "name": "impact",
+      "files": [
+        "impact"
+      ],
+      "category": "neutral",
+      "subtitle": "Impact"
     }
   ],
   "language_map": {
@@ -5742,6 +5837,7 @@
       "effect.spooky.mummy_ticks": "MummyTicks",
       "item.spooky.plate_dust": "Plate Dust",
       "item.spooky.inferno_dust": "Inferno Dust",
+      "effect.spooky.airborn": "AIRBORN",
       "entity.spooky.mummy_dig_animation": "Mummy Dig Animation",
       "item.spooky.ice_dust": "Ice Dust",
       "key.spooky.wiki": "Wiki",
@@ -5762,6 +5858,7 @@
       "item.spooky.amongus_spawn_egg": "Amongus Spawn Egg",
       "item.spooky.angelic_dust": "Angelic Dust",
       "subtitles.amongus_sound_effect": "sus",
+      "subtitles.impact": "Impact",
       "item.spooky.sunflower_spawn_egg": "Sunflower Spawn Egg",
       "item.spooky.bronze_set_aug_helmet": "Bronze Set Aug Helmet",
       "item.spooky.druid_shovel": "Druid Shovel",
@@ -5974,6 +6071,10 @@
             "children": [
               {
                 "name": "B Actionkey",
+                "children": []
+              },
+              {
+                "name": "doublejump",
                 "children": []
               }
             ]

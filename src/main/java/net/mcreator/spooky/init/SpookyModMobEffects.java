@@ -13,6 +13,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.mcreator.spooky.potion.PlayerMobEffect;
 import net.mcreator.spooky.potion.MummyTicksMobEffect;
 import net.mcreator.spooky.potion.EntityTickMobEffect;
+import net.mcreator.spooky.potion.AirbornMobEffect;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -23,6 +24,7 @@ public class SpookyModMobEffects {
 	public static final MobEffect PLAYER = register(new PlayerMobEffect());
 	public static final MobEffect MUMMY_TICKS = register(new MummyTicksMobEffect());
 	public static final MobEffect ENTITY_TICK = register(new EntityTickMobEffect());
+	public static final MobEffect AIRBORN = register(new AirbornMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

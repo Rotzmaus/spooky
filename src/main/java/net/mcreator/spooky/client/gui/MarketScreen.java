@@ -122,10 +122,6 @@ public class MarketScreen extends AbstractContainerScreen<MarketMenu> {
 		this.addRenderableWidget(new Button(this.leftPos + 35, this.topPos + 133, 103, 20, new TextComponent("Buy Stuff"), e -> {
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 35, this.topPos + 61, 103, 20, new TextComponent("Augment Equipment"), e -> {
-			if (true) {
-				SpookyMod.PACKET_HANDLER.sendToServer(new MarketButtonMessage(3, x, y, z));
-				MarketButtonMessage.handleButtonAction(entity, 3, x, y, z);
-			}
 		}));
 	}
 }

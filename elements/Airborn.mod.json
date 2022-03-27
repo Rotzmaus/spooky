@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "AIRBORN",
+    "icon": "bronzesword.png",
+    "color": {
+      "value": -10040065,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onActiveTick": {
+      "name": "MakeTheGroundShake"
+    }
+  }
+}

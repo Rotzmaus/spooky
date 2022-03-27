@@ -17,6 +17,7 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.spooky.network.SpookyModVariables;
 import net.mcreator.spooky.init.SpookyModItems;
 
 import javax.annotation.Nullable;
@@ -52,6 +53,13 @@ public class SettingIntantRespawnProcedure {
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
+		}
+		{
+			boolean _setval = true;
+			entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.CanLeap = _setval;
+				capability.syncPlayerVariables(entity);
+			});
 		}
 	}
 }

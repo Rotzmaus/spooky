@@ -53,5 +53,15 @@
         "stream": false
       }
     ]
+  },
+  "impact": {
+    "category": "neutral",
+    "subtitle": "subtitles.impact",
+    "sounds": [
+      {
+        "name": "spooky:impact",
+        "stream": false
+      }
+    ]
   }
 }

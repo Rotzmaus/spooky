@@ -169,9 +169,6 @@
         "type": "button",
         "data": {
           "text": "Augment Equipment",
-          "onClick": {
-            "name": "OpenAugmentEquip"
-          },
           "width": 103,
           "height": 20,
           "name": "Augment Equipment",

@@ -18,7 +18,10 @@
     "damageVsEntity": 6.0,
     "usageCount": 500,
     "blocksAffected": [],
-    "hasGlow": false,
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "BronzeSwordMakeItemGlow"
+    },
     "repairItems": [
       {
         "value": "CUSTOM:BronzeDust"
@@ -26,6 +29,9 @@
     ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "BronzeSwordRightClickedInAir"
+    }
   }
 }

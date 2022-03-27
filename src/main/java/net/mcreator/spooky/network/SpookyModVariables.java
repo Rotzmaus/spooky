@@ -135,6 +135,7 @@ public class SpookyModVariables {
 			clone.NatureEssenceKilled = original.NatureEssenceKilled;
 			clone.GoatKilled = original.GoatKilled;
 			if (!event.isWasDeath()) {
+				clone.CanLeap = original.CanLeap;
 			}
 		}
 
@@ -358,6 +359,7 @@ public class SpookyModVariables {
 		public boolean DoublejumpReady = true;
 		public boolean NatureEssenceKilled = false;
 		public boolean GoatKilled = false;
+		public boolean CanLeap = true;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -421,6 +423,7 @@ public class SpookyModVariables {
 			nbt.putBoolean("DoublejumpReady", DoublejumpReady);
 			nbt.putBoolean("NatureEssenceKilled", NatureEssenceKilled);
 			nbt.putBoolean("GoatKilled", GoatKilled);
+			nbt.putBoolean("CanLeap", CanLeap);
 			return nbt;
 		}
 
@@ -481,6 +484,7 @@ public class SpookyModVariables {
 			DoublejumpReady = nbt.getBoolean("DoublejumpReady");
 			NatureEssenceKilled = nbt.getBoolean("NatureEssenceKilled");
 			GoatKilled = nbt.getBoolean("GoatKilled");
+			CanLeap = nbt.getBoolean("CanLeap");
 		}
 	}
 
@@ -561,6 +565,7 @@ public class SpookyModVariables {
 					variables.DoublejumpReady = message.data.DoublejumpReady;
 					variables.NatureEssenceKilled = message.data.NatureEssenceKilled;
 					variables.GoatKilled = message.data.GoatKilled;
+					variables.CanLeap = message.data.CanLeap;
 				}
 			});
 			context.setPacketHandled(true);

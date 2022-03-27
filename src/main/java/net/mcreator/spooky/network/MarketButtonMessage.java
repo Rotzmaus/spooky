@@ -13,7 +13,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.spooky.world.inventory.MarketMenu;
 import net.mcreator.spooky.procedures.OpenEquipmentTabProcedure;
-import net.mcreator.spooky.procedures.OpenAugmentEquipProcedure;
 import net.mcreator.spooky.SpookyMod;
 
 import java.util.function.Supplier;
@@ -66,10 +65,6 @@ public class MarketButtonMessage {
 		if (buttonID == 0) {
 
 			OpenEquipmentTabProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 3) {
-
-			OpenAugmentEquipProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
