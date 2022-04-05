@@ -17,6 +17,7 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.spooky.item.SteelDustItem;
 import net.mcreator.spooky.item.SpawnOMaticItem;
 import net.mcreator.spooky.item.PlateDustItem;
+import net.mcreator.spooky.item.PinguEggItem;
 import net.mcreator.spooky.item.OstrichFeatherItem;
 import net.mcreator.spooky.item.NaturalEssenceProjectileItem;
 import net.mcreator.spooky.item.IronDustItem;
@@ -136,6 +137,11 @@ public class SpookyModItems {
 					.setRegistryName("nature_essence_spawn_egg"));
 	public static final Item NATURAL_ESSENCE_PROJECTILE = register(new NaturalEssenceProjectileItem());
 	public static final Item ALTAR = register(SpookyModBlocks.ALTAR, SpookyModTabs.TAB_ENTITIES);
+	public static final Item ADVENTURE_BLOCK = register(SpookyModBlocks.ADVENTURE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item PINGU = register(
+			new SpawnEggItem(SpookyModEntities.PINGU, -10066330, -256, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("pingu_spawn_egg"));
+	public static final Item PINGU_EGG = register(new PinguEggItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

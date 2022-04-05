@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.mcreator.spooky.client.renderer.SunflowerRenderer;
 import net.mcreator.spooky.client.renderer.SpankyRenderer;
 import net.mcreator.spooky.client.renderer.SandgoblinRenderer;
+import net.mcreator.spooky.client.renderer.PinguRenderer;
 import net.mcreator.spooky.client.renderer.OstrichRenderer;
 import net.mcreator.spooky.client.renderer.NatureEssenceRenderer;
 import net.mcreator.spooky.client.renderer.MummyRenderer;
@@ -50,5 +51,6 @@ public class SpookyModEntityRenderers {
 		event.registerEntityRenderer(SpookyModEntities.AMONGUS, AmongusRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.NATURE_ESSENCE, NatureEssenceRenderer::new);
 		event.registerEntityRenderer(SpookyModEntities.NATURE_ESSENCE_PROJECTILE, ThrownItemRenderer::new);
+		event.registerEntityRenderer(SpookyModEntities.PINGU, PinguRenderer::new);
 	}
 }

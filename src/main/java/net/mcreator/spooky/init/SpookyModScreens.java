@@ -12,16 +12,21 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.spooky.client.gui.WikipediaScreen;
+import net.mcreator.spooky.client.gui.WaterSpawnomaticScreen;
 import net.mcreator.spooky.client.gui.SandgoblinWikiScreen;
 import net.mcreator.spooky.client.gui.PlainsSpawnomaticScreen;
+import net.mcreator.spooky.client.gui.PinguWikiScreen;
 import net.mcreator.spooky.client.gui.OstrichWikiScreen;
 import net.mcreator.spooky.client.gui.NatureEssenceWikiScreen;
 import net.mcreator.spooky.client.gui.MarketScreen;
 import net.mcreator.spooky.client.gui.HotPlacesSpawnomaticScreen;
 import net.mcreator.spooky.client.gui.GoatWikiScreen;
+import net.mcreator.spooky.client.gui.ForestSpawnomaticScreen;
 import net.mcreator.spooky.client.gui.EquipmentTabScreen;
 import net.mcreator.spooky.client.gui.EntitiesWikiScreen;
+import net.mcreator.spooky.client.gui.ColdPlacesSpawnOMaticScreen;
 import net.mcreator.spooky.client.gui.BoarWikiScreen;
+import net.mcreator.spooky.client.gui.BiomesScreen;
 import net.mcreator.spooky.client.gui.AugmentEquipScreen;
 import net.mcreator.spooky.client.gui.AnimeCowWikiScreen;
 import net.mcreator.spooky.client.gui.AngryChickenWikiScreen;
@@ -47,6 +52,11 @@ public class SpookyModScreens {
 			MenuScreens.register(SpookyModMenus.NATURE_ESSENCE_WIKI, NatureEssenceWikiScreen::new);
 			MenuScreens.register(SpookyModMenus.GOAT_WIKI, GoatWikiScreen::new);
 			MenuScreens.register(SpookyModMenus.ALTAR_GUI, AltarGUIScreen::new);
+			MenuScreens.register(SpookyModMenus.WATER_SPAWNOMATIC, WaterSpawnomaticScreen::new);
+			MenuScreens.register(SpookyModMenus.FOREST_SPAWNOMATIC, ForestSpawnomaticScreen::new);
+			MenuScreens.register(SpookyModMenus.COLD_PLACES_SPAWN_O_MATIC, ColdPlacesSpawnOMaticScreen::new);
+			MenuScreens.register(SpookyModMenus.BIOMES, BiomesScreen::new);
+			MenuScreens.register(SpookyModMenus.PINGU_WIKI, PinguWikiScreen::new);
 		});
 	}
 }

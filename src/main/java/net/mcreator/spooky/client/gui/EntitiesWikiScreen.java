@@ -14,6 +14,8 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.spooky.world.inventory.EntitiesWikiMenu;
 import net.mcreator.spooky.procedures.SandgoblinNotKilledProcedure;
 import net.mcreator.spooky.procedures.SandgoblinKilledProcedure;
+import net.mcreator.spooky.procedures.PinguNotKilledProcedure;
+import net.mcreator.spooky.procedures.PinguKilledProcedure;
 import net.mcreator.spooky.procedures.OstrichNotKilledProcedure;
 import net.mcreator.spooky.procedures.OstrichKilledProcedure;
 import net.mcreator.spooky.procedures.NaturalEssenceNotKilledProcedure;
@@ -117,6 +119,9 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 		if (GoatNotKilledProcedure.execute(entity))
 			this.font.draw(poseStack, "???", 163, 39, -12829636);
 		this.font.draw(poseStack, "PL", 145, 39, -12829636);
+		this.font.draw(poseStack, "CP", 145, 66, -12829636);
+		if (PinguNotKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "???", 163, 66, -12829636);
 	}
 
 	@Override
@@ -210,6 +215,18 @@ public class EntitiesWikiScreen extends AbstractContainerScreen<EntitiesWikiMenu
 			@Override
 			public void render(PoseStack ms, int gx, int gy, float ticks) {
 				if (GoatKilledProcedure.execute(entity))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
+		this.addRenderableWidget(new Button(this.leftPos + 163, this.topPos + 66, 51, 20, new TextComponent("Pingu"), e -> {
+			if (PinguKilledProcedure.execute(entity)) {
+				SpookyMod.PACKET_HANDLER.sendToServer(new EntitiesWikiButtonMessage(7, x, y, z));
+				EntitiesWikiButtonMessage.handleButtonAction(entity, 7, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (PinguKilledProcedure.execute(entity))
 					super.render(ms, gx, gy, ticks);
 			}
 		});

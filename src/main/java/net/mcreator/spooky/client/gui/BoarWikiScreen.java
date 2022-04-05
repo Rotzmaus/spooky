@@ -82,8 +82,8 @@ public class BoarWikiScreen extends AbstractContainerScreen<BoarWikiMenu> {
 		this.font.draw(poseStack, "Spawns in Forests", 4, 65, -12829636);
 		this.font.draw(poseStack, "/Kill", 37, 142, -12829636);
 		this.font.draw(poseStack, "2", 73, 118, -12829636);
-		this.font.draw(poseStack, "15", 43, 106, -12829636);
-		this.font.draw(poseStack, "40", 44, 92, -12829636);
+		this.font.draw(poseStack, "10", 43, 106, -12829636);
+		this.font.draw(poseStack, "35", 44, 92, -12829636);
 		this.font.draw(poseStack, "better leave it be.", 3, 38, -12829636);
 	}
 

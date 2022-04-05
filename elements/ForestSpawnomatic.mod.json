@@ -1,0 +1,215 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 300,
+    "height": 200,
+    "inventoryOffsetX": 66,
+    "inventoryOffsetY": 20,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ActiveForestLevel>",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ActiveForestLevel>",
+          "x": 250,
+          "y": 28
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Active Forest Level:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Active Forest Level:",
+          "x": 143,
+          "y": 28
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Forest EXP:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Forest EXP:",
+          "x": 68,
+          "y": 144
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert Forest Drops",
+          "onClick": {
+            "name": "ConvertForestDrops"
+          },
+          "width": 129,
+          "height": 20,
+          "name": "Convert Forest Drops",
+          "x": 66,
+          "y": 196
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 87,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ForestEXP>",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ForestEXP>",
+          "x": 128,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 156,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ForestEXPNeeded>",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ForestEXPNeeded>",
+          "x": 161,
+          "y": 145
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Forest Lvl:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Forest Lvl:",
+          "x": 69,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ForestLevel>",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ForestLevel>",
+          "x": 128,
+          "y": 158
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EXP",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "EXP",
+          "x": 149,
+          "y": 176
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": true,
+          "name": "arrow.png",
+          "x": 107,
+          "y": 173
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "ActiveForestDown"
+          },
+          "displayCondition": {
+            "name": "ActiveForestBiggerZero"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 109,
+          "y": 27
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "ActiveForestUp"
+          },
+          "displayCondition": {
+            "name": "ActiveForestCanGoBigger"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 306,
+          "y": 26
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

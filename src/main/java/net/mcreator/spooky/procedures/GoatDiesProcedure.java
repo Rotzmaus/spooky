@@ -6,8 +6,8 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.spooky.network.SpookyModVariables;
 
 public class GoatDiesProcedure {
-	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
-		if (entity == null || sourceentity == null)
+	public static void execute(LevelAccessor world, Entity sourceentity) {
+		if (sourceentity == null)
 			return;
 		{
 			double _setval = (sourceentity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -27,9 +27,9 @@ public class GoatDiesProcedure {
 		}
 		{
 			boolean _setval = true;
-			entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			sourceentity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.GoatKilled = _setval;
-				capability.syncPlayerVariables(entity);
+				capability.syncPlayerVariables(sourceentity);
 			});
 		}
 		CheckLevelUpProcedure.execute(world, sourceentity);

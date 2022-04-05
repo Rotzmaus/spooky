@@ -47,8 +47,8 @@ public class PlayerHurtProcedure {
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 2, (false), (false)));
-			} else if ((sourceentity.getDisplayName().getString()).equals("Mummy") || (sourceentity.getDisplayName().getString()).equals("cweepy")
-					|| (sourceentity.getDisplayName().getString()).equals("kawaii cow")) {
+			} else if ((sourceentity.getDisplayName().getString()).equals("Mummy") || (sourceentity.getDisplayName().getString()).equals("kawaii cow")
+					|| (sourceentity.getDisplayName().getString()).equals("cweepy") || (sourceentity.getDisplayName().getString()).equals("Pingu")) {
 				{
 					double _setval = (entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new SpookyModVariables.PlayerVariables())).effectiveHealthPoints - 2;

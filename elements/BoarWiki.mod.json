@@ -140,12 +140,12 @@
       {
         "type": "label",
         "data": {
-          "text": "15",
+          "text": "10",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "15",
+          "name": "10",
           "x": 189,
           "y": 136
         }
@@ -153,12 +153,12 @@
       {
         "type": "label",
         "data": {
-          "text": "40",
+          "text": "35",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "40",
+          "name": "35",
           "x": 190,
           "y": 122
         }

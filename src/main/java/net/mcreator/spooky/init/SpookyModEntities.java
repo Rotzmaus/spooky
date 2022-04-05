@@ -18,6 +18,7 @@ import net.mcreator.spooky.entity.SunflowerEntityProjectile;
 import net.mcreator.spooky.entity.SunflowerEntity;
 import net.mcreator.spooky.entity.SpankyEntity;
 import net.mcreator.spooky.entity.SandgoblinEntity;
+import net.mcreator.spooky.entity.PinguEntity;
 import net.mcreator.spooky.entity.OstrichEntity;
 import net.mcreator.spooky.entity.NatureEssenceEntityProjectile;
 import net.mcreator.spooky.entity.NatureEssenceEntity;
@@ -94,6 +95,9 @@ public class SpookyModEntities {
 			EntityType.Builder.<NatureEssenceEntityProjectile>of(NatureEssenceEntityProjectile::new, MobCategory.MISC)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1)
 					.setCustomClientFactory(NatureEssenceEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final EntityType<PinguEntity> PINGU = register("pingu",
+			EntityType.Builder.<PinguEntity>of(PinguEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(PinguEntity::new).fireImmune().sized(0.7f, 1.2f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -125,6 +129,7 @@ public class SpookyModEntities {
 			FishEntity.init();
 			AmongusEntity.init();
 			NatureEssenceEntity.init();
+			PinguEntity.init();
 		});
 	}
 
@@ -146,5 +151,6 @@ public class SpookyModEntities {
 		event.put(FISH, FishEntity.createAttributes().build());
 		event.put(AMONGUS, AmongusEntity.createAttributes().build());
 		event.put(NATURE_ESSENCE, NatureEssenceEntity.createAttributes().build());
+		event.put(PINGU, PinguEntity.createAttributes().build());
 	}
 }

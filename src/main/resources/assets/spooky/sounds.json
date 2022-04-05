@@ -63,5 +63,15 @@
         "stream": false
       }
     ]
+  },
+  "nootnoot": {
+    "category": "hostile",
+    "subtitle": "subtitles.nootnoot",
+    "sounds": [
+      {
+        "name": "spooky:nootnoot",
+        "stream": false
+      }
+    ]
   }
 }

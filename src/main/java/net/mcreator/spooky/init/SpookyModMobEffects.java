@@ -14,6 +14,7 @@ import net.mcreator.spooky.potion.PlayerMobEffect;
 import net.mcreator.spooky.potion.MummyTicksMobEffect;
 import net.mcreator.spooky.potion.EntityTickMobEffect;
 import net.mcreator.spooky.potion.AirbornMobEffect;
+import net.mcreator.spooky.potion.AdventureMobEffect;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class SpookyModMobEffects {
 	public static final MobEffect MUMMY_TICKS = register(new MummyTicksMobEffect());
 	public static final MobEffect ENTITY_TICK = register(new EntityTickMobEffect());
 	public static final MobEffect AIRBORN = register(new AirbornMobEffect());
+	public static final MobEffect ADVENTURE = register(new AdventureMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

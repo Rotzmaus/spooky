@@ -1,0 +1,199 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 122,
+    "height": 159,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Pingu:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Pingu:",
+          "x": 177,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "health:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "health:",
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Armor:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Armor:",
+          "x": 159,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Regen Level:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Regen Level:",
+          "x": 159,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "0.5",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "0.5",
+          "x": 159,
+          "y": 152
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bronzedust.png",
+          "use1Xscale": false,
+          "name": "bronzedust.png",
+          "x": 181,
+          "y": 146
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Spawns in Cold Places",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Spawns in Cold Places",
+          "x": 156,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/Kill",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "/Kill",
+          "x": 198,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "2",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "2",
+          "x": 222,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "0",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "0",
+          "x": 195,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "60",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "60",
+          "x": 195,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "OpenEnities"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Back",
+          "x": 214,
+          "y": 168
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "0.05",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "0.05",
+          "x": 157,
+          "y": 163
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "druiddust.png",
+          "use1Xscale": false,
+          "name": "druiddust.png",
+          "x": 183,
+          "y": 158
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

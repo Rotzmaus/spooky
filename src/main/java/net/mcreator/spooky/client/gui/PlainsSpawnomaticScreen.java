@@ -12,6 +12,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.spooky.world.inventory.PlainsSpawnomaticMenu;
+import net.mcreator.spooky.procedures.GoatNotKilledProcedure;
+import net.mcreator.spooky.procedures.GoatKilledProcedure;
 import net.mcreator.spooky.procedures.AnimeCowNotKilledProcedure;
 import net.mcreator.spooky.procedures.AnimeCowKilledProcedure;
 import net.mcreator.spooky.procedures.AngryChickenNotKilledProcedure;
@@ -120,6 +122,10 @@ public class PlainsSpawnomaticScreen extends AbstractContainerScreen<PlainsSpawn
 			this.font.draw(poseStack, "45%", 14, 51, -12829636);
 		if (ActivePlainsLevel2Procedure.execute(entity))
 			this.font.draw(poseStack, "15%", 14, 69, -12829636);
+		if (GoatNotKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "???", 32, 69, -12829636);
+		if (GoatKilledProcedure.execute(entity))
+			this.font.draw(poseStack, "Goat", 32, 69, -12829636);
 	}
 
 	@Override

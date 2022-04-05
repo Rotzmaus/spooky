@@ -394,6 +394,38 @@
           "x": 78,
           "y": 89
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "GoatNotKilled"
+          },
+          "name": "???",
+          "x": 96,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Goat",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "GoatKilled"
+          },
+          "name": "Goat",
+          "x": 96,
+          "y": 89
+        }
       }
     ],
     "gridSettings": {

@@ -134,6 +134,12 @@ public class SpookyModVariables {
 			clone.DoublejumpReady = original.DoublejumpReady;
 			clone.NatureEssenceKilled = original.NatureEssenceKilled;
 			clone.GoatKilled = original.GoatKilled;
+			clone.CritDamageMulitplyer = original.CritDamageMulitplyer;
+			clone.CritChance = original.CritChance;
+			clone.ActiveForestLevel = original.ActiveForestLevel;
+			clone.ActiveWaterLevel = original.ActiveWaterLevel;
+			clone.ActiveCPLevel = original.ActiveCPLevel;
+			clone.PinguKilled = original.PinguKilled;
 			if (!event.isWasDeath()) {
 				clone.CanLeap = original.CanLeap;
 			}
@@ -355,11 +361,17 @@ public class SpookyModVariables {
 		public double ActiveHPLevel = 0;
 		public double ColdPLacesLevel = 0;
 		public double ColdPLacesEXP = 0;
-		public double ColdPlacesEXPNeeded = 100.0;
+		public double ColdPlacesEXPNeeded = 0.0;
 		public boolean DoublejumpReady = true;
 		public boolean NatureEssenceKilled = false;
 		public boolean GoatKilled = false;
 		public boolean CanLeap = true;
+		public double CritDamageMulitplyer = 0.2;
+		public double CritChance = 0.05;
+		public double ActiveForestLevel = 0;
+		public double ActiveWaterLevel = 0;
+		public double ActiveCPLevel = 0;
+		public boolean PinguKilled = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -424,6 +436,12 @@ public class SpookyModVariables {
 			nbt.putBoolean("NatureEssenceKilled", NatureEssenceKilled);
 			nbt.putBoolean("GoatKilled", GoatKilled);
 			nbt.putBoolean("CanLeap", CanLeap);
+			nbt.putDouble("CritDamageMulitplyer", CritDamageMulitplyer);
+			nbt.putDouble("CritChance", CritChance);
+			nbt.putDouble("ActiveForestLevel", ActiveForestLevel);
+			nbt.putDouble("ActiveWaterLevel", ActiveWaterLevel);
+			nbt.putDouble("ActiveCPLevel", ActiveCPLevel);
+			nbt.putBoolean("PinguKilled", PinguKilled);
 			return nbt;
 		}
 
@@ -485,6 +503,12 @@ public class SpookyModVariables {
 			NatureEssenceKilled = nbt.getBoolean("NatureEssenceKilled");
 			GoatKilled = nbt.getBoolean("GoatKilled");
 			CanLeap = nbt.getBoolean("CanLeap");
+			CritDamageMulitplyer = nbt.getDouble("CritDamageMulitplyer");
+			CritChance = nbt.getDouble("CritChance");
+			ActiveForestLevel = nbt.getDouble("ActiveForestLevel");
+			ActiveWaterLevel = nbt.getDouble("ActiveWaterLevel");
+			ActiveCPLevel = nbt.getDouble("ActiveCPLevel");
+			PinguKilled = nbt.getBoolean("PinguKilled");
 		}
 	}
 
@@ -566,6 +590,12 @@ public class SpookyModVariables {
 					variables.NatureEssenceKilled = message.data.NatureEssenceKilled;
 					variables.GoatKilled = message.data.GoatKilled;
 					variables.CanLeap = message.data.CanLeap;
+					variables.CritDamageMulitplyer = message.data.CritDamageMulitplyer;
+					variables.CritChance = message.data.CritChance;
+					variables.ActiveForestLevel = message.data.ActiveForestLevel;
+					variables.ActiveWaterLevel = message.data.ActiveWaterLevel;
+					variables.ActiveCPLevel = message.data.ActiveCPLevel;
+					variables.PinguKilled = message.data.PinguKilled;
 				}
 			});
 			context.setPacketHandled(true);

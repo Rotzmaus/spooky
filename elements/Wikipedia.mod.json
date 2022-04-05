@@ -4,7 +4,7 @@
   "definition": {
     "type": 0,
     "width": 176,
-    "height": 166,
+    "height": 200,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -20,8 +20,8 @@
           "width": 67,
           "height": 20,
           "name": "Entities",
-          "x": 130,
-          "y": 60
+          "x": 132,
+          "y": 71
         }
       },
       {
@@ -33,8 +33,91 @@
             "falpha": 0.0
           },
           "name": "Wiki",
-          "x": 201,
-          "y": 42
+          "x": 204,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Biomes",
+          "onClick": {
+            "name": "OpenBiomes"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Biomes",
+          "x": 222,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Market (Press M-Key)",
+          "onClick": {
+            "name": "MOnKeyPressed"
+          },
+          "width": 108,
+          "height": 20,
+          "name": "Market (Press M-Key)",
+          "x": 150,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dust",
+          "width": 46,
+          "height": 20,
+          "name": "Dust",
+          "x": 168,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Bosses",
+          "width": 56,
+          "height": 20,
+          "name": "Bosses",
+          "x": 231,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Abilities",
+          "width": 72,
+          "height": 20,
+          "name": "Abilities",
+          "x": 132,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Stat System",
+          "width": 82,
+          "height": 20,
+          "name": "Stat System",
+          "x": 213,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mod Introduction",
+          "width": 108,
+          "height": 20,
+          "name": "Mod Introduction",
+          "x": 168,
+          "y": 44
         }
       }
     ],
@@ -43,7 +126,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

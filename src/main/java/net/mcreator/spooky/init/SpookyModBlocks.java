@@ -13,6 +13,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.spooky.block.AltarBlock;
+import net.mcreator.spooky.block.AdventureBlockBlock;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 public class SpookyModBlocks {
 	private static final List<Block> REGISTRY = new ArrayList<>();
 	public static final Block ALTAR = register(new AltarBlock());
+	public static final Block ADVENTURE_BLOCK = register(new AdventureBlockBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

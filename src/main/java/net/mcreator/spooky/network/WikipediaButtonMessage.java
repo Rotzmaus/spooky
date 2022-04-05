@@ -13,6 +13,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.spooky.world.inventory.WikipediaMenu;
 import net.mcreator.spooky.procedures.OpenEnitiesProcedure;
+import net.mcreator.spooky.procedures.OpenBiomesProcedure;
+import net.mcreator.spooky.procedures.MOnKeyPressedProcedure;
 import net.mcreator.spooky.SpookyMod;
 
 import java.util.function.Supplier;
@@ -65,6 +67,14 @@ public class WikipediaButtonMessage {
 		if (buttonID == 0) {
 
 			OpenEnitiesProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			OpenBiomesProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			MOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

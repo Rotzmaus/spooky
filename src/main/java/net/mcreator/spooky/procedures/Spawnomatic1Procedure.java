@@ -18,9 +18,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.spooky.world.inventory.WikipediaMenu;
 import net.mcreator.spooky.world.inventory.PlainsSpawnomaticMenu;
 import net.mcreator.spooky.world.inventory.HotPlacesSpawnomaticMenu;
+import net.mcreator.spooky.world.inventory.ForestSpawnomaticMenu;
 
 import io.netty.buffer.Unpooled;
 
@@ -178,12 +178,12 @@ public class Spawnomatic1Procedure {
 							NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 								@Override
 								public Component getDisplayName() {
-									return new TextComponent("Wikipedia");
+									return new TextComponent("ForestSpawnomatic");
 								}
 
 								@Override
 								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new WikipediaMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+									return new ForestSpawnomaticMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 								}
 							}, _bpos);
 						}

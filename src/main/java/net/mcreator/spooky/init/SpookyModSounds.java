@@ -25,6 +25,7 @@ public class SpookyModSounds {
 		REGISTRY.put(new ResourceLocation("spooky", "sao_first_town"), new SoundEvent(new ResourceLocation("spooky", "sao_first_town")));
 		REGISTRY.put(new ResourceLocation("spooky", "amongus_sound_effect"), new SoundEvent(new ResourceLocation("spooky", "amongus_sound_effect")));
 		REGISTRY.put(new ResourceLocation("spooky", "impact"), new SoundEvent(new ResourceLocation("spooky", "impact")));
+		REGISTRY.put(new ResourceLocation("spooky", "nootnoot"), new SoundEvent(new ResourceLocation("spooky", "nootnoot")));
 	}
 
 	@SubscribeEvent

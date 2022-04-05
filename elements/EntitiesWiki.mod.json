@@ -429,6 +429,52 @@
           "x": 159,
           "y": 44
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "CP",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "CP",
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "???",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "PinguNotKilled"
+          },
+          "name": "???",
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Pingu",
+          "onClick": {
+            "name": "OpenPinguWiki"
+          },
+          "displayCondition": {
+            "name": "PinguKilled"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Pingu",
+          "x": 159,
+          "y": 71
+        }
       }
     ],
     "gridSettings": {

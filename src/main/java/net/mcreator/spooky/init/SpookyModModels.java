@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.spooky.client.model.Modelpingu;
 import net.mcreator.spooky.client.model.Modelnewversionostrich;
 import net.mcreator.spooky.client.model.Modelnatureessence;
 import net.mcreator.spooky.client.model.Modelgorilla;
@@ -28,6 +29,7 @@ public class SpookyModModels {
 		event.registerLayerDefinition(ModelGoblin.LAYER_LOCATION, ModelGoblin::createBodyLayer);
 		event.registerLayerDefinition(Modelcactus_small.LAYER_LOCATION, Modelcactus_small::createBodyLayer);
 		event.registerLayerDefinition(Modelnatureessence.LAYER_LOCATION, Modelnatureessence::createBodyLayer);
+		event.registerLayerDefinition(Modelpingu.LAYER_LOCATION, Modelpingu::createBodyLayer);
 		event.registerLayerDefinition(Modelamogus.LAYER_LOCATION, Modelamogus::createBodyLayer);
 		event.registerLayerDefinition(Modelbigheadedfish.LAYER_LOCATION, Modelbigheadedfish::createBodyLayer);
 	}

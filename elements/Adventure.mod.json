@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Adventure",
+    "icon": "expframe4.png",
+    "color": {
+      "value": -13421824,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "AdventureEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "AdventureEffectExpires"
+    }
+  }
+}

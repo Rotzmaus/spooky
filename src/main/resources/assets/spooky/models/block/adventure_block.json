@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "spooky:blocks/adventureblock",
+    "up": "spooky:blocks/adventureblock",
+    "north": "spooky:blocks/adventureblock",
+    "east": "spooky:blocks/adventureblock",
+    "south": "spooky:blocks/adventureblock",
+    "west": "spooky:blocks/adventureblock",
+    "particle": "spooky:blocks/adventureblock"
+  }
+}

@@ -2062,10 +2062,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           },
@@ -5335,7 +5331,7 @@
           }
         ]
       },
-      "path": "~/equip/BronzeDustEquip"
+      "path": "~/equip/abilities/WeaponAbility/bronzeSwordDash"
     },
     {
       "name": "MakeTheGroundShake",
@@ -5368,7 +5364,7 @@
           }
         ]
       },
-      "path": "~/equip/BronzeDustEquip"
+      "path": "~/equip/abilities/WeaponAbility/bronzeSwordDash"
     },
     {
       "name": "Airborn",
@@ -5377,7 +5373,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "airborn",
-      "path": "~/equip/BronzeDustEquip"
+      "path": "~/equip/abilities/WeaponAbility/bronzeSwordDash"
     },
     {
       "name": "BronzeSwordMakeItemGlow",
@@ -5396,6 +5392,1247 @@
         ]
       },
       "path": "~/equip/BronzeDustEquip"
+    },
+    {
+      "name": "Crit",
+      "type": "procedure",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/LevelHealthSystem/Crit"
+    },
+    {
+      "name": "Adventure",
+      "type": "potioneffect",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adventure",
+      "path": "~/autismus/trap"
+    },
+    {
+      "name": "AdventureBlock",
+      "type": "block",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adventure_block",
+      "path": "~/autismus/trap"
+    },
+    {
+      "name": "AdventureBlockRedstoneOn",
+      "type": "procedure",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adventure_block_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/autismus/trap"
+    },
+    {
+      "name": "AdventureEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adventure_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/autismus/trap"
+    },
+    {
+      "name": "AdventureEffectExpires",
+      "type": "procedure",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adventure_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/autismus/trap"
+    },
+    {
+      "name": "CritchanceCommandExecuted",
+      "type": "procedure",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "critchance_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/LevelHealthSystem/Crit"
+    },
+    {
+      "name": "Critchance",
+      "type": "command",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "critchance",
+      "path": "~/LevelHealthSystem/Crit"
+    },
+    {
+      "name": "TrapNotActive",
+      "type": "structure",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trap_not_active",
+      "path": "~/autismus/trap"
+    },
+    {
+      "name": "WaterSpawnomatic",
+      "type": "gui",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_spawnomatic",
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ForestSpawnomatic",
+      "type": "gui",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forest_spawnomatic",
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ColdPlacesSpawnOMatic",
+      "type": "gui",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cold_places_spawn_o_matic",
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveWaterBiggerZero",
+      "type": "procedure",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_bigger_zero",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterCanGoBigger",
+      "type": "procedure",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_can_go_bigger",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterUp",
+      "type": "procedure",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_up",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterDown",
+      "type": "procedure",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_down",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ConvertWaterDrops",
+      "type": "procedure",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_water_drops",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel0",
+      "type": "procedure",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel1",
+      "type": "procedure",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel2",
+      "type": "procedure",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel3",
+      "type": "procedure",
+      "sortid": 310,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel4",
+      "type": "procedure",
+      "sortid": 311,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_4",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel5",
+      "type": "procedure",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_5",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel6",
+      "type": "procedure",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_6",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel7",
+      "type": "procedure",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_7",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel8",
+      "type": "procedure",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_8",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel9",
+      "type": "procedure",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_9",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveWaterLevel10",
+      "type": "procedure",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_water_level_10",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Water"
+    },
+    {
+      "name": "ActiveForestBiggerZero",
+      "type": "procedure",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_bigger_zero",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestCanGoBigger",
+      "type": "procedure",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_can_go_bigger",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestUp",
+      "type": "procedure",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_up",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestDown",
+      "type": "procedure",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_down",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ConvertForestDrops",
+      "type": "procedure",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_forest_drops",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel0",
+      "type": "procedure",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel1",
+      "type": "procedure",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel2",
+      "type": "procedure",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel3",
+      "type": "procedure",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel4",
+      "type": "procedure",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_4",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel5",
+      "type": "procedure",
+      "sortid": 328,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_5",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel6",
+      "type": "procedure",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_6",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel7",
+      "type": "procedure",
+      "sortid": 330,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_7",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel8",
+      "type": "procedure",
+      "sortid": 331,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_8",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel9",
+      "type": "procedure",
+      "sortid": 332,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_9",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveForestLevel10",
+      "type": "procedure",
+      "sortid": 333,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_forest_level_10",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/Forest"
+    },
+    {
+      "name": "ActiveCPBiggerZero",
+      "type": "procedure",
+      "sortid": 334,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_bigger_zero",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPCanGoBigger",
+      "type": "procedure",
+      "sortid": 335,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_can_go_bigger",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPUp",
+      "type": "procedure",
+      "sortid": 336,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_up",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPDown",
+      "type": "procedure",
+      "sortid": 337,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_down",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ConvertCPDrops",
+      "type": "procedure",
+      "sortid": 338,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_cp_drops",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel0",
+      "type": "procedure",
+      "sortid": 339,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel1",
+      "type": "procedure",
+      "sortid": 340,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel2",
+      "type": "procedure",
+      "sortid": 341,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel3",
+      "type": "procedure",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel4",
+      "type": "procedure",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_4",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel5",
+      "type": "procedure",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_5",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel6",
+      "type": "procedure",
+      "sortid": 345,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_6",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel7",
+      "type": "procedure",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_7",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel8",
+      "type": "procedure",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_8",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel9",
+      "type": "procedure",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_9",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "ActiveCPLevel10",
+      "type": "procedure",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_cp_level_10",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/equip/Spawn-O-matic/ColdPlaces"
+    },
+    {
+      "name": "Biomes",
+      "type": "gui",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomes",
+      "path": "~/Wiki/Biomes"
+    },
+    {
+      "name": "OpenBiomes",
+      "type": "procedure",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_biomes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wiki/Biomes"
+    },
+    {
+      "name": "PinguDies",
+      "type": "procedure",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pingu_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/entitys/Cold Places/Pingu"
+    },
+    {
+      "name": "PinguEgg",
+      "type": "item",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pingu_egg",
+      "path": "~/entitys/Cold Places/Pingu"
+    },
+    {
+      "name": "Pingu",
+      "type": "livingentity",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pingu",
+      "path": "~/entitys/Cold Places/Pingu"
+    },
+    {
+      "name": "PinguWiki",
+      "type": "gui",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pingu_wiki",
+      "path": "~/Wiki/Entities/pingu"
+    },
+    {
+      "name": "OpenPinguWiki",
+      "type": "procedure",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_pingu_wiki",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wiki/Entities/pingu"
+    },
+    {
+      "name": "PinguEntityIsHurt",
+      "type": "procedure",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pingu_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/entitys/Cold Places/Pingu"
+    },
+    {
+      "name": "PinguKilled",
+      "type": "procedure",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pingu_killed",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Wiki/Entities/ReturnIfKilled"
+    },
+    {
+      "name": "PinguNotKilled",
+      "type": "procedure",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pingu_not_killed",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Wiki/Entities/ReturnIfKilled"
+    },
+    {
+      "name": "PinguLoot",
+      "type": "loottable",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pingu_loot",
+      "path": "~/entitys/Cold Places/Pingu"
+    },
+    {
+      "name": "SpawnPingu",
+      "type": "procedure",
+      "sortid": 359,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_pingu",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawning/SpawnColdPlaces"
     }
   ],
   "variable_elements": [
@@ -5709,7 +6946,7 @@
       "name": "ColdPlacesEXPNeeded",
       "type": "number",
       "scope": "player_persistent",
-      "value": "100.0"
+      "value": "0.0"
     },
     {
       "name": "DoublejumpReady",
@@ -5740,6 +6977,42 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "true"
+    },
+    {
+      "name": "CritDamageMulitplyer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.2"
+    },
+    {
+      "name": "CritChance",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.05"
+    },
+    {
+      "name": "ActiveForestLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ActiveWaterLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ActiveCPLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "PinguKilled",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -5798,11 +7071,18 @@
       ],
       "category": "neutral",
       "subtitle": "Impact"
+    },
+    {
+      "name": "nootnoot",
+      "files": [
+        "nootnoot"
+      ],
+      "category": "hostile",
+      "subtitle": "nootnoot"
     }
   ],
   "language_map": {
     "en_us": {
-      "entity.spooky.spanky": "Spanky",
       "item.spooky.iron_dust": "Iron Dust",
       "entity.spooky.boar": "Boar",
       "itemGroup.tabmod_items": "Mod Items",
@@ -5813,85 +7093,93 @@
       "item.spooky.druid_set_helmet": "Bronze Helmet",
       "subtitles.sao_death": "",
       "item.spooky.bronze_set_boots": "Bronze Boots",
-      "key.spooky.space": "Space",
-      "item.spooky.anime_cow_spawn_egg": "Anime Cow Spawn Egg",
       "key.spooky.m": "M",
       "item.spooky.angry_feather": "Angry Feather",
+      "item.spooky.pingu_egg": "Pingu Egg",
       "item.spooky.mummy_spawn_egg": "Mummy Spawn Egg",
       "key.spooky.b": "B",
       "item.spooky.bronze_set_aug_leggings": "Bronze Set Aug Leggings",
-      "item.spooky.ostrich_feather": "Ostrich Feather",
-      "item.spooky.cactus_spawn_egg": "Cactus Spawn Egg",
-      "item.spooky.dark_iron_dust": "Dark Iron Dust",
       "subtitles.goblinhurt": "",
       "item.spooky.sandgoblin_spawn_egg": "Sandgoblin Spawn Egg",
-      "item.spooky.ostrich_spawn_egg": "ostrich Spawn Egg",
+      "effect.spooky.adventure": "Adventure",
       "item.spooky.cweeper_spawn_egg": "Cweepy Spawn Egg",
-      "entity.spooky.anime_cow": "Anime Cow",
-      "entity.spooky.gorila": "Gorila",
       "item.spooky.bronze_set_chestplate": "Bronze Body",
       "item.spooky.druid_sword": "Druid Sword",
       "entity.spooky.fish": "Fish",
-      "item.spooky.nature_essence_spawn_egg": "Nature Essence Spawn Egg",
-      "effect.spooky.player": "Player",
-      "effect.spooky.mummy_ticks": "MummyTicks",
-      "item.spooky.plate_dust": "Plate Dust",
+      "subtitles.nootnoot": "nootnoot",
       "item.spooky.inferno_dust": "Inferno Dust",
       "effect.spooky.airborn": "AIRBORN",
-      "entity.spooky.mummy_dig_animation": "Mummy Dig Animation",
-      "item.spooky.ice_dust": "Ice Dust",
       "key.spooky.wiki": "Wiki",
-      "item.spooky.bronze_hoe": "Bronze Hoe",
       "item.spooky.bronze_set_aug_chestplate": "Augmented Bronze Chestplate",
-      "item.spooky.boar_spawn_egg": "Boar Spawn Egg",
-      "item.spooky.damascus_dust": "Damascus Dust",
       "item.spooky.mummy_dig_animation_spawn_egg": "Mummy Dig Animation Spawn Egg",
-      "item.spooky.bronze_set_aug_boots": "FeatherLight Crocs",
-      "item.spooky.druid_dust": "Druid Dust",
-      "item.spooky.holy_steel_dust": "Holy Steel Dust",
+      "entity.spooky.pingu": "Pingu",
       "item.spooky.bronze_pickaxe": "Bronze Pickaxe",
-      "item.spooky.druid_axe": "Druid Axe",
-      "item.spooky.spanky_spawn_egg": "Spanky Spawn Egg",
-      "item.spooky.bronze_set_leggings": "Bronze Leggings",
+      "block.spooky.adventure_block": "Adventure Block",
       "item.spooky.steel_dust": "Steel Dust",
-      "effect.spooky.entity_tick": "EntityTick",
       "item.spooky.amongus_spawn_egg": "Amongus Spawn Egg",
       "item.spooky.angelic_dust": "Angelic Dust",
       "subtitles.amongus_sound_effect": "sus",
       "subtitles.impact": "Impact",
-      "item.spooky.sunflower_spawn_egg": "Sunflower Spawn Egg",
-      "item.spooky.bronze_set_aug_helmet": "Bronze Set Aug Helmet",
-      "item.spooky.druid_shovel": "Druid Shovel",
       "item.spooky.druid_set_boots": "Bronze Boots",
       "item.spooky.cute_leather": "Cute Leather",
       "subtitles.sao_bossfight": "",
-      "item.spooky.druid_set_chestplate": "Bronze Body",
       "item.spooky.bronze_shovel": "Bronze Shovel",
       "subtitles.sao_first_town": "",
       "entity.spooky.mummy": "Mummy",
-      "item.spooky.chicken_knife": "Chicken Knife",
       "item.spooky.bronze_set_helmet": "Bronze Helmet",
-      "item.spooky.druid_set_leggings": "Bronze Leggings",
-      "item.spooky.gorila_spawn_egg": "Gorila Spawn Egg",
-      "entity.spooky.goat": "Goat",
       "item.spooky.bronze_axe": "Bronze Axe",
-      "block.spooky.altar": "Altar",
-      "item.spooky.natural_essence_projectile": "Natural Essence Projectile",
       "item.spooky.bronze_dust": "Bronze Dust",
       "entity.spooky.angry_chicken": "Angry Chicken",
       "item.spooky.goat_spawn_egg": "Goat Spawn Egg",
       "item.spooky.boar_fang": "Boar Fang",
+      "entity.spooky.amongus": "Amongus",
+      "entity.spooky.cactus": "Cactus",
+      "entity.spooky.sunflower": "Sunflower",
+      "item.spooky.druid_pickaxe": "Druid Pickaxe",
+      "subtitles.goblindies": "",
+      "entity.spooky.spanky": "Spanky",
+      "key.spooky.space": "Space",
+      "item.spooky.anime_cow_spawn_egg": "Anime Cow Spawn Egg",
+      "item.spooky.pingu_spawn_egg": "Pingu Spawn Egg",
+      "item.spooky.ostrich_feather": "Ostrich Feather",
+      "item.spooky.cactus_spawn_egg": "Cactus Spawn Egg",
+      "item.spooky.dark_iron_dust": "Dark Iron Dust",
+      "item.spooky.ostrich_spawn_egg": "ostrich Spawn Egg",
+      "entity.spooky.anime_cow": "Anime Cow",
+      "entity.spooky.gorila": "Gorila",
+      "item.spooky.nature_essence_spawn_egg": "Nature Essence Spawn Egg",
+      "effect.spooky.player": "Player",
+      "effect.spooky.mummy_ticks": "MummyTicks",
+      "item.spooky.plate_dust": "Plate Dust",
+      "entity.spooky.mummy_dig_animation": "Mummy Dig Animation",
+      "item.spooky.ice_dust": "Ice Dust",
+      "item.spooky.bronze_hoe": "Bronze Hoe",
+      "item.spooky.boar_spawn_egg": "Boar Spawn Egg",
+      "item.spooky.damascus_dust": "Damascus Dust",
+      "item.spooky.bronze_set_aug_boots": "FeatherLight Crocs",
+      "item.spooky.druid_dust": "Druid Dust",
+      "item.spooky.holy_steel_dust": "Holy Steel Dust",
+      "item.spooky.druid_axe": "Druid Axe",
+      "item.spooky.spanky_spawn_egg": "Spanky Spawn Egg",
+      "item.spooky.bronze_set_leggings": "Bronze Leggings",
+      "effect.spooky.entity_tick": "EntityTick",
+      "item.spooky.sunflower_spawn_egg": "Sunflower Spawn Egg",
+      "item.spooky.bronze_set_aug_helmet": "Bronze Set Aug Helmet",
+      "item.spooky.druid_shovel": "Druid Shovel",
+      "item.spooky.druid_set_chestplate": "Bronze Body",
+      "Crit": "",
+      "item.spooky.chicken_knife": "Chicken Knife",
+      "item.spooky.druid_set_leggings": "Bronze Leggings",
+      "item.spooky.gorila_spawn_egg": "Gorila Spawn Egg",
+      "entity.spooky.goat": "Goat",
+      "block.spooky.altar": "Altar",
+      "item.spooky.natural_essence_projectile": "Natural Essence Projectile",
       "entity.spooky.cweeper": "Cweepy",
       "entity.spooky.sandgoblin": "Sandgoblin",
       "item.spooky.bronze_sword": "Bronze Sword",
-      "entity.spooky.amongus": "Amongus",
       "item.spooky.druid_hoe": "Druid Hoe",
-      "entity.spooky.cactus": "Cactus",
-      "entity.spooky.sunflower": "Sunflower",
       "item.spooky.spawn_o_matic": "Spawn-O-Matic",
-      "item.spooky.angry_chicken_spawn_egg": "Angry Chicken Spawn Egg",
-      "item.spooky.druid_pickaxe": "Druid Pickaxe",
-      "subtitles.goblindies": ""
+      "item.spooky.angry_chicken_spawn_egg": "Angry Chicken Spawn Egg"
     }
   },
   "foldersRoot": {
@@ -5955,6 +7243,10 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Crit",
+            "children": []
           }
         ]
       },
@@ -5985,7 +7277,12 @@
       },
       {
         "name": "autismus",
-        "children": []
+        "children": [
+          {
+            "name": "trap",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Wiki",
@@ -6024,8 +7321,16 @@
               {
                 "name": "Goat",
                 "children": []
+              },
+              {
+                "name": "pingu",
+                "children": []
               }
             ]
+          },
+          {
+            "name": "Biomes",
+            "children": []
           }
         ]
       },
@@ -6063,6 +7368,18 @@
               {
                 "name": "Plains",
                 "children": []
+              },
+              {
+                "name": "Forest",
+                "children": []
+              },
+              {
+                "name": "Water",
+                "children": []
+              },
+              {
+                "name": "ColdPlaces",
+                "children": []
               }
             ]
           },
@@ -6076,6 +7393,15 @@
               {
                 "name": "doublejump",
                 "children": []
+              },
+              {
+                "name": "WeaponAbility",
+                "children": [
+                  {
+                    "name": "bronzeSwordDash",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -6168,7 +7494,12 @@
           },
           {
             "name": "Cold Places",
-            "children": []
+            "children": [
+              {
+                "name": "Pingu",
+                "children": []
+              }
+            ]
           },
           {
             "name": "HotPlaces",

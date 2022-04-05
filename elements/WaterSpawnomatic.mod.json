@@ -1,0 +1,215 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 300,
+    "height": 200,
+    "inventoryOffsetX": 66,
+    "inventoryOffsetY": 20,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ActiveWaterLevel>",
+          "color": {
+            "value": -16763905,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ActiveWaterLevel>",
+          "x": 250,
+          "y": 28
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Active Water Level:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Active Water Level:",
+          "x": 143,
+          "y": 28
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Water EXP:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Water EXP:",
+          "x": 68,
+          "y": 144
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert Water Drops",
+          "onClick": {
+            "name": "ConvertWaterDrops"
+          },
+          "width": 129,
+          "height": 20,
+          "name": "Convert Water Drops",
+          "x": 66,
+          "y": 196
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16763956,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 87,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:WaterExp>",
+          "color": {
+            "value": -16763905,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:WaterExp>",
+          "x": 128,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -16763905,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 156,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:WaterEXPNeeded>",
+          "color": {
+            "value": -16763905,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:WaterEXPNeeded>",
+          "x": 161,
+          "y": 145
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Water Lvl:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Water Lvl:",
+          "x": 68,
+          "y": 157
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:WaterLevel>",
+          "color": {
+            "value": -16763905,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:WaterLevel>",
+          "x": 128,
+          "y": 158
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EXP",
+          "color": {
+            "value": -16763905,
+            "falpha": 0.0
+          },
+          "name": "EXP",
+          "x": 149,
+          "y": 176
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": true,
+          "name": "arrow.png",
+          "x": 107,
+          "y": 173
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "ActiveWaterDown"
+          },
+          "displayCondition": {
+            "name": "ActiveWaterBiggerZero"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 109,
+          "y": 27
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "ActiveWaterUp"
+          },
+          "displayCondition": {
+            "name": "ActiveWaterCanGoBigger"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 306,
+          "y": 26
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

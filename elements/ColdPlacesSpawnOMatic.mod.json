@@ -1,0 +1,215 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 300,
+    "height": 200,
+    "inventoryOffsetX": 66,
+    "inventoryOffsetY": 20,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ActiveCPLevel>",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ActiveCPLevel>",
+          "x": 274,
+          "y": 27
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Active Cold Places Level:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Active Cold Places Level:",
+          "x": 141,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cold Places Exp:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Cold Places Exp:",
+          "x": 69,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert ClodPlaces Drops",
+          "onClick": {
+            "name": "ConvertCPDrops"
+          },
+          "width": 129,
+          "height": 20,
+          "name": "Convert ClodPlaces Drops",
+          "x": 66,
+          "y": 196
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 87,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ColdPLacesEXP>",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ColdPLacesEXP>",
+          "x": 154,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 168,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ColdPlacesEXPNeeded>",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ColdPlacesEXPNeeded>",
+          "x": 173,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cold Places Lvl:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Cold Places Lvl:",
+          "x": 69,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ColdPLacesLevel>",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ColdPLacesLevel>",
+          "x": 154,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EXP",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "EXP",
+          "x": 149,
+          "y": 176
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": true,
+          "name": "arrow.png",
+          "x": 107,
+          "y": 173
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "ActiveCPDown"
+          },
+          "displayCondition": {
+            "name": "ActiveCPBiggerZero"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 109,
+          "y": 27
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "ActiveCPUp"
+          },
+          "displayCondition": {
+            "name": "ActiveCPCanGoBigger"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 306,
+          "y": 26
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

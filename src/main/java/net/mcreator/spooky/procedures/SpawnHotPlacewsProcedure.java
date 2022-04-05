@@ -12,7 +12,7 @@ public class SpawnHotPlacewsProcedure {
 		double randomNumber = 0;
 		randomNumber = Math.random();
 		if ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SpookyModVariables.PlayerVariables())).HotPlacesLevel <= 1) {
+				.orElse(new SpookyModVariables.PlayerVariables())).ActiveHPLevel <= 1) {
 			if (randomNumber <= 0.8) {
 				SpawnHotPlacesProcedure.execute(world, x, z);
 			} else if (randomNumber <= 0.9) {
@@ -21,7 +21,7 @@ public class SpawnHotPlacewsProcedure {
 				SpawnCactusSmallProcedure.execute(world, x, z);
 			}
 		} else if ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SpookyModVariables.PlayerVariables())).HotPlacesLevel <= 3) {
+				.orElse(new SpookyModVariables.PlayerVariables())).ActiveHPLevel <= 3) {
 			if (randomNumber <= 0.7) {
 				SpawnHotPlacesProcedure.execute(world, x, z);
 			} else if (randomNumber <= 0.85) {
@@ -30,7 +30,7 @@ public class SpawnHotPlacewsProcedure {
 				SpawnCactusSmallProcedure.execute(world, x, z);
 			}
 		} else if ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SpookyModVariables.PlayerVariables())).HotPlacesLevel <= 5) {
+				.orElse(new SpookyModVariables.PlayerVariables())).ActiveHPLevel <= 5) {
 			if (randomNumber <= 0.5) {
 				SpawnHotPlacesProcedure.execute(world, x, z);
 			} else if (randomNumber <= 0.8) {

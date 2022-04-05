@@ -134,7 +134,7 @@ public class GoatEntity extends Monster {
 		Entity entity = this;
 		Level world = this.level;
 
-		GoatDiesProcedure.execute(world, entity, sourceentity);
+		GoatDiesProcedure.execute(world, sourceentity);
 	}
 
 	public static void init() {

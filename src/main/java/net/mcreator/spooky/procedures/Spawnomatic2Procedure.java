@@ -18,7 +18,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.spooky.world.inventory.WikipediaMenu;
+import net.mcreator.spooky.world.inventory.WaterSpawnomaticMenu;
+import net.mcreator.spooky.world.inventory.ColdPlacesSpawnOMaticMenu;
 
 import io.netty.buffer.Unpooled;
 
@@ -64,12 +65,12 @@ public class Spawnomatic2Procedure {
 							NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 								@Override
 								public Component getDisplayName() {
-									return new TextComponent("Wikipedia");
+									return new TextComponent("WaterSpawnomatic");
 								}
 
 								@Override
 								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new WikipediaMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+									return new WaterSpawnomaticMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 								}
 							}, _bpos);
 						}
@@ -122,12 +123,12 @@ public class Spawnomatic2Procedure {
 							NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 								@Override
 								public Component getDisplayName() {
-									return new TextComponent("Wikipedia");
+									return new TextComponent("ColdPlacesSpawnOMatic");
 								}
 
 								@Override
 								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new WikipediaMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+									return new ColdPlacesSpawnOMaticMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 								}
 							}, _bpos);
 						}

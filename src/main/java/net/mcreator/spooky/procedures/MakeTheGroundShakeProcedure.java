@@ -7,12 +7,11 @@ import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -50,8 +49,132 @@ public class MakeTheGroundShakeProcedure {
 					}
 				}
 			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 5, 255, (false), (false)));
+			entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private LevelAccessor world;
+
+				public void start(LevelAccessor world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
+				}
+
+				private void run() {
+					entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+					new Object() {
+						private int ticks = 0;
+						private float waitTicks;
+						private LevelAccessor world;
+
+						public void start(LevelAccessor world, int waitTicks) {
+							this.waitTicks = waitTicks;
+							MinecraftForge.EVENT_BUS.register(this);
+							this.world = world;
+						}
+
+						@SubscribeEvent
+						public void tick(TickEvent.ServerTickEvent event) {
+							if (event.phase == TickEvent.Phase.END) {
+								this.ticks += 1;
+								if (this.ticks >= this.waitTicks)
+									run();
+							}
+						}
+
+						private void run() {
+							entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+							new Object() {
+								private int ticks = 0;
+								private float waitTicks;
+								private LevelAccessor world;
+
+								public void start(LevelAccessor world, int waitTicks) {
+									this.waitTicks = waitTicks;
+									MinecraftForge.EVENT_BUS.register(this);
+									this.world = world;
+								}
+
+								@SubscribeEvent
+								public void tick(TickEvent.ServerTickEvent event) {
+									if (event.phase == TickEvent.Phase.END) {
+										this.ticks += 1;
+										if (this.ticks >= this.waitTicks)
+											run();
+									}
+								}
+
+								private void run() {
+									entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+									new Object() {
+										private int ticks = 0;
+										private float waitTicks;
+										private LevelAccessor world;
+
+										public void start(LevelAccessor world, int waitTicks) {
+											this.waitTicks = waitTicks;
+											MinecraftForge.EVENT_BUS.register(this);
+											this.world = world;
+										}
+
+										@SubscribeEvent
+										public void tick(TickEvent.ServerTickEvent event) {
+											if (event.phase == TickEvent.Phase.END) {
+												this.ticks += 1;
+												if (this.ticks >= this.waitTicks)
+													run();
+											}
+										}
+
+										private void run() {
+											entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+											new Object() {
+												private int ticks = 0;
+												private float waitTicks;
+												private LevelAccessor world;
+
+												public void start(LevelAccessor world, int waitTicks) {
+													this.waitTicks = waitTicks;
+													MinecraftForge.EVENT_BUS.register(this);
+													this.world = world;
+												}
+
+												@SubscribeEvent
+												public void tick(TickEvent.ServerTickEvent event) {
+													if (event.phase == TickEvent.Phase.END) {
+														this.ticks += 1;
+														if (this.ticks >= this.waitTicks)
+															run();
+													}
+												}
+
+												private void run() {
+													entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+													MinecraftForge.EVENT_BUS.unregister(this);
+												}
+											}.start(world, 1);
+											MinecraftForge.EVENT_BUS.unregister(this);
+										}
+									}.start(world, 1);
+									MinecraftForge.EVENT_BUS.unregister(this);
+								}
+							}.start(world, 1);
+							MinecraftForge.EVENT_BUS.unregister(this);
+						}
+					}.start(world, 1);
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(world, 1);
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;

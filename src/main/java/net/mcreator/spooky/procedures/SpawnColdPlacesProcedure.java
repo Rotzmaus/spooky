@@ -12,39 +12,39 @@ public class SpawnColdPlacesProcedure {
 		double randomNumber = 0;
 		randomNumber = Math.random();
 		if ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SpookyModVariables.PlayerVariables())).ForestLevel <= 1) {
+				.orElse(new SpookyModVariables.PlayerVariables())).ActiveCPLevel <= 1) {
 			if (randomNumber <= 0.8) {
-				SpawnBoarProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			} else if (randomNumber <= 0.9) {
-				SpawnGorillaProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			} else if (randomNumber > 0.9) {
-				SpawnGorillaProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			}
 		} else if ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SpookyModVariables.PlayerVariables())).ForestLevel <= 3) {
+				.orElse(new SpookyModVariables.PlayerVariables())).ActiveCPLevel <= 3) {
 			if (randomNumber <= 0.7) {
-				SpawnBoarProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			} else if (randomNumber <= 0.8) {
-				SpawnGorillaProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			} else if (randomNumber > 0.8) {
-				SpawnGorillaProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			}
 		} else if ((entity.getCapability(SpookyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SpookyModVariables.PlayerVariables())).ForestLevel <= 5) {
+				.orElse(new SpookyModVariables.PlayerVariables())).ActiveCPLevel <= 5) {
 			if (randomNumber <= 0.6) {
-				SpawnBoarProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			} else if (randomNumber <= 0.75) {
-				SpawnGorillaProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			} else if (randomNumber > 0.75) {
-				SpawnGorillaProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			}
 		} else {
 			if (randomNumber <= 0.5) {
-				SpawnBoarProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			} else if (randomNumber <= 0.6) {
-				SpawnGorillaProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			} else if (randomNumber > 0.6) {
-				SpawnGorillaProcedure.execute(world, x, z);
+				SpawnPinguProcedure.execute(world, x, z);
 			}
 		}
 	}

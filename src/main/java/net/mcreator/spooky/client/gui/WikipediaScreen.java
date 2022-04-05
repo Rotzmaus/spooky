@@ -31,7 +31,7 @@ public class WikipediaScreen extends AbstractContainerScreen<WikipediaMenu> {
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageHeight = 200;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("spooky:textures/wikipedia.png");
@@ -69,7 +69,7 @@ public class WikipediaScreen extends AbstractContainerScreen<WikipediaMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Wiki", 75, 5, -12829636);
+		this.font.draw(poseStack, "Wiki", 78, 6, -12829636);
 	}
 
 	@Override
@@ -82,11 +82,33 @@ public class WikipediaScreen extends AbstractContainerScreen<WikipediaMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 4, this.topPos + 23, 67, 20, new TextComponent("Entities"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 51, 67, 20, new TextComponent("Entities"), e -> {
 			if (true) {
 				SpookyMod.PACKET_HANDLER.sendToServer(new WikipediaButtonMessage(0, x, y, z));
 				WikipediaButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 96, this.topPos + 60, 56, 20, new TextComponent("Biomes"), e -> {
+			if (true) {
+				SpookyMod.PACKET_HANDLER.sendToServer(new WikipediaButtonMessage(1, x, y, z));
+				WikipediaButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 87, 108, 20, new TextComponent("Market (Press M-Key)"), e -> {
+			if (true) {
+				SpookyMod.PACKET_HANDLER.sendToServer(new WikipediaButtonMessage(2, x, y, z));
+				WikipediaButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 42, this.topPos + 114, 46, 20, new TextComponent("Dust"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 105, this.topPos + 132, 56, 20, new TextComponent("Bosses"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 141, 72, 20, new TextComponent("Abilities"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 87, this.topPos + 168, 82, 20, new TextComponent("Stat System"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 42, this.topPos + 24, 108, 20, new TextComponent("Mod Introduction"), e -> {
 		}));
 	}
 }

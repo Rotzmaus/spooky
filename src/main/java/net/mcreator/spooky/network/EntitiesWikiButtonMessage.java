@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.spooky.world.inventory.EntitiesWikiMenu;
 import net.mcreator.spooky.procedures.OpenSandgoblinWikiProcedure;
+import net.mcreator.spooky.procedures.OpenPinguWikiProcedure;
 import net.mcreator.spooky.procedures.OpenOstrichWikiProcedure;
 import net.mcreator.spooky.procedures.OpenNaturalEssenceWikiProcedure;
 import net.mcreator.spooky.procedures.OpenGoatWikiProcedure;
@@ -95,6 +96,10 @@ public class EntitiesWikiButtonMessage {
 		if (buttonID == 6) {
 
 			OpenGoatWikiProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 7) {
+
+			OpenPinguWikiProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
